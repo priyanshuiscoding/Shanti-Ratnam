@@ -1,0 +1,8 @@
+<svg width="360" height="160" viewBox="0 0 360 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="160" fill="#FFFFFF"/>
+  <path d="M28 104C53 61 77 74 103 94C126 112 145 120 173 109C203 96 222 63 241 71C259 79 257 108 274 117C293 127 315 114 331 99" stroke="#1E1E1E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M58 66C67 57 80 55 90 61" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+  <text x="18" y="148" fill="#6F6F6F" font-family="Arial, sans-serif" font-size="18">
+    Signature Placeholder
+  </text>
+</svg>

@@ -1,0 +1,245 @@
+{
+  "dayKey": "2026-02-28",
+  "departments": [
+    {
+      "code": "G",
+      "name": "General OPD"
+    },
+    {
+      "code": "D",
+      "name": "Diabetes"
+    },
+    {
+      "code": "N",
+      "name": "Neuro-Pain"
+    },
+    {
+      "code": "P",
+      "name": "Panchakarma"
+    }
+  ],
+  "counters": {
+    "G": 10,
+    "P": 1,
+    "D": 2,
+    "N": 2
+  },
+  "nowServing": {
+    "G": "e40ce839-ecc4-4b3f-9ae5-572695da1d29",
+    "N": "d1ac271e-5ca2-4e3c-b440-018b5661c61f"
+  },
+  "entries": [
+    {
+      "id": "5f58af04-640d-4b0e-b28b-58d39689525e",
+      "token": "G-001",
+      "serialNumber": 1,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "Priyanshu",
+      "phone": "9981558029",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:40:02.692Z",
+      "calledAt": null,
+      "completedAt": "2026-02-28T08:40:40.173Z"
+    },
+    {
+      "id": "11e0a9de-85ea-43b3-8f84-72ba93d247b6",
+      "token": "P-001",
+      "serialNumber": 1,
+      "departmentCode": "P",
+      "departmentName": "Panchakarma",
+      "name": "soumya",
+      "phone": "123456789",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:40:18.720Z",
+      "calledAt": null,
+      "completedAt": "2026-02-28T08:41:08.338Z"
+    },
+    {
+      "id": "59cf1d45-8062-41c7-8fe8-1339ea134bd5",
+      "token": "G-002",
+      "serialNumber": 2,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "seema",
+      "phone": "12345678",
+      "note": "",
+      "status": "skipped",
+      "createdAt": "2026-02-28T08:40:29.237Z",
+      "calledAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "8d38195d-457f-4620-9097-8ab8bf89618f",
+      "token": "G-003",
+      "serialNumber": 3,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "deepak",
+      "phone": "132465789",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:41:20.514Z",
+      "calledAt": null,
+      "completedAt": "2026-02-28T08:51:21.629Z"
+    },
+    {
+      "id": "15a7e833-f52a-4a01-b924-69526cd1c06c",
+      "token": "G-004",
+      "serialNumber": 4,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "soumyaa",
+      "phone": "123456789",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:41:37.734Z",
+      "calledAt": null,
+      "completedAt": "2026-02-28T08:50:43.630Z"
+    },
+    {
+      "id": "c113bf13-079d-4b24-b0a8-1de8f2dba45a",
+      "token": "G-005",
+      "serialNumber": 5,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "divyanshu",
+      "phone": "1123456789",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:41:45.155Z",
+      "calledAt": "2026-02-28T08:51:03.060Z",
+      "completedAt": "2026-02-28T08:51:22.174Z"
+    },
+    {
+      "id": "3ae8e8ff-b7c0-4762-9ff6-b6bd5364fcba",
+      "token": "G-006",
+      "serialNumber": 6,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "balram",
+      "phone": "132456789",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:42:00.231Z",
+      "calledAt": "2026-02-28T08:51:04.677Z",
+      "completedAt": "2026-02-28T08:51:22.565Z"
+    },
+    {
+      "id": "080d8434-acf9-411e-ad8e-5578c4924552",
+      "token": "G-007",
+      "serialNumber": 7,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "priyanshu",
+      "phone": "132456789",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:51:48.346Z",
+      "calledAt": "2026-02-28T08:54:37.628Z",
+      "completedAt": "2026-02-28T09:28:59.217Z"
+    },
+    {
+      "id": "ad80ff86-8814-4e51-93b5-d00655098a51",
+      "token": "D-001",
+      "serialNumber": 1,
+      "departmentCode": "D",
+      "departmentName": "Diabetes",
+      "name": "soumya",
+      "phone": "132456789",
+      "note": "",
+      "status": "in_consultation",
+      "createdAt": "2026-02-28T08:51:58.232Z",
+      "calledAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "d1ac271e-5ca2-4e3c-b440-018b5661c61f",
+      "token": "N-001",
+      "serialNumber": 1,
+      "departmentCode": "N",
+      "departmentName": "Neuro-Pain",
+      "name": "divyanshu",
+      "phone": "132456789",
+      "note": "",
+      "status": "called",
+      "createdAt": "2026-02-28T08:52:09.335Z",
+      "calledAt": "2026-02-28T08:55:05.612Z",
+      "completedAt": null
+    },
+    {
+      "id": "37e35ce5-f3fc-45ed-9193-6bdc137b7067",
+      "token": "D-002",
+      "serialNumber": 2,
+      "departmentCode": "D",
+      "departmentName": "Diabetes",
+      "name": "prince",
+      "phone": "132456789",
+      "note": "",
+      "status": "waiting",
+      "createdAt": "2026-02-28T08:52:25.049Z",
+      "calledAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "e5971542-9735-4483-a284-3100a08c4021",
+      "token": "N-002",
+      "serialNumber": 2,
+      "departmentCode": "N",
+      "departmentName": "Neuro-Pain",
+      "name": "deepak",
+      "phone": "132456789",
+      "note": "",
+      "status": "waiting",
+      "createdAt": "2026-02-28T08:52:34.833Z",
+      "calledAt": null,
+      "completedAt": null
+    },
+    {
+      "id": "d0c88fa2-a905-412c-b7c7-7484fc5f5792",
+      "token": "G-008",
+      "serialNumber": 8,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "priyanshi",
+      "phone": "123465798",
+      "note": "",
+      "status": "completed",
+      "createdAt": "2026-02-28T08:52:43.474Z",
+      "calledAt": "2026-02-28T08:54:56.023Z",
+      "completedAt": "2026-02-28T10:18:48.115Z"
+    },
+    {
+      "id": "acf1bdb5-1419-4c8c-bc08-d1f8142cb7c4",
+      "token": "G-009",
+      "serialNumber": 9,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "priyanshu",
+      "phone": "123456789",
+      "note": "",
+      "status": "called",
+      "createdAt": "2026-02-28T09:28:36.895Z",
+      "calledAt": "2026-02-28T09:29:07.348Z",
+      "completedAt": null
+    },
+    {
+      "id": "e40ce839-ecc4-4b3f-9ae5-572695da1d29",
+      "token": "G-010",
+      "serialNumber": 10,
+      "departmentCode": "G",
+      "departmentName": "General OPD",
+      "name": "priyanshu",
+      "phone": "123456789",
+      "note": "",
+      "status": "called",
+      "createdAt": "2026-02-28T10:16:49.159Z",
+      "calledAt": "2026-02-28T10:18:55.381Z",
+      "completedAt": null
+    }
+  ],
+  "createdAt": "2026-02-28T08:07:13.384Z",
+  "updatedAt": "2026-02-28T10:18:55.382Z"
+}

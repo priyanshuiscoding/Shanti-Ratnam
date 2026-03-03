@@ -1,0 +1,10 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#E7ECF1"/>
+  <rect x="70" y="80" width="1060" height="560" rx="24" fill="#F5F8FB"/>
+  <rect x="130" y="190" width="350" height="320" rx="20" fill="#CBD8E5"/>
+  <rect x="530" y="220" width="230" height="280" rx="18" fill="#DEE6EF"/>
+  <rect x="790" y="190" width="280" height="320" rx="20" fill="#BFCFDD"/>
+  <text x="600" y="600" text-anchor="middle" fill="#2F4A66" font-family="Arial, sans-serif" font-size="44" font-weight="700">
+    Walk In Treatment
+  </text>
+</svg>
