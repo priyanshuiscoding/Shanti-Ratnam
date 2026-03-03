@@ -7,7 +7,7 @@ export function generateStaticParams() {
   return innerPages.map((page) => ({ slug: page.slug }));
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   const page = getPageBySlug(params.slug);
   if (!page) {
     return {};
@@ -15,7 +15,10 @@ export function generateMetadata({ params }) {
 
   return {
     title: page.title,
-    description: page.intro
+    description: page.intro,
+    alternates: {
+      canonical: `/${page.slug}`
+    }
   };
 }
 

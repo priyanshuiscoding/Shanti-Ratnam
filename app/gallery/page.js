@@ -4,7 +4,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Media Gallery",
   description:
-    "Explore moments from Shanti-Ratnam through our media gallery featuring facilities, care, and patient-focused healing spaces."
+    "Explore moments from Shanti-Ratnam through our media gallery featuring facilities, care, and patient-focused healing spaces.",
+  alternates: {
+    canonical: "/gallery"
+  }
 };
 
 const galleryImages = [

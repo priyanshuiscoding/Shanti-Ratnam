@@ -6,7 +6,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Disease Treated",
   description:
-    "Integrated Ayurveda and naturopathy based condition-focused care at Shanti-Ratnam."
+    "Integrated Ayurveda and naturopathy based condition-focused care at Shanti-Ratnam.",
+  alternates: {
+    canonical: "/diseases-treated"
+  }
 };
 
 const diseaseSections = [
@@ -278,4 +281,3 @@ export default function DiseaseTreatedPage() {
     </main>
   );
 }
-

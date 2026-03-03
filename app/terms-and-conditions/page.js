@@ -3,7 +3,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Terms & Conditions",
   description:
-    "Terms and conditions for reservations, cancellations, payments, and stay guidelines at Shanti-Ratnam."
+    "Terms and conditions for reservations, cancellations, payments, and stay guidelines at Shanti-Ratnam.",
+  alternates: {
+    canonical: "/terms-and-conditions"
+  }
 };
 
 export default function TermsPage() {

@@ -5,7 +5,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Neuro-Pain Management | Sagar",
   description:
-    "Targeted neuro-pain management in Sagar for sciatica, neuropathy, and cervical or lumbar spondylosis."
+    "Targeted neuro-pain management in Sagar for sciatica, neuropathy, and cervical or lumbar spondylosis.",
+  alternates: {
+    canonical: "/neuro-pain-management-sagar"
+  }
 };
 
 export default function NeuroPainManagementPage() {

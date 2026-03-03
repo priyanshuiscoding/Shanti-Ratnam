@@ -4,7 +4,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Contact Shanti-Ratnam in Sagar for appointments, inquiries, and expert guidance."
+    "Contact Shanti-Ratnam in Sagar for appointments, inquiries, and expert guidance.",
+  alternates: {
+    canonical: "/contact-us"
+  }
 };
 
 export default function ContactUsPage() {

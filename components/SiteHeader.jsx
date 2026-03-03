@@ -95,12 +95,10 @@ export default function SiteHeader() {
   const currentPathWithoutLocale = stripLocaleFromPath(pathname || "/");
   const t = headerText[currentLocale] || headerText.en;
 
-  const toLocaleHref = (href, locale = currentLocale) => {
+  const toLocaleHref = (href) => {
     const [path, hash] = href.split("#");
     const normalizedPath = path && path.startsWith("/") ? path : "/";
-    const localizedPath =
-      normalizedPath === "/" ? `/${locale}` : `/${locale}${normalizedPath}`;
-    return hash ? `${localizedPath}#${hash}` : localizedPath;
+    return hash ? `${normalizedPath}#${hash}` : normalizedPath;
   };
 
   const handleLocaleSwitch = (locale) => (event) => {

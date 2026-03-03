@@ -9,7 +9,10 @@ import { GOOGLE_REVIEWS_FALLBACK_URL, getLiveGoogleReviews } from "@/lib/googleR
 export const metadata = {
   title: "Home",
   description:
-    "Shanti-Ratnam home page with wellness programs, why choose us details, and consultation access."
+    "Shanti-Ratnam home page with wellness programs, why choose us details, and consultation access.",
+  alternates: {
+    canonical: "/"
+  }
 };
 
 const treatmentDepartments = [

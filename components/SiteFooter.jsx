@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { getClientLocaleFromPath, withLocalePath } from "@/lib/locale";
+import { getClientLocaleFromPath } from "@/lib/locale";
 
 const SAGAR_COORDS = {
   latitude: 23.8388,
@@ -87,7 +87,6 @@ export default function SiteFooter() {
           developedBy: "Designed and developed by Priyanshu"
         };
 
-  const localHref = (path) => withLocalePath(path, locale);
   const year = new Date().getFullYear();
   const [now, setNow] = useState(null);
   const [weather, setWeather] = useState({
@@ -169,16 +168,16 @@ export default function SiteFooter() {
         <section>
           <h3>{t.links}</h3>
           <div className="footer-links">
-            <Link href={localHref("/")}>{t.home}</Link>
-            <Link href={localHref("/treatment")}>{t.treatments}</Link>
-            <Link href={localHref("/about-us")}>{t.about}</Link>
-            <Link href={localHref("/blog")}>{t.blog}</Link>
-            <Link href={localHref("/contact-us")}>{t.contact}</Link>
-            <Link href={localHref("/consultation")}>{t.consultation}</Link>
-            <Link href={localHref("/queue/login")}>{t.staffQueueLogin}</Link>
-            <Link href={localHref("/queue/display")}>{t.queueDisplay}</Link>
+            <Link href="/">{t.home}</Link>
+            <Link href="/treatment">{t.treatments}</Link>
+            <Link href="/about-us">{t.about}</Link>
+            <Link href="/blog">{t.blog}</Link>
+            <Link href="/contact-us">{t.contact}</Link>
+            <Link href="/consultation">{t.consultation}</Link>
+            <Link href="/queue/login">{t.staffQueueLogin}</Link>
+            <Link href="/queue/display">{t.queueDisplay}</Link>
             <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
-            <Link href={localHref("/terms-and-conditions")}>{t.terms}</Link>
+            <Link href="/terms-and-conditions">{t.terms}</Link>
           </div>
         </section>
 

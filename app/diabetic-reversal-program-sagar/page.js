@@ -5,7 +5,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Diabetic Reversal Program | Sagar",
   description:
-    "Reverse diabetes naturally with SR-AIIMS 90-day Ayurvedic diabetic reversal protocol in Sagar."
+    "Reverse diabetes naturally with SR-AIIMS 90-day Ayurvedic diabetic reversal protocol in Sagar.",
+  alternates: {
+    canonical: "/diabetic-reversal-program-sagar"
+  }
 };
 
 export default function DiabeticReversalProgramPage() {

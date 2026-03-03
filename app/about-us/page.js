@@ -6,7 +6,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "About Us",
   description:
-    "Know more about Shanti-Ratnam, our clinical approach, and our experience in Ayurvedic wellness care."
+    "Know more about Shanti-Ratnam, our clinical approach, and our experience in Ayurvedic wellness care.",
+  alternates: {
+    canonical: "/about-us"
+  }
 };
 
 // Paste your final YouTube embed link here.

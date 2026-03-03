@@ -5,7 +5,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Package",
   description:
-    "Package-wise Ayurveda and naturopathy wellness programs at Shanti-Ratnam."
+    "Package-wise Ayurveda and naturopathy wellness programs at Shanti-Ratnam.",
+  alternates: {
+    canonical: "/packages"
+  }
 };
 
 const packagePrograms = [

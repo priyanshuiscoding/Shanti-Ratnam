@@ -4,7 +4,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Consultation",
   description:
-    "Book a consultation at Shanti-Ratnam for chronic condition clarity and personalized care."
+    "Book a consultation at Shanti-Ratnam for chronic condition clarity and personalized care.",
+  alternates: {
+    canonical: "/consultation"
+  }
 };
 
 export default function ConsultationPage() {

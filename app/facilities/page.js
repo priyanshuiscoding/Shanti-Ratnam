@@ -4,7 +4,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Facilities",
   description:
-    "Explore Shanti-Ratnam facilities including OPD, IPD, therapies, wellness spaces, and patient support services."
+    "Explore Shanti-Ratnam facilities including OPD, IPD, therapies, wellness spaces, and patient support services.",
+  alternates: {
+    canonical: "/facilities"
+  }
 };
 
 const facilities = [

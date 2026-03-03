@@ -4,6 +4,10 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // ---- Locale safety redirects -> canonical non-locale URLs ----
+      { source: "/en/:path*", destination: "/:path*", permanent: true },
+      { source: "/hi/:path*", destination: "/:path*", permanent: true },
+
       // ---- Core direct redirects ----
       { source: "/about-us-2", destination: "/about-us", permanent: true },
       { source: "/book-appointement", destination: "/consultation", permanent: true },

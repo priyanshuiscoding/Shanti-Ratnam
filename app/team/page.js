@@ -6,7 +6,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Team",
   description:
-    "Meet the doctors and care team at Shanti-Ratnam who lead patient-centered healing programs."
+    "Meet the doctors and care team at Shanti-Ratnam who lead patient-centered healing programs.",
+  alternates: {
+    canonical: "/team"
+  }
 };
 
 const coreDoctors = [

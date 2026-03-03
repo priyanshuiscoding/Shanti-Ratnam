@@ -7,7 +7,10 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Blog",
   description:
-    "Latest insights from Shanti-Ratnam on Ayurveda, chronic condition care, and lifestyle healing."
+    "Latest insights from Shanti-Ratnam on Ayurveda, chronic condition care, and lifestyle healing.",
+  alternates: {
+    canonical: "/blog"
+  }
 };
 
 function formatDate(isoDate) {
