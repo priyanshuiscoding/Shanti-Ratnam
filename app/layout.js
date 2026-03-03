@@ -1,6 +1,7 @@
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { headers } from "next/headers";
 import LayoutShell from "@/components/LayoutShell";
+import SeoLocalBusiness from "@/components/SeoLocalBusiness";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -18,6 +19,9 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata = {
   metadataBase: new URL("https://shantiratnam.com"),
+  alternates: {
+    canonical: "/"
+  },
   title: {
     default: "Shanti-Ratnam | Healing With Happiness",
     template: "%s | Shanti-Ratnam"
@@ -47,6 +51,7 @@ export default function RootLayout({ children }) {
         </head>
       ) : null}
       <body className={`${manrope.variable} ${cormorant.variable}`}>
+        <SeoLocalBusiness />
         <LayoutShell>{children}</LayoutShell>
       </body>
     </html>

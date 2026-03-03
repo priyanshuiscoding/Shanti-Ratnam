@@ -3,7 +3,11 @@ import { getQueueState } from "@/lib/queueStore";
 
 export const metadata = {
   title: "Queue Registration",
-  description: "Patient self-registration queue form."
+  description: "Patient self-registration queue form.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function QueueRegisterPage() {

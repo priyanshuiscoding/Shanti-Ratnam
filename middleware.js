@@ -2,66 +2,56 @@ import { NextResponse } from "next/server";
 
 const SUPPORTED_LOCALES = ["en", "hi"];
 const DEFAULT_LOCALE = "en";
-const PUBLIC_FILE = /\.[^/]+$/;
+const PUBLIC_FILE = /\.(.*)$/;
 
 function getLocaleFromPath(pathname) {
-  const firstSegment = pathname.split("/").filter(Boolean)[0];
-  return SUPPORTED_LOCALES.includes(firstSegment) ? firstSegment : null;
+  const first = pathname.split("/").filter(Boolean)[0];
+  return SUPPORTED_LOCALES.includes(first) ? first : null;
 }
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
 
-  // Skip next internals, api, and public files
+  // Skip internal files and public assets
   if (
     pathname.startsWith("/api") ||
     pathname.startsWith("/_next") ||
+    pathname === "/favicon.ico" ||
     PUBLIC_FILE.test(pathname)
   ) {
     return NextResponse.next();
   }
 
-  // If user visits /en/... or /hi/... we serve the non-locale URL
-  // and store their locale preference in cookie.
   const localeInPath = getLocaleFromPath(pathname);
 
+  // If someone visits /en/... or /hi/... redirect them to the NON-locale URL (canonical)
   if (localeInPath) {
-    const strippedPath = pathname.replace(`/${localeInPath}`, "") || "/";
-    const rewriteUrl = request.nextUrl.clone();
-    rewriteUrl.pathname = strippedPath;
+    const stripped = pathname.replace(`/${localeInPath}`, "") || "/";
+    const url = request.nextUrl.clone();
+    url.pathname = stripped;
 
-    const requestHeaders = new Headers(request.headers);
-    requestHeaders.set("x-locale", localeInPath);
-
-    const response = NextResponse.rewrite(rewriteUrl, {
-      request: { headers: requestHeaders },
-    });
-
-    response.cookies.set("NEXT_LOCALE", localeInPath, {
+    const res = NextResponse.redirect(url, 308);
+    res.cookies.set("NEXT_LOCALE", localeInPath, {
       path: "/",
       sameSite: "lax",
-      maxAge: 60 * 60 * 24 * 365,
+      maxAge: 60 * 60 * 24 * 365
     });
-
-    return response;
+    return res;
   }
 
-  // IMPORTANT CHANGE:
-  // Do NOT redirect / -> /en or any path -> /en/path
-  // Just continue normally and use default locale internally.
-  const requestHeaders = new Headers(request.headers);
+  // No redirects for normal URLs (Option A)
+  const res = NextResponse.next();
+
+  // still set x-locale for internal rendering preference
   const savedLocale = request.cookies.get("NEXT_LOCALE")?.value;
   const locale = SUPPORTED_LOCALES.includes(savedLocale)
     ? savedLocale
     : DEFAULT_LOCALE;
 
-  requestHeaders.set("x-locale", locale);
-
-  return NextResponse.next({
-    request: { headers: requestHeaders },
-  });
+  res.headers.set("x-locale", locale);
+  return res;
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"]
 };
