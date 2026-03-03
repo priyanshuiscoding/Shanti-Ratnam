@@ -10,8 +10,9 @@ function getLocaleFromPath(pathname) {
 }
 
 export function middleware(request) {
-  const { pathname, search } = request.nextUrl;
+  const { pathname } = request.nextUrl;
 
+  // Skip next internals, api, and public files
   if (
     pathname.startsWith("/api") ||
     pathname.startsWith("/_next") ||
@@ -20,37 +21,47 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
+  // If user visits /en/... or /hi/... we serve the non-locale URL
+  // and store their locale preference in cookie.
   const localeInPath = getLocaleFromPath(pathname);
 
   if (localeInPath) {
     const strippedPath = pathname.replace(`/${localeInPath}`, "") || "/";
-    const rewriteUrl = new URL(`${strippedPath}${search}`, request.url);
+    const rewriteUrl = request.nextUrl.clone();
+    rewriteUrl.pathname = strippedPath;
+
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set("x-locale", localeInPath);
 
     const response = NextResponse.rewrite(rewriteUrl, {
-      request: { headers: requestHeaders }
+      request: { headers: requestHeaders },
     });
 
     response.cookies.set("NEXT_LOCALE", localeInPath, {
       path: "/",
       sameSite: "lax",
-      maxAge: 60 * 60 * 24 * 365
+      maxAge: 60 * 60 * 24 * 365,
     });
 
     return response;
   }
 
+  // IMPORTANT CHANGE:
+  // Do NOT redirect / -> /en or any path -> /en/path
+  // Just continue normally and use default locale internally.
+  const requestHeaders = new Headers(request.headers);
   const savedLocale = request.cookies.get("NEXT_LOCALE")?.value;
   const locale = SUPPORTED_LOCALES.includes(savedLocale)
     ? savedLocale
     : DEFAULT_LOCALE;
-  const localizedPath = pathname === "/" ? `/${locale}` : `/${locale}${pathname}`;
-  const redirectUrl = new URL(`${localizedPath}${search}`, request.url);
 
-  return NextResponse.redirect(redirectUrl);
+  requestHeaders.set("x-locale", locale);
+
+  return NextResponse.next({
+    request: { headers: requestHeaders },
+  });
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"]
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };
