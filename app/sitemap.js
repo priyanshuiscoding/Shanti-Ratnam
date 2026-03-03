@@ -8,10 +8,7 @@ export default function sitemap() {
     "/consultation",
     "/diabetic-reversal-program-sagar",
     "/neuro-pain-management-sagar",
-    "/privacy-policy",
     "/terms-and-conditions",
-    "/medical-disclaimer",
-    "/cancellation-refund-policy",
   ];
 
   const urls = new Set();

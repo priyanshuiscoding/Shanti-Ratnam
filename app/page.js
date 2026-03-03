@@ -146,7 +146,6 @@ export default async function HomePage() {
         welcome: "\u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948",
         book: "\u0928\u093f\u0936\u0941\u0932\u094d\u0915 \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u092c\u0941\u0915 \u0915\u0930\u0947\u0902",
         callNow: "\u0905\u092d\u0940 \u0915\u0949\u0932 \u0915\u0930\u0947\u0902",
-        govtBadge: "\u0938\u0930\u0915\u093e\u0930\u0940 \u092a\u0902\u091c\u0940\u0915\u0943\u0924 \u092c\u0948\u091c",
         advisor: "\u0939\u092e\u093e\u0930\u0947 \u0935\u0947\u0932\u0928\u0947\u0938 \u090f\u0921\u0935\u093e\u0907\u091c\u0930 \u0938\u0947 \u092c\u093e\u0924 \u0915\u0930\u0947\u0902",
         advisorBody:
           "\u0938\u093e\u0917\u0930, \u092e\u0927\u094d\u092f \u092a\u094d\u0930\u0926\u0947\u0936 \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0915\u0947 \u0938\u093e\u0925 \u0905\u092a\u0928\u093e \u092a\u0948\u0915\u0947\u091c \u0915\u0938\u094d\u091f\u092e\u093e\u0907\u091c \u0915\u0930\u0947\u0902\u0964",
@@ -196,7 +195,6 @@ export default async function HomePage() {
         welcome: "Welcome To",
         book: "Book Free Consultation",
         callNow: "Call Now",
-        govtBadge: "Govt. Registered Badge",
         advisor: "Call Our Wellness Advisor",
         advisorBody:
           "Customize your package with our wellness team in Sagar, Madhya Pradesh.",
@@ -334,7 +332,6 @@ export default async function HomePage() {
                 className="logo-slot-image"
               />
             </div>
-            <div className="logo-slot">{t.govtBadge}</div>
           </div>
         </div>
 

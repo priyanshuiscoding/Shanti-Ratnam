@@ -1,6 +1,4 @@
-import Link from "next/link";
 import ConsultationForm from "@/components/ConsultationForm";
-import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
 
 export const metadata = {
@@ -12,7 +10,6 @@ export const metadata = {
 export default function ConsultationPage() {
   const locale = getServerLocale();
   const hi = locale === "hi";
-  const localHref = (path) => withLocalePath(path, locale);
   const t = hi
     ? {
         consultation: "\u092a\u0930\u093e\u092e\u0930\u094d\u0936",
@@ -26,8 +23,7 @@ export default function ConsultationPage() {
         callNow: "\u0905\u092d\u0940 \u0915\u0949\u0932 \u0915\u0930\u0947\u0902",
         whatsapp: "\u0935\u094d\u0939\u093e\u091f\u094d\u0938\u090f\u092a \u0915\u0930\u0947\u0902",
         freeConsultation: "\u0928\u093f\u0936\u0941\u0932\u094d\u0915 \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u092c\u0941\u0915 \u0915\u0930\u0947\u0902",
-        fillForm: "\u092f\u0939 \u092b\u0949\u0930\u094d\u092e \u092d\u0930\u0947\u0902, \u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0917\u0940\u0964",
-        privacy: "\u0917\u094b\u092a\u0928\u0940\u092f\u0924\u093e \u0928\u0940\u0924\u093f"
+        fillForm: "\u092f\u0939 \u092b\u0949\u0930\u094d\u092e \u092d\u0930\u0947\u0902, \u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0917\u0940\u0964"
       }
     : {
         consultation: "Consultation",
@@ -40,8 +36,7 @@ export default function ConsultationPage() {
         callNow: "Call Now",
         whatsapp: "WhatsApp Us",
         freeConsultation: "Book A Free Consultation",
-        fillForm: "Fill this quick form and our team will connect with you.",
-        privacy: "Privacy Policy"
+        fillForm: "Fill this quick form and our team will connect with you."
       };
 
   return (
@@ -74,10 +69,6 @@ export default function ConsultationPage() {
           <h2>{t.freeConsultation}</h2>
           <p>{t.fillForm}</p>
           <ConsultationForm />
-          <p className="consultation-disclaimer">
-            By submitting, you agree to our{" "}
-            <Link href={localHref("/privacy-policy")}>{t.privacy}</Link>.
-          </p>
         </article>
       </section>
     </main>

@@ -60,18 +60,13 @@ export default function SiteFooter() {
           consultation: "\u092a\u0930\u093e\u092e\u0930\u094d\u0936",
           staffQueueLogin: "\u0938\u094d\u091f\u093e\u092b \u0915\u094d\u092f\u0942 \u0932\u0949\u0917\u093f\u0928",
           queueDisplay: "\u0915\u094d\u092f\u0942 \u0921\u093f\u0938\u094d\u092a\u094d\u0932\u0947 \u0938\u094d\u0915\u094d\u0930\u0940\u0928",
-          privacy: "\u0917\u094b\u092a\u0928\u0940\u092f\u0924\u093e \u0928\u0940\u0924\u093f",
           terms: "\u0928\u093f\u092f\u092e \u090f\u0935\u0902 \u0936\u0930\u094d\u0924\u0947\u0902",
-          cancellation:
-            "\u0930\u0926\u094d\u0926\u0940\u0915\u0930\u0923/\u0930\u093f\u092b\u0902\u0921 \u0928\u0940\u0924\u093f",
-          disclaimer: "\u092e\u0947\u0921\u093f\u0915\u0932 \u0921\u093f\u0938\u094d\u0915\u094d\u0932\u0947\u092e\u0930",
           weather: "\u0906\u091c \u0915\u093e \u092e\u094c\u0938\u092e",
           follow: "\u0939\u092e\u093e\u0930\u0947 \u0938\u093e\u0925 \u091c\u0941\u0921\u093c\u0947\u0902",
           securePayment: "100% \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u092d\u0941\u0917\u0924\u093e\u0928",
           contactUs: "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902",
           openMap: "\u0917\u0942\u0917\u0932 \u092e\u0948\u092a \u092e\u0947\u0902 \u0916\u094b\u0932\u0947\u0902",
-          developedBy:
-            "\u0921\u093f\u091c\u093c\u093e\u0907\u0928 \u0914\u0930 \u0921\u0947\u0935\u0932\u092a\u092e\u0947\u0902\u091f: CAMS Pvt. Ltd."
+          developedBy: "\u0921\u093f\u091c\u093c\u093e\u0907\u0928 \u0914\u0930 \u0921\u0947\u0935\u0932\u092a\u092e\u0947\u0902\u091f: Priyanshu"
         }
       : {
           links: "Links",
@@ -83,16 +78,13 @@ export default function SiteFooter() {
           consultation: "Consultation",
           staffQueueLogin: "Staff Queue Login",
           queueDisplay: "Queue Display Screen",
-          privacy: "Privacy Policy",
           terms: "Terms & Conditions",
-          cancellation: "Cancellation/Refund Policy",
-          disclaimer: "Medical Disclaimer",
           weather: "Today Weather",
           follow: "Follow Us",
           securePayment: "100% Secure Payment",
           contactUs: "Contact Us",
           openMap: "Open In Google Maps",
-          developedBy: "Designed and developed by CAMS Pvt. Ltd."
+          developedBy: "Designed and developed by Priyanshu"
         };
 
   const localHref = (path) => withLocalePath(path, locale);
@@ -186,10 +178,7 @@ export default function SiteFooter() {
             <Link href={localHref("/queue/login")}>{t.staffQueueLogin}</Link>
             <Link href={localHref("/queue/display")}>{t.queueDisplay}</Link>
             <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
-            <Link href={localHref("/privacy-policy")}>{t.privacy}</Link>
             <Link href={localHref("/terms-and-conditions")}>{t.terms}</Link>
-            <Link href={localHref("/cancellation-refund-policy")}>{t.cancellation}</Link>
-            <Link href={localHref("/medical-disclaimer")}>{t.disclaimer}</Link>
           </div>
         </section>
 
