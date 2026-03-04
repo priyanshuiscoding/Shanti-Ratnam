@@ -3,32 +3,29 @@ import { innerPages } from "@/lib/siteData";
 const base = "https://shantiratnam.com";
 
 export default function sitemap() {
-  // Add important pages that are NOT in innerPages
-  const staticPaths = [
+  const staticRoutes = [
+    "/", // home
+
+    // main pages
     "/consultation",
     "/diabetic-reversal-program-sagar",
     "/neuro-pain-management-sagar",
+
+    // legal pages
+    "/privacy-policy",
     "/terms-and-conditions",
+    "/medical-disclaimer",
+    "/cancellation-refund-policy",
   ];
 
-  const urls = new Set();
+  const innerRoutes = innerPages.map((p) => `/${p.slug}`);
 
-  // Home
-  urls.add(`${base}/`);
+  // unique + clean
+  const all = Array.from(new Set([...staticRoutes, ...innerRoutes]));
 
-  // Inner pages (/about-us, /blog, /contact-us, /treatment, etc.)
-  innerPages.forEach((p) => {
-    urls.add(`${base}/${p.slug}`);
-  });
-
-  // Missing static pages
-  staticPaths.forEach((p) => {
-    urls.add(`${base}${p}`);
-  });
-
-  return Array.from(urls).map((url) => ({
-    url,
+  return all.map((path) => ({
+    url: `${base}${path === "/" ? "" : path}`,
     changeFrequency: "weekly",
-    priority: url === `${base}/` ? 1.0 : 0.8,
+    priority: path === "/" ? 1.0 : 0.8,
   }));
 }

@@ -209,8 +209,7 @@ export default function SiteHeader() {
           {mainMenu.map((item) => {
             if (item.children) {
               const isSpecialtiesActive =
-                currentPathWithoutLocale === "/diseases-treated" ||
-                currentPathWithoutLocale === "/treatment";
+                currentPathWithoutLocale === "/diseases-treated";
 
               return (
                 <div

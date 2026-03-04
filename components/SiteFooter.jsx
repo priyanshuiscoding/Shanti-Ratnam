@@ -169,7 +169,7 @@ export default function SiteFooter() {
           <h3>{t.links}</h3>
           <div className="footer-links">
             <Link href="/">{t.home}</Link>
-            <Link href="/treatment">{t.treatments}</Link>
+            <Link href="/diseases-treated">{t.treatments}</Link>
             <Link href="/about-us">{t.about}</Link>
             <Link href="/blog">{t.blog}</Link>
             <Link href="/contact-us">{t.contact}</Link>
