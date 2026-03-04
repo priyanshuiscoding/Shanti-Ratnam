@@ -1,9 +1,23 @@
+const base = "https://shantiratnam.com";
+
 export default function robots() {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/"
-    },
-    sitemap: "https://shantiratnam.com/sitemap.xml"
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/"
+      },
+      {
+        userAgent: "*",
+        disallow: [
+          "/queue",
+          "/queue/",
+          "/queue/login",
+          "/queue/admin",
+          "/api"
+        ]
+      },
+    ],
+    sitemap: `${base}/sitemap.xml`,
   };
 }

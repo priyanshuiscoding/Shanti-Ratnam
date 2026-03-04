@@ -13,6 +13,9 @@ const nextConfig = {
       { source: "/book-appointement", destination: "/consultation", permanent: true },
       { source: "/terms-conditions", destination: "/terms-and-conditions", permanent: true },
       { source: "/package", destination: "/packages", permanent: true },
+      { source: "/package/", destination: "/packages", permanent: true },
+      { source: "/services", destination: "/diseases-treated", permanent: true },
+      { source: "/services/", destination: "/diseases-treated", permanent: true },
       { source: "/treatment", destination: "/diseases-treated", permanent: true },
 
       // MERGE service pages -> /diseases-treated (Specialities)
