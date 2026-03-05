@@ -41,7 +41,7 @@ const facilities = [
   },
   {
     title: "Naturopathy Treatments",
-    image: "/images/facilities/doctor patient picture.jpeg",
+    image: "/images/facilities/Naturopathy Treatment .png",
     alt: "Naturopathy treatment support",
     body:
       "Our Naturopathy treatments emphasize natural healing through diet, hydrotherapy, colon hydrotherapy, mud therapy, yoga, and lifestyle modifications. By harnessing the body's innate self-healing ability, we help manage chronic diseases, promote detoxification, and restore balance. Guided by experts, our therapies support holistic wellness, rejuvenation, and long-term health, ensuring a natural and sustainable approach to well-being."
@@ -102,7 +102,7 @@ export default function FacilitiesPage() {
   const t = hi
     ? {
         title: "\u0938\u0941\u0935\u093f\u0927\u093e\u090f\u0902",
-        hero: "\u0909\u0928\u094d\u0928\u0924 \u0926\u0947\u0916\u092d\u093e\u0932 \u0914\u0930 \u0938\u0939\u093e\u0928\u0941\u092d\u0942\u0924\u093f \u0915\u0947 \u0938\u093e\u0925 \u0935\u0947\u0932\u0928\u0947\u0938 \u0915\u094b \u0928\u0908 \u090a\u0901\u091a\u093e\u0908\u0964",
+        hero: "\u092c\u0947\u0939\u0924\u0930 \u0926\u0947\u0916\u092d\u093e\u0932, \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0914\u0930 \u0938\u0947\u0935\u093e \u0939\u092e\u093e\u0930\u0940 \u092a\u094d\u0930\u093e\u0925\u092e\u093f\u0915\u0924\u093e \u0939\u0948\u0964",
         lead:
           "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e, \u0938\u093e\u0917\u0930 \u092e\u0947\u0902 \u092e\u0947\u0921\u093f\u0915\u0932, \u0925\u0947\u0930\u0947\u092a\u0940 \u0914\u0930 \u0930\u094b\u0917\u0940 \u0938\u0939\u093e\u092f\u0924\u093e \u0938\u0941\u0935\u093f\u0927\u093e\u0913\u0902 \u0915\u093e \u0938\u0902\u0915\u094d\u0937\u093f\u092a\u094d\u0924 \u0905\u0935\u0932\u094b\u0915\u0928\u0964"
       }

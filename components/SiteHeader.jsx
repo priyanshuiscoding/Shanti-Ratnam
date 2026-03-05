@@ -5,14 +5,14 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
+  DEFAULT_LOCALE,
   getClientLocaleFromPath,
+  SUPPORTED_LOCALES,
   stripLocaleFromPath
 } from "@/lib/locale";
 
 const mainMenu = [
   { href: "/", labelKey: "home" },
-  { href: "/about-us", labelKey: "about" },
-  { href: "/facilities", labelKey: "facilities" },
   {
     labelKey: "specialties",
     children: [
@@ -39,9 +39,11 @@ const mainMenu = [
     ]
   },
   { href: "/packages", labelKey: "package" },
+  { href: "/facilities", labelKey: "facilities" },
+  { href: "/about-us", labelKey: "about" },
   { href: "/team", labelKey: "team" },
-  { href: "/blog", labelKey: "blog" },
   { href: "/gallery", labelKey: "gallery" },
+  { href: "/blog", labelKey: "blog" },
   { href: "/contact-us", labelKey: "contact" }
 ];
 
@@ -58,8 +60,8 @@ const headerText = {
       home: "Home",
       about: "About Us",
       facilities: "Facilities",
-      specialties: "Specialties",
-      package: "Package",
+      specialties: "Speciality",
+      package: "Packages",
       team: "Team",
       blog: "Blog",
       gallery: "Media/Gallery",
@@ -90,8 +92,11 @@ export default function SiteHeader() {
   const pathname = usePathname();
   const [specialtiesOpen, setSpecialtiesOpen] = useState(false);
   const [fontScale, setFontScale] = useState(100);
+  const [cookieLocale, setCookieLocale] = useState(null);
   const closeTimerRef = useRef(null);
-  const currentLocale = getClientLocaleFromPath(pathname || "/");
+  const pathLocale = getClientLocaleFromPath(pathname || "/");
+  const hasLocalePrefix = /^\/(en|hi)(\/|$)/.test(pathname || "/");
+  const currentLocale = hasLocalePrefix ? pathLocale : (cookieLocale || pathLocale);
   const currentPathWithoutLocale = stripLocaleFromPath(pathname || "/");
   const t = headerText[currentLocale] || headerText.en;
 
@@ -115,6 +120,18 @@ export default function SiteHeader() {
     setFontScale(next);
     document.documentElement.style.fontSize = `${next}%`;
   }, []);
+
+  useEffect(() => {
+    const cookie = document.cookie
+      .split("; ")
+      .find((entry) => entry.startsWith("NEXT_LOCALE="));
+    const cookieValue = cookie ? decodeURIComponent(cookie.split("=")[1]) : null;
+    if (cookieValue && SUPPORTED_LOCALES.includes(cookieValue)) {
+      setCookieLocale(cookieValue);
+      return;
+    }
+    setCookieLocale(DEFAULT_LOCALE);
+  }, [pathname]);
 
   const updateFontScale = (delta) => {
     const next = Math.min(120, Math.max(90, fontScale + delta));

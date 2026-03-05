@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
 
@@ -18,7 +19,7 @@ const packagePrograms = [
     subtitle: "This package is designed to relax and vitalize the body.",
     goal: "Recovery, Vitalization",
     days: "14 Days",
-    imagePath: "/images/packages/rejuvenation-package.jpg",
+    imagePath: "/images/packages/Rejuvenation package.webp",
     imageSide: "left",
     contents: [
       "Panchkarma Treatment",
@@ -49,7 +50,7 @@ const packagePrograms = [
       "This Ayurveda and naturopathy package cleanses the body and mind.",
     goal: "Cleansing De-Addiction",
     days: "21 Days",
-    imagePath: "/images/packages/detox-package.jpg",
+    imagePath: "/images/packages/detox package.webp",
     imageSide: "right",
     contents: [
       "Initial Assessment",
@@ -89,7 +90,7 @@ const packagePrograms = [
       "If you suffer from stress or burn-out symptoms, the stress management package is the right choice.",
     goal: "Let Body And Soul Come To Rest",
     days: "14 Days",
-    imagePath: "/images/packages/stress-management-package.jpg",
+    imagePath: "/images/packages/stress management.webp",
     imageSide: "left",
     contents: [
       "Initial Assessment",
@@ -130,7 +131,7 @@ const packagePrograms = [
       "Losing weight, feeling freer and more comfortable as well as preventing the harmful effects that can occur due to overweight.",
     goal: "Weight Loss/Weight Gain",
     days: "28 Days",
-    imagePath: "/images/packages/weight-management-package.jpg",
+    imagePath: "/images/packages/weight management.webp",
     imageSide: "right",
     contents: [
       "Initial Assessment",
@@ -170,7 +171,7 @@ const packagePrograms = [
       "The diabetes care package helps to prevent pre-diabetes stage and to keep diabetes type 2 in remission.",
     goal: "Monitor Blood Sugar Level",
     days: "21 Days",
-    imagePath: "/images/packages/diabetes-package.jpg",
+    imagePath: "/images/packages/diabeties package.webp",
     imageSide: "left",
     contents: [
       "Initial Assessment",
@@ -204,7 +205,7 @@ const packagePrograms = [
       "A holistic package to support women's hormonal, reproductive, and long-term wellness.",
     goal: "Balancing The Aggravated Dosha",
     days: "21 Days",
-    imagePath: "/images/packages/womens-health-care-package.jpg",
+    imagePath: "/images/packages/womens health care.webp",
     imageSide: "right",
     contents: [
       "Initial Assessment",
@@ -250,7 +251,7 @@ const packagePrograms = [
       "A well planned health pack using all the possibilities of Ayurveda and Yoga to treat various joint and spine conditions.",
     goal: "To Avoid The Possible Spine And Joint Complications",
     days: "28 Days",
-    imagePath: "/images/packages/joint-and-spine-package.jpg",
+    imagePath: "/images/packages/joint and spine.webp",
     imageSide: "left",
     contents: [
       "Initial Assessment",
@@ -308,12 +309,17 @@ function PackageBlock({ item, index, t, locale }) {
 
   return (
     <article id={item.id} className={`package-block${reverse ? " is-reverse" : ""}`}>
-      <div className="package-media" aria-label={`${item.title} image placeholder`}>
+      <div className="package-media" aria-label={`${item.title} image`}>
         <div className="package-media-frame">
-          <p className="package-media-title">{t.imagePlaceholder}</p>
-          <p className="package-media-copy">
-            {t.addImageAt}: <code>{item.imagePath}</code>
-          </p>
+          <Image
+            src={item.imagePath}
+            alt={item.title}
+            width={1200}
+            height={900}
+            quality={95}
+            sizes="(max-width: 1024px) 100vw, 46vw"
+            className="package-media-image"
+          />
         </div>
       </div>
 
@@ -355,7 +361,7 @@ export default function PackagePage() {
   const hi = locale === "hi";
   const t = hi
     ? {
-        package: "\u092a\u0948\u0915\u0947\u091c",
+        package: "\u0909\u092a\u091a\u093e\u0930 \u092a\u0948\u0915\u0947\u091c",
         lead:
           "\u0936\u0930\u0940\u0930, \u092e\u0928 \u0914\u0930 \u0906\u0924\u094d\u092e\u093e \u0915\u094b \u0938\u0902\u0924\u0941\u0932\u093f\u0924 \u0914\u0930 \u0938\u093e\u092e\u0902\u091c\u0938\u094d\u092f\u092a\u0942\u0930\u094d\u0923 \u091c\u0940\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f \u091c\u094b\u0921\u093c\u0928\u093e\u0964",
         imagePlaceholder: "\u0907\u092e\u0947\u091c \u092a\u094d\u0932\u0947\u0938\u0939\u094b\u0932\u094d\u0921\u0930",

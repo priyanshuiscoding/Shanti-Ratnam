@@ -53,10 +53,14 @@ export default function SiteFooter() {
       ? {
           links: "\u0932\u093f\u0902\u0915\u094d\u0938",
           home: "\u0939\u094b\u092e",
-          treatments: "\u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e",
-          about: "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902",
+          speciality: "\u0935\u093f\u0936\u0947\u0937\u0924\u093e",
+          packages: "\u092a\u0948\u0915\u0947\u091c",
+          facilities: "\u0938\u0941\u0935\u093f\u0927\u093e\u090f\u0902",
+          aboutUs: "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902",
+          team: "\u091f\u0940\u092e",
+          mediaGallery: "\u092e\u0940\u0921\u093f\u092f\u093e/\u0917\u0948\u0932\u0930\u0940",
           blog: "\u092c\u094d\u0932\u0949\u0917",
-          contact: "\u0938\u0902\u092a\u0930\u094d\u0915",
+          contactUsNav: "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902",
           consultation: "\u092a\u0930\u093e\u092e\u0930\u094d\u0936",
           staffQueueLogin: "\u0938\u094d\u091f\u093e\u092b \u0915\u094d\u092f\u0942 \u0932\u0949\u0917\u093f\u0928",
           queueDisplay: "\u0915\u094d\u092f\u0942 \u0921\u093f\u0938\u094d\u092a\u094d\u0932\u0947 \u0938\u094d\u0915\u094d\u0930\u0940\u0928",
@@ -71,10 +75,14 @@ export default function SiteFooter() {
       : {
           links: "Links",
           home: "Home",
-          treatments: "Treatments",
-          about: "About",
+          speciality: "Speciality",
+          packages: "Packages",
+          facilities: "Facilities",
+          aboutUs: "About Us",
+          team: "Team",
+          mediaGallery: "Media/Gallery",
           blog: "Blog",
-          contact: "Contact",
+          contactUsNav: "Contact Us",
           consultation: "Consultation",
           staffQueueLogin: "Staff Queue Login",
           queueDisplay: "Queue Display Screen",
@@ -169,10 +177,14 @@ export default function SiteFooter() {
           <h3>{t.links}</h3>
           <div className="footer-links">
             <Link href="/">{t.home}</Link>
-            <Link href="/diseases-treated">{t.treatments}</Link>
-            <Link href="/about-us">{t.about}</Link>
+            <Link href="/diseases-treated">{t.speciality}</Link>
+            <Link href="/packages">{t.packages}</Link>
+            <Link href="/facilities">{t.facilities}</Link>
+            <Link href="/about-us">{t.aboutUs}</Link>
+            <Link href="/team">{t.team}</Link>
+            <Link href="/gallery">{t.mediaGallery}</Link>
             <Link href="/blog">{t.blog}</Link>
-            <Link href="/contact-us">{t.contact}</Link>
+            <Link href="/contact-us">{t.contactUsNav}</Link>
             <Link href="/consultation">{t.consultation}</Link>
             <Link href="/queue/login">{t.staffQueueLogin}</Link>
             <Link href="/queue/display">{t.queueDisplay}</Link>

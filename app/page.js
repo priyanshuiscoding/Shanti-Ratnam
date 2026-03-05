@@ -146,8 +146,10 @@ export default async function HomePage() {
   const hi = locale === "hi";
   const t = hi
     ? {
-        welcome: "\u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948",
-        book: "\u0928\u093f\u0936\u0941\u0932\u094d\u0915 \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u092c\u0941\u0915 \u0915\u0930\u0947\u0902",
+        welcome:
+          "\u0938\u0902\u092a\u0942\u0930\u094d\u0923 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0915\u0947 \u0932\u093f\u090f \u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e \u092e\u0947\u0902 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948",
+        book:
+          "\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u0915\u0947 \u0932\u093f\u090f \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902",
         callNow: "\u0905\u092d\u0940 \u0915\u0949\u0932 \u0915\u0930\u0947\u0902",
         advisor: "\u0939\u092e\u093e\u0930\u0947 \u0935\u0947\u0932\u0928\u0947\u0938 \u090f\u0921\u0935\u093e\u0907\u091c\u0930 \u0938\u0947 \u092c\u093e\u0924 \u0915\u0930\u0947\u0902",
         advisorBody:
@@ -159,7 +161,7 @@ export default async function HomePage() {
           "\u0930\u094b\u0917\u0940-\u092a\u094d\u0930\u0925\u092e \u0926\u0947\u0916\u092d\u093e\u0932, \u0938\u0902\u0930\u091a\u093f\u0924 \u0939\u0940\u0932\u093f\u0902\u0917 \u092a\u094d\u0932\u093e\u0928",
         specialties: "\u0935\u093f\u0936\u0947\u0937 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e",
         specialtyTitle:
-          "\u0915\u094d\u0930\u0949\u0928\u093f\u0915 \u0915\u0902\u0921\u0940\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0935\u093f\u0936\u0947\u0937 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e",
+          "\u092a\u0942\u0930\u094d\u0923 \u0926\u0940\u0930\u094d\u0918\u0915\u093e\u0932\u093f\u0915 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0932\u093e\u092d \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0947 \u0938\u092e\u0930\u094d\u092a\u093f\u0924 \u0909\u092a\u091a\u093e\u0930 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e",
         learnMore: "\u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0947\u0902",
         ourTreatment: "\u0939\u092e\u093e\u0930\u0940 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e",
         treatmentTitle:
@@ -185,7 +187,7 @@ export default async function HomePage() {
         reviewCta: "\u0917\u0942\u0917\u0932 \u092a\u0930 \u0938\u092d\u0940 \u0930\u093f\u0935\u094d\u092f\u0942 \u0926\u0947\u0916\u0947\u0902",
         reviewSummary: "\u0917\u0942\u0917\u0932 \u0930\u0947\u091f\u093f\u0902\u0917",
         heroLead:
-          "\u0939\u092e \u0938\u0902\u0930\u091a\u093f\u0924, \u0921\u0949\u0915\u094d\u091f\u0930-\u0917\u093e\u0907\u0921\u0947\u0921 \u0939\u0940\u0932\u093f\u0902\u0917 \u092a\u094d\u0932\u093e\u0928 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902 \u091c\u094b \u0932\u0902\u092c\u0947 \u0938\u092e\u092f \u0915\u0940 \u0930\u093f\u0915\u0935\u0930\u0940 \u0914\u0930 \u092c\u0947\u0939\u0924\u0930 \u0926\u0948\u0928\u093f\u0915 \u091c\u0940\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f \u0921\u093f\u091c\u093e\u0907\u0928 \u0915\u093f\u090f \u0917\u090f \u0939\u0948\u0902\u0964",
+          "\u0939\u092e \u0938\u0902\u0930\u091a\u093f\u0924, \u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0915\u0943\u0924 \u0914\u0930 \u0935\u093f\u0936\u093f\u0937\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930-\u0917\u093e\u0907\u0921\u0947\u0921 \u0939\u0940\u0932\u093f\u0902\u0917 \u092a\u094d\u0932\u093e\u0928 \u092a\u094d\u0930\u0926\u093e\u0928 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902, \u091c\u094b \u0926\u0940\u0930\u094d\u0918\u0915\u093e\u0932\u093f\u0915 \u0938\u094d\u0925\u093f\u0930\u0924\u093e \u0914\u0930 \u092c\u0947\u0939\u0924\u0930 \u0938\u094d\u0935\u0938\u094d\u0925 \u091c\u0940\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0915\u093f\u090f \u0917\u090f \u0939\u0948\u0902\u0964",
         exp: "\u0032\u0035+ \u0935\u0930\u094d\u0937\u094b\u0902 \u0915\u093e \u0905\u0928\u0941\u092d\u0935",
         doctorPrograms: "\u0921\u0949\u0915\u094d\u091f\u0930-\u0928\u093f\u0930\u094d\u0926\u0947\u0936\u093f\u0924 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e",
         chronicFocus: "\u0915\u094d\u0930\u0949\u0928\u093f\u0915 \u0915\u0947\u092f\u0930 \u092b\u094b\u0915\u0938",
@@ -228,7 +230,7 @@ export default async function HomePage() {
         reviewCta: "Read All Reviews",
         reviewSummary: "Google Rating",
         heroLead:
-          "We provide structured, doctor-guided healing plans designed for long-term recovery and better daily living.",
+          "We provide structured, personalized, unique doctor-guided healing plans designed for long-term sustainability and better healthy living.",
         exp: "25+ Years Experience",
         doctorPrograms: "Doctor-Guided Programs",
         chronicFocus: "Chronic Care Focus",
@@ -242,48 +244,48 @@ export default async function HomePage() {
 
   const whyItems = [
     "100% safe, surgery-free, and time-bound care.",
-    "No animal cruelty involved.",
-    "Fixed and time-bound treatment plans for neuro and spine problems, diabetes reversal, and autoimmune disorders.",
     "Above 99% cure in cases of migraine, asthma, eczema, allergic rhinitis, urticaria, colitis, and arthritis.",
-    "Legacy care foundation.",
     "Holistic healing approach.",
+    "Fixed and time-bound treatment plans for neuro and spine problems, diabetes reversal, and autoimmune disorders.",
     "Proven clinical outcomes.",
+    "No animal cruelty involved.",
+    "Legacy care foundation.",
     "Accessibility in both Hindi and English consultation."
   ];
 
   const consultationCards = hi
     ? [
         {
-          title: "वीडियो कंसल्टेशन",
-          imagePath: "/images/sections/in-patient-treatment.jpeg",
+          title: "Video Consultation",
+          imagePath: "/images/sections/Vedio consultation image .png",
           imageAlt: "Video consultation"
         },
         {
-          title: "ई-मेल कंसल्टेशन",
+          title: "Walk In Consultation - OPD",
           imagePath: "/images/sections/walk-in-treatment.jpg",
-          imageAlt: "Email consultation"
+          imageAlt: "Walk in consultation OPD"
         },
         {
-          title: "पर्सनल कंसल्टेशन",
-          imagePath: "/images/doctors/dr-saurabh-photo.jpeg",
-          imageAlt: "Personal consultation"
+          title: "Live In Consultation - IPD",
+          imagePath: "/images/facilities/delux room.jpeg",
+          imageAlt: "Live in consultation IPD"
         }
       ]
     : [
         {
           title: "Video Consultation",
-          imagePath: "/images/sections/in-patient-treatment.jpeg",
+          imagePath: "/images/sections/Vedio consultation image .png",
           imageAlt: "Video consultation"
         },
         {
-          title: "E-Mail Consultation",
+          title: "Walk In Consultation - OPD",
           imagePath: "/images/sections/walk-in-treatment.jpg",
-          imageAlt: "Email consultation"
+          imageAlt: "Walk in consultation OPD"
         },
         {
-          title: "Personal Consultation",
-          imagePath: "/images/doctors/dr-saurabh-photo.jpeg",
-          imageAlt: "Personal consultation"
+          title: "Live In Consultation - IPD",
+          imagePath: "/images/facilities/delux room.jpeg",
+          imageAlt: "Live in consultation IPD"
         }
       ];
 
@@ -309,7 +311,7 @@ export default async function HomePage() {
           <p className="eyebrow">{t.welcome}</p>
           <h1 className="hero-brand-hindi">{"\u0936\u093e\u0902\u0924\u093f \u0930\u0924\u094d\u0928\u092e"}</h1>
           <p className="hero-subtitle">
-            Central India's First Diabetes Reversal Center
+            Central India's First Neuro-Painfree Centre and DIABETES REVERSAL AYUSH HOSPITAL.
           </p>
           <p className="lead">{t.heroLead}</p>
           <div className="hero-cta-row">
@@ -320,20 +322,29 @@ export default async function HomePage() {
               {t.callNow}
             </a>
           </div>
-          <div className="hero-trust-strip">
-            <span>{t.exp}</span>
-            <span>{t.doctorPrograms}</span>
-            <span>{t.chronicFocus}</span>
-          </div>
           <div className="hero-logo-placeholders">
-            <div className="logo-slot logo-slot-ayush">
-              <Image
-                src="/images/branding/ayush-logo.jpeg"
-                alt="AYUSH certified logo"
-                width={240}
-                height={360}
-                className="logo-slot-image"
-              />
+            <div className="logo-slot-ayush hero-ayush-badge">
+              <div className="hero-ayush-cell hero-ayush-cell-logo">
+                <Image
+                  src="/images/branding/ayush-logo.jpeg"
+                  alt="AYUSH certified logo"
+                  width={240}
+                  height={360}
+                  className="logo-slot-image"
+                />
+              </div>
+              <span className="hero-ayush-cell hero-ayush-claim">
+                <strong>100%</strong>
+                <small>SAFE</small>
+              </span>
+              <span className="hero-ayush-cell hero-ayush-claim">
+                <strong>100%</strong>
+                <small>AYURVEDIC</small>
+              </span>
+              <span className="hero-ayush-cell hero-ayush-claim">
+                <strong>100%</strong>
+                <small>VEGETARIAN</small>
+              </span>
             </div>
           </div>
         </div>
@@ -573,4 +584,5 @@ export default async function HomePage() {
     </main>
   );
 }
+
 
