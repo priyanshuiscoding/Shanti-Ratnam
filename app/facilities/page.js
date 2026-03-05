@@ -69,7 +69,7 @@ const facilities = [
   },
   {
     title: "Physical Therapy",
-    image: "/images/facilities/doctor patient picture.jpeg",
+    image: "/images/facilities/physical thearpy.png",
     alt: "Physical therapy care",
     body:
       "We combine Ayurveda and modern rehabilitation techniques to restore mobility, relieve discomfort, and strengthen the body. Through therapeutic exercise, manual therapy, hydrotherapy, and yoga-based routines, we support recovery from injuries, improve posture, and enhance overall physical well-being."
@@ -83,14 +83,14 @@ const facilities = [
   },
   {
     title: "Pharmacy",
-    image: "/images/facilities/doctor patient picture.jpeg",
+    image: "/images/facilities/pharmacy.png",
     alt: "In-house pharmacy",
     body:
       "Our pharmacy ensures continuous nursing care, vital sign monitoring, and proper medication management, providing essential health support for optimal patient well-being."
   },
   {
     title: "Recreation Center",
-    image: "/images/facilities/meditation thearepy.jpg",
+    image: "/images/facilities/Recreation hall.JPG",
     alt: "Recreation center room",
     body:
       "Our dedicated relaxation and leisure space offers a refreshing break for patients and visitors. Equipped with carrom, chess, table tennis, and other indoor games, it provides an engaging environment to unwind. These activities help reduce stress, enhance mental focus, and promote overall well-being."
@@ -130,7 +130,9 @@ export default function FacilitiesPage() {
                 alt={item.alt}
                 width={1200}
                 height={760}
-                className="facility-image"
+                className={`facility-image${
+                  item.title === "Physical Therapy" ? " facility-image-physical" : ""
+                }`}
               />
               <div className="facility-body">
                 <h2>{item.title}</h2>

@@ -14,8 +14,8 @@
   --green: #1ea54b;
   --green-deep: #2464b2;
   --line: #d8e7f7;
-  --footer-bg: #0f4174;
-  --footer-line: #2d659f;
+  --footer-bg: #d9ecff;
+  --footer-line: #b9d7f5;
   --radius-lg: 14px;
   --shadow-soft: 0 14px 30px rgba(24, 58, 99, 0.12);
   --font-hi: "Apraajita", "Aparajita", "Aprajita", "Kohinoor Devanagari", "Noto Sans Devanagari", "Mangal", sans-serif;
@@ -2948,6 +2948,12 @@ main {
   object-fit: cover;
 }
 
+.facility-image-physical {
+  object-fit: contain;
+  object-position: center center;
+  background: #eef5ff;
+}
+
 .facility-body {
   padding: 0.85rem 0.95rem 1rem;
 }
@@ -3039,7 +3045,7 @@ main {
 
 .site-footer {
   background: var(--footer-bg);
-  color: #d2e1ef;
+  color: #2f5d8d;
   padding-top: 2.2rem;
 }
 
@@ -3053,7 +3059,7 @@ main {
 
 .site-footer h3 {
   font-size: 1.9rem;
-  color: #f0f8ff;
+  color: #1e4f84;
   margin-bottom: 0.65rem;
 }
 
@@ -3065,11 +3071,11 @@ main {
 
 .footer-links a {
   text-decoration: none;
-  color: #c4d7ea;
+  color: #36689a;
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+  color: #1e4f84;
 }
 
 .weather-temp {
@@ -3104,15 +3110,15 @@ main {
 
 .site-footer p {
   margin: 0.2rem 0;
-  color: #d2e1ef;
+  color: #2f5d8d;
 }
 
 .site-footer p a {
-  color: #d2e1ef;
+  color: #2f5d8d;
 }
 
 .site-footer p a:hover {
-  color: #ffffff;
+  color: #1e4f84;
 }
 
 .footer-bottom {
