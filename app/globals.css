@@ -1704,6 +1704,7 @@ main {
 
 .media-collage-image {
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.35s ease;
 }
 
@@ -3419,7 +3420,7 @@ select:focus {
 .package-hero h1 {
   margin-top: 0.52rem;
   font-size: clamp(2rem, 4.4vw, 4rem);
-  color: #4f6f92;
+  color: var(--green-deep);
 }
 
 .package-stack {
@@ -3431,7 +3432,7 @@ select:focus {
 .package-block {
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: #f6fbff;
+  background: #ffffff;
   padding: 1rem;
   display: grid;
   grid-template-columns: 0.95fr 1.15fr;
@@ -3481,43 +3482,44 @@ select:focus {
 
 .package-copy h2 {
   font-size: clamp(2rem, 4.4vw, 4rem);
-  color: #4f6f92;
+  color: var(--green-deep);
   line-height: 1.08;
 }
 
 .package-subtitle {
   margin-top: 0.4rem;
-  color: #617b97;
+  color: var(--muted);
 }
 
 .package-meta-card {
   margin-top: 0.82rem;
-  border-top: 1px solid #eb9f75;
+  border-top: 1px solid var(--line);
   padding-top: 0.75rem;
   position: relative;
 }
 
 .package-meta-card h3 {
   font-size: clamp(2rem, 3.8vw, 3.2rem);
-  color: #d9733f;
+  color: var(--green-deep);
   line-height: 1;
 }
 
 .package-goal {
   margin-top: 0.35rem;
-  color: #4f5f72;
+  color: #355a86;
   font-weight: 700;
 }
 
 .package-days-label {
   margin-top: 0.62rem;
-  color: #d9733f;
+  color: var(--saffron);
   font-size: 1.04rem;
+  font-weight: 800;
 }
 
 .package-days {
   margin-top: 0.16rem;
-  color: #4f5f72;
+  color: #355a86;
   font-size: 1.6rem;
   font-family: var(--font-serif), "Cormorant Garamond", serif;
 }
@@ -3529,13 +3531,13 @@ select:focus {
   text-decoration: none;
   border-radius: 999px;
   padding: 0.55rem 1.2rem;
-  background: #66bacb;
+  background: linear-gradient(135deg, #f26a21, #ff8d3d);
   color: #ffffff;
   font-weight: 800;
 }
 
 .package-cta-btn:hover {
-  background: #4ba7bc;
+  background: linear-gradient(135deg, #d95b1c, #f26a21);
 }
 
 .package-list-section {
@@ -3546,7 +3548,7 @@ select:focus {
   margin: 0;
   font-size: 2rem;
   line-height: 1;
-  color: #d9733f;
+  color: var(--green-deep);
   font-family: var(--font-serif), "Cormorant Garamond", serif;
 }
 
@@ -3562,7 +3564,7 @@ select:focus {
 .package-list-grid li {
   position: relative;
   padding-left: 1.85rem;
-  color: #4f5f72;
+  color: #355a86;
   line-height: 1.4;
 }
 
@@ -3576,7 +3578,7 @@ select:focus {
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: #66bacb;
+  background: var(--saffron);
   color: #ffffff;
   font-size: 0.82rem;
   font-weight: 800;

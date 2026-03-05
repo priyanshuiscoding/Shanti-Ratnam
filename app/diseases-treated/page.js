@@ -56,7 +56,7 @@ const diseaseSections = [
       "Joint and muscle cleansing care",
       "Recovery and immunity building"
     ],
-    image: "/images/diseases-treated/panchakarma.webp",
+    image: "/images/diseases-treated/PANCHKARMA THERAPY.png",
     imageAlt: "Panchakarma therapy session"
   },
   {

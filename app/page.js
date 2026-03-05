@@ -262,12 +262,12 @@ export default async function HomePage() {
         },
         {
           title: "Walk In Consultation - OPD",
-          imagePath: "/images/sections/walk-in-treatment.jpg",
+          imagePath: "/images/sections/WALK IN.png",
           imageAlt: "Walk in consultation OPD"
         },
         {
           title: "Live In Consultation - IPD",
-          imagePath: "/images/facilities/delux room.jpeg",
+          imagePath: "/images/sections/IPD.png",
           imageAlt: "Live in consultation IPD"
         }
       ]
@@ -279,12 +279,12 @@ export default async function HomePage() {
         },
         {
           title: "Walk In Consultation - OPD",
-          imagePath: "/images/sections/walk-in-treatment.jpg",
+          imagePath: "/images/sections/WALK IN.png",
           imageAlt: "Walk in consultation OPD"
         },
         {
           title: "Live In Consultation - IPD",
-          imagePath: "/images/facilities/delux room.jpeg",
+          imagePath: "/images/sections/IPD.png",
           imageAlt: "Live in consultation IPD"
         }
       ];
