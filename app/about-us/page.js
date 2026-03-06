@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
@@ -12,34 +12,33 @@ export const metadata = {
   }
 };
 
-// Paste your final YouTube embed link here.
-// Example format: https://www.youtube.com/embed/VIDEO_ID
-const ABOUT_YOUTUBE_EMBED_URL = "https://www.youtube.com/embed/zsqCXAn2A1c";
-const ABOUT_CAMPUS_IMAGE_PATH = "/images/about/hospital-campus.webp";
+const ABOUT_CAMPUS_IMAGE_PATH = "/images/about/about us image.jpeg";
 
-const aboutParagraph = `Start on a Wellness Journey with Shanti Ratnam AYUSH Institute.
-For nearly two decades, the Shanti Ratnam AYUSH Institute of Indian Medicinal Sciences has
-been immersed in the time-honored traditions of Indian healthcare. Our evolution into a
-beacon of research and innovation is driven by an unwavering commitment to elevating healthcare.
-At our core, we believe in the profound connection between humans and nature - an interplay that
-embodies the true essence of health. Guided by this simple yet profound vision, we strive for
-comprehensive health by returning to the fundamental nature of well-being.
-In today's whirlwind of life, the surge in lifestyle disorders is a formidable challenge.
-Despite the dazzling array of technology and sophisticated treatments, these health issues persist,
-leaving us in search of solutions. This is where Shanti Ratnam sets itself apart.
-We are not just an AYUSH institute; we are a source of integrated solutions.
-From everyday concerns like sleep disturbances to complex adversaries like cancer, we stand ready.
-Our expertise encompasses diabetes, hypertension, joint ailments, migraines, prostate health,
-liver and kidney wellness, and psychological balance. Our mission is a beacon of clarity:
-to share health with happiness.`;
+const aboutParagraph = `Sarve Bhavantu Sukhinah. Sarve Santu Niraamayaah.
+May all beings be happy. May all be free from illness. May all witness that which is auspicious.
 
-const aboutParagraphHi = `शांति रत्नम आयुष इंस्टीट्यूट के साथ एक सार्थक स्वास्थ्य यात्रा शुरू करें।
-लगभग दो दशकों से शांति रत्नम आयुष इंस्टीट्यूट ऑफ इंडियन मेडिसिनल साइंसेज भारतीय चिकित्सा परंपराओं पर गहराई से कार्यरत है।
-अनुसंधान और नवाचार की दिशा में हमारा विकास बेहतर स्वास्थ्य सेवाएं देने की प्रतिबद्धता से प्रेरित है।
-हम मानते हैं कि प्रकृति और मनुष्य के बीच संतुलन ही वास्तविक स्वास्थ्य का आधार है।
-आज की जीवनशैली में बढ़ती बीमारियों के बीच हम आयुर्वेद, प्राकृतिक चिकित्सा और समग्र उपचार के माध्यम से व्यावहारिक समाधान प्रदान करते हैं।
-नींद की समस्या से लेकर जटिल रोग स्थितियों तक, हमारा उद्देश्य स्पष्ट है:
-स्वास्थ्य को खुशी के साथ जोड़ना।`;
+Shanti Ratnam is not merely the name of a hospital. It is a resolve, an experience, and a philosophy of life. Every individual who connects with Shanti Ratnam, whether as a patient, a family member, a physician, or a caregiver, experiences the energy of positivity, wholesome living, and universal prosperity.
+
+We believe that health is not only a condition of the body. It is the serenity of the soul, the joy of the mind, and a celebration of life. That is why, at Shanti Ratnam, we do not merely treat, we transform.
+
+Positivity is the first principle of our healing. The environment, the language, and the conduct of our team together awaken confidence, calm, and recovery.
+
+Ancient wisdom and modern science are integrated here to create a comprehensive and transformative healing path rooted in Ayurveda, Panchakarma, Yoga, Meditation, Diet Therapy, and Naturopathy.
+
+Shanti Ratnam is not an institution of walls and instruments alone. It is a living consciousness committed to spreading health, peace, and prosperity.`;
+
+const aboutParagraphHi = `सर्वे भवन्तु सुखिनः। सर्वे सन्तु निरामयाः।
+सभी सुखी हों। सभी रोगमुक्त हों। सभी कल्याण को देखें।
+
+शांति-रत्नम् केवल एक अस्पताल का नाम नहीं है। यह एक संकल्प, एक अनुभव और एक जीवनदर्शन है। जो भी व्यक्ति — रोगी, परिजन, चिकित्सक या सेवक — शांति-रत्नम् से जुड़ता है, वह केवल उपचार नहीं पाता, बल्कि सकारात्मकता, स्वस्थ जीवन और समृद्धि की विशेष ऊर्जा का अनुभव करता है।
+
+हमारा विश्वास है कि स्वास्थ्य केवल शरीर की अवस्था नहीं है; यह आत्मा की शांति, मन की प्रसन्नता और जीवन का उत्सव है। इसलिए शांति-रत्नम् में हम केवल चिकित्सा नहीं करते — हम रूपांतरण करते हैं।
+
+सकारात्मकता हमारी चिकित्सा का पहला सूत्र है। यहाँ का वातावरण, वाणी और व्यवहार रोगी के भीतर नई ऊर्जा जगाते हैं।
+
+शांति-रत्नम् में आयुर्वेद, पंचकर्म, योग, ध्यान, आहार-चिकित्सा और प्राकृतिक चिकित्सा का समन्वय कर प्राचीन ज्ञान तथा आधुनिक विज्ञान के आधार पर समग्र और परिणामकारी उपचार प्रदान किया जाता है।
+
+शांति-रत्नम् केवल दीवारों और उपकरणों का संस्थान नहीं है; यह एक जीवंत चेतना है, जो स्वास्थ्य, शांति और समृद्धि फैलाने के लिए समर्पित है।`;
 
 const facilities = [
   {
@@ -74,17 +73,18 @@ const valueCards = [
   {
     title: "We Work For",
     body:
-      "Establishing a standard in Indian Traditional medicinal sciences by using innovative approaches encompassing healing, prevention and promotion."
+      "We do not suppress disease; we work to eradicate its roots through a disciplined, integrative, and patient-centered healing approach."
   },
   {
     title: "Vision",
     body:
-      "Contemporary intensive research to explore the wisdom of ancient Indian medicinal science to heal mankind with evidence.",
+      "To build a society where every individual, irrespective of background, can live a healthy, joyful, and abundant life through the convergence of Ayurveda, Naturopathy, and modern science.",
     featured: true
   },
   {
     title: "Mission",
-    body: "Propagation and practice of AYUSH systems of healing."
+    body:
+      "To provide every patient not merely relief, but complete life transformation by awakening body, mind, and soul through authentic AYUSH healing systems."
   }
 ];
 
@@ -133,17 +133,17 @@ export default function AboutUsPage() {
         campus: "\u0939\u092e\u093e\u0930\u093e \u0915\u0948\u0902\u092a\u0938",
         campusSub:
           "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e \u0935\u0947\u0932\u0928\u0947\u0938 \u0938\u0947\u0902\u091f\u0930, \u0938\u093e\u0917\u0930",
-        timingNote: "एसआर-एआईआईएमएस आएं और हमारी सेवाओं का अनुभव करें।",
-        opd: "ओपीडी",
-        monSat: "सोम-शनि",
-        sunday: "रविवार और राष्ट्रीय अवकाश समय",
-        ipd: "आईपीडी",
-        contactTitle: "अपॉइंटमेंट बुक करें",
-        contactBody: "व्यक्तिगत देखभाल के लिए अभी अपना अपॉइंटमेंट सुरक्षित करें और स्वास्थ्य यात्रा शुरू करें।",
-        callNow: "अभी कॉल करें",
-        callBody: "हमारी टीम से सीधे जुड़ें, हम आपको सही अपॉइंटमेंट तक मार्गदर्शन देंगे।",
-        chat: "हमसे चैट करें",
-        chatBody: "अपने प्रश्नों के लिए व्हाट्सएप पर हमसे सुविधाजनक रूप से जुड़ें।"
+        timingNote: "à¤à¤¸à¤†à¤°-à¤à¤†à¤ˆà¤†à¤ˆà¤à¤®à¤à¤¸ à¤†à¤à¤‚ à¤”à¤° à¤¹à¤®à¤¾à¤°à¥€ à¤¸à¥‡à¤µà¤¾à¤“à¤‚ à¤•à¤¾ à¤…à¤¨à¥à¤­à¤µ à¤•à¤°à¥‡à¤‚à¥¤",
+        opd: "à¤“à¤ªà¥€à¤¡à¥€",
+        monSat: "à¤¸à¥‹à¤®-à¤¶à¤¨à¤¿",
+        sunday: "à¤°à¤µà¤¿à¤µà¤¾à¤° à¤”à¤° à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤…à¤µà¤•à¤¾à¤¶ à¤¸à¤®à¤¯",
+        ipd: "à¤†à¤ˆà¤ªà¥€à¤¡à¥€",
+        contactTitle: "à¤…à¤ªà¥‰à¤‡à¤‚à¤Ÿà¤®à¥‡à¤‚à¤Ÿ à¤¬à¥à¤• à¤•à¤°à¥‡à¤‚",
+        contactBody: "à¤µà¥à¤¯à¤•à¥à¤¤à¤¿à¤—à¤¤ à¤¦à¥‡à¤–à¤­à¤¾à¤² à¤•à¥‡ à¤²à¤¿à¤ à¤…à¤­à¥€ à¤…à¤ªà¤¨à¤¾ à¤…à¤ªà¥‰à¤‡à¤‚à¤Ÿà¤®à¥‡à¤‚à¤Ÿ à¤¸à¥à¤°à¤•à¥à¤·à¤¿à¤¤ à¤•à¤°à¥‡à¤‚ à¤”à¤° à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤¯à¤¾à¤¤à¥à¤°à¤¾ à¤¶à¥à¤°à¥‚ à¤•à¤°à¥‡à¤‚à¥¤",
+        callNow: "à¤…à¤­à¥€ à¤•à¥‰à¤² à¤•à¤°à¥‡à¤‚",
+        callBody: "à¤¹à¤®à¤¾à¤°à¥€ à¤Ÿà¥€à¤® à¤¸à¥‡ à¤¸à¥€à¤§à¥‡ à¤œà¥à¤¡à¤¼à¥‡à¤‚, à¤¹à¤® à¤†à¤ªà¤•à¥‹ à¤¸à¤¹à¥€ à¤…à¤ªà¥‰à¤‡à¤‚à¤Ÿà¤®à¥‡à¤‚à¤Ÿ à¤¤à¤• à¤®à¤¾à¤°à¥à¤—à¤¦à¤°à¥à¤¶à¤¨ à¤¦à¥‡à¤‚à¤—à¥‡à¥¤",
+        chat: "à¤¹à¤®à¤¸à¥‡ à¤šà¥ˆà¤Ÿ à¤•à¤°à¥‡à¤‚",
+        chatBody: "à¤…à¤ªà¤¨à¥‡ à¤ªà¥à¤°à¤¶à¥à¤¨à¥‹à¤‚ à¤•à¥‡ à¤²à¤¿à¤ à¤µà¥à¤¹à¤¾à¤Ÿà¥à¤¸à¤à¤ª à¤ªà¤° à¤¹à¤®à¤¸à¥‡ à¤¸à¥à¤µà¤¿à¤§à¤¾à¤œà¤¨à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤œà¥à¤¡à¤¼à¥‡à¤‚à¥¤"
       }
     : {
         about: "About Us",
@@ -191,41 +191,18 @@ export default function AboutUsPage() {
               </div>
             </article>
 
-            <div className="about-video-wrap">
-              <iframe
-                title="About Shanti-Ratnam"
-                src={ABOUT_YOUTUBE_EMBED_URL}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-              <p className="video-hint">
-                Add final video link in{" "}
-                <code>app/about-us/page.js</code> at{" "}
-                <code>ABOUT_YOUTUBE_EMBED_URL</code>
-              </p>
-            </div>
           </div>
 
           <div className="about-story-copy">
             <p className="mini-kicker">{t.about}</p>
             <h2>{t.storyTitle}</h2>
-            <p>{hi ? aboutParagraphHi : aboutParagraph}</p>
+            <p className="about-story-long">{hi ? aboutParagraphHi : aboutParagraph}</p>
             <div className="about-inline-cta">
               <Link href={localHref("/contact-us")}>{t.book}</Link>
             </div>
             <ul className="about-facility-list">
               {facilities.map((item) => (
-                <li key={item.title} className={item.image ? "has-image" : ""}>
-                  {item.image ? (
-                    <Image
-                      src={item.image}
-                      alt={item.alt || item.title}
-                      width={52}
-                      height={52}
-                      className="about-facility-thumb"
-                    />
-                  ) : null}
+                <li key={item.title}>
                   <span>{item.title}</span>
                 </li>
               ))}
@@ -250,10 +227,10 @@ export default function AboutUsPage() {
 
       <section className="container about-legacy-section reveal in">
         <div className="about-legacy-head">
-          <p className="mini-kicker">{hi ? "एक अमर विरासत" : "A Living Legacy"}</p>
-          <h2>{hi ? "वैद्यराज डॉ. रतन चन्द जैन" : "Dr. Ratan Chand Jain"}</h2>
+          <p className="mini-kicker">{hi ? "à¤à¤• à¤…à¤®à¤° à¤µà¤¿à¤°à¤¾à¤¸à¤¤" : "A Living Legacy"}</p>
+          <h2>{hi ? "à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨" : "Dr. Ratan Chand Jain"}</h2>
           <p className="legacy-subtitle">
-            {hi ? "आयुर्वेदाचार्य | शाहपुर सागर, मध्य प्रदेश" : "Vaidyaraj | Ayurvedacharya | Shahpur Sagar, Madhya Pradesh"}
+            {hi ? "à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¾à¤šà¤¾à¤°à¥à¤¯ | à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤°, à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶" : "Vaidyaraj | Ayurvedacharya | Shahpur Sagar, Madhya Pradesh"}
           </p>
         </div>
 
@@ -261,94 +238,94 @@ export default function AboutUsPage() {
           <div className="legacy-founder-compact">
             <div className="legacy-timeline">
               <div className="legacy-date">
-                <span className="date-label">{hi ? "जन्म" : "Born"}</span>
+                <span className="date-label">{hi ? "à¤œà¤¨à¥à¤®" : "Born"}</span>
                 <span className="date-value">05 Oct 1931</span>
               </div>
               <div className="legacy-date">
-                <span className="date-label">{hi ? "ब्रह्मलीन" : "Attained Moksha"}</span>
+                <span className="date-label">{hi ? "à¤¬à¥à¤°à¤¹à¥à¤®à¤²à¥€à¤¨" : "Attained Moksha"}</span>
                 <span className="date-value">19 Apr 2019</span>
               </div>
               <div className="legacy-date highlight">
-                <span className="date-label">{hi ? "सेवा" : "Service"}</span>
+                <span className="date-label">{hi ? "à¤¸à¥‡à¤µà¤¾" : "Service"}</span>
                 <span className="date-value">67 Years</span>
               </div>
             </div>
             <div className="legacy-summary">
-              <h4>{hi ? "महान विभूति का परिचय" : "About the Legend"}</h4>
+              <h4>{hi ? "à¤®à¤¹à¤¾à¤¨ à¤µà¤¿à¤­à¥‚à¤¤à¤¿ à¤•à¤¾ à¤ªà¤°à¤¿à¤šà¤¯" : "About the Legend"}</h4>
               <p>
                 {hi 
-                  ? "डॉ. रतन चन्द जैन मध्य प्रदेश के सागर जिले के सबसे प्रतिष्ठित आयुर्वेदाचार्यों में से एक थे। 5 अक्टूबर 1931 को शाहपुर सागर में जन्मे, उन्होंने अपना सम्पूर्ण जीवन आयुर्वेद की प्राचीन विज्ञान को समर्पित कर दिया। सागर संभाग के लोगों की सेवा में उन्होंने 67 वर्षों तक अनवरत श्रम किया।"
+                  ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ à¤•à¥‡ à¤¸à¤¾à¤—à¤° à¤œà¤¿à¤²à¥‡ à¤•à¥‡ à¤¸à¤¬à¤¸à¥‡ à¤ªà¥à¤°à¤¤à¤¿à¤·à¥à¤ à¤¿à¤¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¾à¤šà¤¾à¤°à¥à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤à¤• à¤¥à¥‡à¥¤ 5 à¤…à¤•à¥à¤Ÿà¥‚à¤¬à¤° 1931 à¤•à¥‹ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤œà¤¨à¥à¤®à¥‡, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤…à¤ªà¤¨à¤¾ à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤œà¥€à¤µà¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦ à¤•à¥€ à¤ªà¥à¤°à¤¾à¤šà¥€à¤¨ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤•à¤° à¤¦à¤¿à¤¯à¤¾à¥¤ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤—à¥‹à¤‚ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ 67 à¤µà¤°à¥à¤·à¥‹à¤‚ à¤¤à¤• à¤…à¤¨à¤µà¤°à¤¤ à¤¶à¥à¤°à¤® à¤•à¤¿à¤¯à¤¾à¥¤"
                   : "Dr. Ratan Chand Jain was one of the most revered Ayurvedacharyas of the Sagar region in Madhya Pradesh. Born on 5th October 1931 in Shahpur Sagar, he dedicated his entire life to the ancient science of Ayurveda, serving the people of central India with unwavering devotion, compassion, and exceptional medical wisdom as goverment ayurvedic medical officer (from 1962-1962)."
                 }
               </p>
               <p>
                 {hi 
-                  ? "उन्होंने प्रत्येक रोगी की सेवा समान भाव से की — चाहे वह गांव का साधारण किसान हो या शहर का विद्वान। आयुर्वेदिक शास्त्रों का उनका गहन ज्ञान, प्रकृति-परीक्षण की कुशलता, और जड़ी-बूटियों के प्रयोग ने उन्हें एक अद्वितीय वैद्यराज बनाया जिनके उपचार से असंख्य रोगी लाभान्वित हुए।"
+                  ? "à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤°à¥‹à¤—à¥€ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤¸à¤®à¤¾à¤¨ à¤­à¤¾à¤µ à¤¸à¥‡ à¤•à¥€ â€” à¤šà¤¾à¤¹à¥‡ à¤µà¤¹ à¤—à¤¾à¤‚à¤µ à¤•à¤¾ à¤¸à¤¾à¤§à¤¾à¤°à¤£ à¤•à¤¿à¤¸à¤¾à¤¨ à¤¹à¥‹ à¤¯à¤¾ à¤¶à¤¹à¤° à¤•à¤¾ à¤µà¤¿à¤¦à¥à¤µà¤¾à¤¨à¥¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¿à¤• à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°à¥‹à¤‚ à¤•à¤¾ à¤‰à¤¨à¤•à¤¾ à¤—à¤¹à¤¨ à¤œà¥à¤žà¤¾à¤¨, à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿-à¤ªà¤°à¥€à¤•à¥à¤·à¤£ à¤•à¥€ à¤•à¥à¤¶à¤²à¤¤à¤¾, à¤”à¤° à¤œà¤¡à¤¼à¥€-à¤¬à¥‚à¤Ÿà¤¿à¤¯à¥‹à¤‚ à¤•à¥‡ à¤ªà¥à¤°à¤¯à¥‹à¤— à¤¨à¥‡ à¤‰à¤¨à¥à¤¹à¥‡à¤‚ à¤à¤• à¤…à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¬à¤¨à¤¾à¤¯à¤¾ à¤œà¤¿à¤¨à¤•à¥‡ à¤‰à¤ªà¤šà¤¾à¤° à¤¸à¥‡ à¤…à¤¸à¤‚à¤–à¥à¤¯ à¤°à¥‹à¤—à¥€ à¤²à¤¾à¤­à¤¾à¤¨à¥à¤µà¤¿à¤¤ à¤¹à¥à¤à¥¤"
                   : "For an extraordinary span of 67 years, Dr. Ratan Chand Jain served as a guiding light for thousands of patients across the region. Whether it was the common folk from rural areas or families from the city, he treated each patient with equal care, ensuring that the blessings of Ayurvedic healing reached every doorstep."
                 }
               </p>
               <blockquote className="legacy-quote-compact">
-                "{hi ? "वे केवल रोगों को नहीं, आत्माओं को भी स्वस्थ करते थे।" : "He did not just heal bodies — he healed communities."}"
+                "{hi ? "à¤µà¥‡ à¤•à¥‡à¤µà¤² à¤°à¥‹à¤—à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚, à¤†à¤¤à¥à¤®à¤¾à¤“à¤‚ à¤•à¥‹ à¤­à¥€ à¤¸à¥à¤µà¤¸à¥à¤¥ à¤•à¤°à¤¤à¥‡ à¤¥à¥‡à¥¤" : "He did not just heal bodies â€” he healed communities."}"
                 <span className="legacy-quote-sub">
-                  {hi ? "उनकी दवा थी — ज्ञान, करुणा और विश्वास का संगम।" : "His medicine was equal parts knowledge, kindness, and faith."}
+                  {hi ? "à¤‰à¤¨à¤•à¥€ à¤¦à¤µà¤¾ à¤¥à¥€ â€” à¤œà¥à¤žà¤¾à¤¨, à¤•à¤°à¥à¤£à¤¾ à¤”à¤° à¤µà¤¿à¤¶à¥à¤µà¤¾à¤¸ à¤•à¤¾ à¤¸à¤‚à¤—à¤®à¥¤" : "His medicine was equal parts knowledge, kindness, and faith."}
                 </span>
               </blockquote>
             </div>
           </div>
 
           <div className="legacy-continuation-compact">
-            <h3>{hi ? "विरासत की निरन्तरता" : "Healing since 81 years"}</h3>
+            <h3>{hi ? "à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥€ à¤¨à¤¿à¤°à¤¨à¥à¤¤à¤°à¤¤à¤¾" : "Healing since 81 years"}</h3>
             <p className="legacy-continuation-intro">
               {hi 
-                ? "डॉ. रतन चन्द जैन द्वारा जलाई गई ज्ञान की ज्योति आज भी प्रकाशमान है। उनकी इस अमर विरासत को उनके पुत्रों एवं पौत्र ने सार्थक रूप से आगे बढ़ाया है — ताकि शाहपुर सागर और समूचे सागर संभाग के लोग भारतीय चिकित्सा परम्परा की छाया में स्वास्थ्य लाभ पाते रहें।"
-                : "The lamp lit by Dr. Ratan Chand Jain has never gone dark. His legacy lives on through his sons and grandson, each of whom took forward the torch of healing — ensuring that the people of Shahpur Sagar and central India continue to receive dedicated, compassionate medical care rooted in the Indian healing tradition."
+                ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤œà¤²à¤¾à¤ˆ à¤—à¤ˆ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥€ à¤œà¥à¤¯à¥‹à¤¤à¤¿ à¤†à¤œ à¤­à¥€ à¤ªà¥à¤°à¤•à¤¾à¤¶à¤®à¤¾à¤¨ à¤¹à¥ˆà¥¤ à¤‰à¤¨à¤•à¥€ à¤‡à¤¸ à¤…à¤®à¤° à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥‹ à¤‰à¤¨à¤•à¥‡ à¤ªà¥à¤¤à¥à¤°à¥‹à¤‚ à¤à¤µà¤‚ à¤ªà¥Œà¤¤à¥à¤° à¤¨à¥‡ à¤¸à¤¾à¤°à¥à¤¥à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤†à¤—à¥‡ à¤¬à¤¢à¤¼à¤¾à¤¯à¤¾ à¤¹à¥ˆ â€” à¤¤à¤¾à¤•à¤¿ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤”à¤° à¤¸à¤®à¥‚à¤šà¥‡ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤— à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤•à¥€ à¤›à¤¾à¤¯à¤¾ à¤®à¥‡à¤‚ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤²à¤¾à¤­ à¤ªà¤¾à¤¤à¥‡ à¤°à¤¹à¥‡à¤‚à¥¤"
+                : "The lamp lit by Dr. Ratan Chand Jain has never gone dark. His legacy lives on through his sons and grandson, each of whom took forward the torch of healing â€” ensuring that the people of Shahpur Sagar and central India continue to receive dedicated, compassionate medical care rooted in the Indian healing tradition."
               }
             </p>
             
             <div className="legacy-torchbearers-compact">
               <div className="torchbearer-compact is-brief">
                 <div className="torchbearer-info">
-                  <h4>{hi ? "प्रथम मशालवाहक" : "First Torch Bearer"}</h4>
+                  <h4>{hi ? "à¤ªà¥à¤°à¤¥à¤® à¤®à¤¶à¤¾à¤²à¤µà¤¾à¤¹à¤•" : "First Torch Bearer"}</h4>
                   <h5>Dr. Sanjeev Kumar Jain</h5>
                   <span className="torchbearer-role">
-                    {hi ? "होम्योपैथिक चिकित्सक | डॉ. रतन चन्द जैन के कनिष्ठ पुत्र" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
+                    {hi ? "à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¤¿à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤• | à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤•à¤¨à¤¿à¤·à¥à¤  à¤ªà¥à¤¤à¥à¤°" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
                   </span>
                   <span className="torchbearer-place">
-                    {hi ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर" : "शान्तिनिकेतन अस्पताल | Shantiniketan Hospital, Shahpur Sagar"}
+                    {hi ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤°" : "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤² | Shantiniketan Hospital, Shahpur Sagar"}
                   </span>
                 </div>
                 <p>
                   {hi 
-                    ? "पिता की महान परम्परा में पले-बढ़े डॉ. संजीव कुमार जैन ने बचपन से ही सेवा, विनम्रता और करुणा के संस्कार ग्रहण किए। वैद्यराज डॉ. रतन चन्द जैन के कनिष्ठ पुत्र के रूप में, उन्होंने परिवार की चिकित्सा सेवा की परम्परा को सबसे पहले आगे बढ़ाया। उन्होंने होम्योपैथी को माध्यम बनाकर इस विरासत को एक नई दिशा दी और अधिक से अधिक रोगियों तक चिकित्सा की पहुँच सुनिश्चित की।"
-                    : "Growing up in the shadow of a legendary father, Dr. Sanjeev Kumar Jain imbibed the values of service, humility, and healing from a very young age. As the younger son of Vaidyaraj Dr. Ratan Chand Jain, he was among the first to carry forward the family's sacred mission of healthcare — choosing the path of Homeopathy to extend the reach of the healing legacy to a wider spectrum of patients."
+                    ? "à¤ªà¤¿à¤¤à¤¾ à¤•à¥€ à¤®à¤¹à¤¾à¤¨ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤®à¥‡à¤‚ à¤ªà¤²à¥‡-à¤¬à¤¢à¤¼à¥‡ à¤¡à¥‰. à¤¸à¤‚à¤œà¥€à¤µ à¤•à¥à¤®à¤¾à¤° à¤œà¥ˆà¤¨ à¤¨à¥‡ à¤¬à¤šà¤ªà¤¨ à¤¸à¥‡ à¤¹à¥€ à¤¸à¥‡à¤µà¤¾, à¤µà¤¿à¤¨à¤®à¥à¤°à¤¤à¤¾ à¤”à¤° à¤•à¤°à¥à¤£à¤¾ à¤•à¥‡ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤—à¥à¤°à¤¹à¤£ à¤•à¤¿à¤à¥¤ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤•à¤¨à¤¿à¤·à¥à¤  à¤ªà¥à¤¤à¥à¤° à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¤°à¤¿à¤µà¤¾à¤° à¤•à¥€ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤¸à¥‡à¤µà¤¾ à¤•à¥€ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤•à¥‹ à¤¸à¤¬à¤¸à¥‡ à¤ªà¤¹à¤²à¥‡ à¤†à¤—à¥‡ à¤¬à¤¢à¤¼à¤¾à¤¯à¤¾à¥¤ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¥€ à¤•à¥‹ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¬à¤¨à¤¾à¤•à¤° à¤‡à¤¸ à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥‹ à¤à¤• à¤¨à¤ˆ à¤¦à¤¿à¤¶à¤¾ à¤¦à¥€ à¤”à¤° à¤…à¤§à¤¿à¤• à¤¸à¥‡ à¤…à¤§à¤¿à¤• à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤¤à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤•à¥€ à¤ªà¤¹à¥à¤à¤š à¤¸à¥à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤ à¤•à¥€à¥¤"
+                    : "Growing up in the shadow of a legendary father, Dr. Sanjeev Kumar Jain imbibed the values of service, humility, and healing from a very young age. As the younger son of Vaidyaraj Dr. Ratan Chand Jain, he was among the first to carry forward the family's sacred mission of healthcare â€” choosing the path of Homeopathy to extend the reach of the healing legacy to a wider spectrum of patients."
                   }
                 </p>
                 <p>
                   {hi 
-                    ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर में अपनी सेवाएँ प्रदान करते हुए, डॉ. संजीव कुमार जैन ने एक विश्वसनीय और समर्पित होम्योपैथिक चिकित्सक के रूप में अपनी पहचान बनाई है। उनका रोगी-केन्द्रित दृष्टिकोण, सूक्ष्म रोग-निदान और प्रभावी उपचार ने शाहपुर सागर के अनगिनत परिवारों को स्वास्थ्य लाभ दिलाया है।"
-                    : "Practicing at शान्तिनिकेतन अस्पताल (Shantiniketan Hospital) in Shahpur Sagar, Dr. Sanjeev Kumar Jain has built a trusted reputation as a dedicated Homeopathic practitioner, known for his patient-centric approach, careful case analysis, and commitment to gentle yet effective healing. His clinic has become a familiar refuge for families in Shahpur Sagar who seek holistic, side-effect-free treatment for both acute and chronic conditions."
+                    ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤…à¤ªà¤¨à¥€ à¤¸à¥‡à¤µà¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¥‡ à¤¹à¥à¤, à¤¡à¥‰. à¤¸à¤‚à¤œà¥€à¤µ à¤•à¥à¤®à¤¾à¤° à¤œà¥ˆà¤¨ à¤¨à¥‡ à¤à¤• à¤µà¤¿à¤¶à¥à¤µà¤¸à¤¨à¥€à¤¯ à¤”à¤° à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¤¿à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤• à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤…à¤ªà¤¨à¥€ à¤ªà¤¹à¤šà¤¾à¤¨ à¤¬à¤¨à¤¾à¤ˆ à¤¹à¥ˆà¥¤ à¤‰à¤¨à¤•à¤¾ à¤°à¥‹à¤—à¥€-à¤•à¥‡à¤¨à¥à¤¦à¥à¤°à¤¿à¤¤ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿à¤•à¥‹à¤£, à¤¸à¥‚à¤•à¥à¤·à¥à¤® à¤°à¥‹à¤—-à¤¨à¤¿à¤¦à¤¾à¤¨ à¤”à¤° à¤ªà¥à¤°à¤­à¤¾à¤µà¥€ à¤‰à¤ªà¤šà¤¾à¤° à¤¨à¥‡ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤•à¥‡ à¤…à¤¨à¤—à¤¿à¤¨à¤¤ à¤ªà¤°à¤¿à¤µà¤¾à¤°à¥‹à¤‚ à¤•à¥‹ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤²à¤¾à¤­ à¤¦à¤¿à¤²à¤¾à¤¯à¤¾ à¤¹à¥ˆà¥¤"
+                    : "Practicing at à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤² (Shantiniketan Hospital) in Shahpur Sagar, Dr. Sanjeev Kumar Jain has built a trusted reputation as a dedicated Homeopathic practitioner, known for his patient-centric approach, careful case analysis, and commitment to gentle yet effective healing. His clinic has become a familiar refuge for families in Shahpur Sagar who seek holistic, side-effect-free treatment for both acute and chronic conditions."
                   }
                 </p>
               </div>
 
               <div className="torchbearer-compact featured">
                 <div className="torchbearer-info">
-                  <h4>{hi ? "विरासत की निरन्तरता — अगली पीढ़ी" : "Legacy Continues — Next Generation"}</h4>
+                  <h4>{hi ? "à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥€ à¤¨à¤¿à¤°à¤¨à¥à¤¤à¤°à¤¤à¤¾ â€” à¤…à¤—à¤²à¥€ à¤ªà¥€à¤¢à¤¼à¥€" : "Legacy Continues â€” Next Generation"}</h4>
                   <h5>Shantiratnam Ayush Institute of Indian Medicinal Sciences</h5>
                   <span className="torchbearer-role">
-                    {hi ? "भारतीय चिकित्सा विज्ञान संस्थान | सागर, मध्य प्रदेश | स्थापना: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
+                    {hi ? "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ | à¤¸à¤¾à¤—à¤°, à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ | à¤¸à¥à¤¥à¤¾à¤ªà¤¨à¤¾: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
                   </span>
                 </div>
                 <p>
                   {hi 
-                    ? "डॉ. रतन चन्द जैन के पौत्र डॉ. सौरभ भरिल्ल के गतिशील नेतृत्व में शान्तिरत्नम् आयुष संस्थान सागर संभाग में आयुर्वेद एवं अन्य आयुष विषयों के लिए एक प्रमुख केन्द्र के रूप में स्थापित हो चुका है। वर्ष 2004 में स्थापना से अब तक 10,000 से अधिक संतुष्ट रोगियों को सेवाएँ प्रदान की जा चुकी हैं।"
+                    ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤ªà¥Œà¤¤à¥à¤° à¤¡à¥‰. à¤¸à¥Œà¤°à¤­ à¤­à¤°à¤¿à¤²à¥à¤² à¤•à¥‡ à¤—à¤¤à¤¿à¤¶à¥€à¤² à¤¨à¥‡à¤¤à¥ƒà¤¤à¥à¤µ à¤®à¥‡à¤‚ à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤°à¤¤à¥à¤¨à¤®à¥ à¤†à¤¯à¥à¤· à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤®à¥‡à¤‚ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦ à¤à¤µà¤‚ à¤…à¤¨à¥à¤¯ à¤†à¤¯à¥à¤· à¤µà¤¿à¤·à¤¯à¥‹à¤‚ à¤•à¥‡ à¤²à¤¿à¤ à¤à¤• à¤ªà¥à¤°à¤®à¥à¤– à¤•à¥‡à¤¨à¥à¤¦à¥à¤° à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤¸à¥à¤¥à¤¾à¤ªà¤¿à¤¤ à¤¹à¥‹ à¤šà¥à¤•à¤¾ à¤¹à¥ˆà¥¤ à¤µà¤°à¥à¤· 2004 à¤®à¥‡à¤‚ à¤¸à¥à¤¥à¤¾à¤ªà¤¨à¤¾ à¤¸à¥‡ à¤…à¤¬ à¤¤à¤• 10,000 à¤¸à¥‡ à¤…à¤§à¤¿à¤• à¤¸à¤‚à¤¤à¥à¤·à¥à¤Ÿ à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤¸à¥‡à¤µà¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¥€ à¤œà¤¾ à¤šà¥à¤•à¥€ à¤¹à¥ˆà¤‚à¥¤"
                     : "Under the dynamic leadership of Dr. Saurabh Bharill, grandson of Dr. Ratan Chand Jain, Shantiratnam Ayush Institute has emerged as a premier center for Ayurveda and other AYUSH disciplines in central India. Since its establishment in 2004 as Shanti ratnam ayurvedic Chitiksalay, the Institute has successfully served more than 10,000 satisfied patients from across central India."
                   }
                 </p>
                 <p>
                   {hi 
-                    ? "यह संस्थान आयुर्वेद, योग, यूनानी, सिद्ध और होम्योपैथी में व्यापक चिकित्सा सुविधाएँ प्रदान करता है। डॉ. सौरभ भरिल्ल का आयुष क्षेत्र में गतिशील कार्य न केवल उनके पितामह की स्मृति को सम्मान देता है, बल्कि मध्य भारत में समग्र स्वास्थ्य सेवाओं के स्तर को भी ऊँचा उठाता है।"
-                    : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management — working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
+                    ? "à¤¯à¤¹ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦, à¤¯à¥‹à¤—, à¤¯à¥‚à¤¨à¤¾à¤¨à¥€, à¤¸à¤¿à¤¦à¥à¤§ à¤”à¤° à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¥€ à¤®à¥‡à¤‚ à¤µà¥à¤¯à¤¾à¤ªà¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤¸à¥à¤µà¤¿à¤§à¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¡à¥‰. à¤¸à¥Œà¤°à¤­ à¤­à¤°à¤¿à¤²à¥à¤² à¤•à¤¾ à¤†à¤¯à¥à¤· à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤—à¤¤à¤¿à¤¶à¥€à¤² à¤•à¤¾à¤°à¥à¤¯ à¤¨ à¤•à¥‡à¤µà¤² à¤‰à¤¨à¤•à¥‡ à¤ªà¤¿à¤¤à¤¾à¤®à¤¹ à¤•à¥€ à¤¸à¥à¤®à¥ƒà¤¤à¤¿ à¤•à¥‹ à¤¸à¤®à¥à¤®à¤¾à¤¨ à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤¬à¤²à¥à¤•à¤¿ à¤®à¤§à¥à¤¯ à¤­à¤¾à¤°à¤¤ à¤®à¥‡à¤‚ à¤¸à¤®à¤—à¥à¤° à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤¸à¥‡à¤µà¤¾à¤“à¤‚ à¤•à¥‡ à¤¸à¥à¤¤à¤° à¤•à¥‹ à¤­à¥€ à¤Šà¤à¤šà¤¾ à¤‰à¤ à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+                    : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management â€” working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
                   }
                 </p>
               </div>
@@ -404,7 +381,7 @@ export default function AboutUsPage() {
           <h2>{t.patientsSay}</h2>
           <p>
             {hi
-              ? "रोगियों के अनुभव और सफलता कथाएं हमारी उपचार प्रणाली की प्रभावशीलता और देखभाल को दर्शाती हैं।"
+              ? "à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤•à¥‡ à¤…à¤¨à¥à¤­à¤µ à¤”à¤° à¤¸à¤«à¤²à¤¤à¤¾ à¤•à¤¥à¤¾à¤à¤‚ à¤¹à¤®à¤¾à¤°à¥€ à¤‰à¤ªà¤šà¤¾à¤° à¤ªà¥à¤°à¤£à¤¾à¤²à¥€ à¤•à¥€ à¤ªà¥à¤°à¤­à¤¾à¤µà¤¶à¥€à¤²à¤¤à¤¾ à¤”à¤° à¤¦à¥‡à¤–à¤­à¤¾à¤² à¤•à¥‹ à¤¦à¤°à¥à¤¶à¤¾à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤"
               : "Patients express their heartfelt gratitude and success stories through testimonials, showcasing the effectiveness of our treatments and care."}
           </p>
         </div>
@@ -434,3 +411,5 @@ export default function AboutUsPage() {
     </main>
   );
 }
+
+

@@ -151,9 +151,10 @@ export default async function HomePage() {
         book:
           "\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u0915\u0947 \u0932\u093f\u090f \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902",
         callNow: "\u0905\u092d\u0940 \u0915\u0949\u0932 \u0915\u0930\u0947\u0902",
-        advisor: "\u0939\u092e\u093e\u0930\u0947 \u0935\u0947\u0932\u0928\u0947\u0938 \u090f\u0921\u0935\u093e\u0907\u091c\u0930 \u0938\u0947 \u092c\u093e\u0924 \u0915\u0930\u0947\u0902",
+        advisor:
+          "\u0905\u092a\u0928\u0947 \u0932\u0915\u094d\u0937\u0923 \u0917\u0942\u0917\u0932 \u0915\u0930\u0928\u093e \u092c\u0902\u0926 \u0915\u0930\u0947\u0902\u0964 15 \u092e\u093f\u0928\u091f \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0947 \u090f\u0915\u094d\u0938\u092a\u0930\u094d\u091f\u094d\u0938 \u0938\u0947 \u0938\u094d\u092a\u0937\u094d\u091f \u092e\u093e\u0930\u094d\u0917\u0926\u0930\u094d\u0936\u0928 \u0932\u0947\u0902\u0964",
         advisorBody:
-          "\u0938\u093e\u0917\u0930, \u092e\u0927\u094d\u092f \u092a\u094d\u0930\u0926\u0947\u0936 \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0915\u0947 \u0938\u093e\u0925 \u0905\u092a\u0928\u093e \u092a\u0948\u0915\u0947\u091c \u0915\u0938\u094d\u091f\u092e\u093e\u0907\u091c \u0915\u0930\u0947\u0902\u0964",
+          "\u0915\u093f\u0938\u0940 \u092d\u0940 \u092a\u094d\u0930\u0936\u094d\u0928 \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0964",
         symptom:
           "\u0905\u092a\u0928\u0947 \u0932\u0915\u094d\u0937\u0923 \u0917\u0942\u0917\u0932 \u0915\u0930\u0928\u093e \u092c\u0902\u0926 \u0915\u0930\u0947\u0902\u0964 15 \u092e\u093f\u0928\u091f \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0947 \u090f\u0915\u094d\u0938\u092a\u0930\u094d\u091f\u094d\u0938 \u0938\u0947 \u0938\u094d\u092a\u0937\u094d\u091f \u092e\u093e\u0930\u094d\u0917\u0926\u0930\u094d\u0936\u0928 \u0932\u0947\u0902\u0964",
         whyEyebrow: "\u0939\u092e\u0947\u0902 \u0915\u094d\u092f\u094b\u0902 \u091a\u0941\u0928\u0947\u0902",
@@ -200,9 +201,10 @@ export default async function HomePage() {
         welcome: "Welcome To",
         book: "Book Free Consultation",
         callNow: "Call Now",
-        advisor: "Call Our Wellness Advisor",
+        advisor:
+          "Stop Googling Your Symptoms. We know you've already spent hours online. Let our experts give you clarity in 15 minutes.",
         advisorBody:
-          "Customize your package with our wellness team in Sagar, Madhya Pradesh.",
+          "Contact us for any query.",
         symptom:
           "Stop Googling Your Symptoms. We know you've already spent hours online. Let our experts give you clarity in 15 minutes.",
         whyEyebrow: "Why Choose Us",
@@ -334,16 +336,31 @@ export default async function HomePage() {
                 />
               </div>
               <span className="hero-ayush-cell hero-ayush-claim">
-                <strong>100%</strong>
-                <small>SAFE</small>
+                <Image
+                  src="/images/branding/100%25%20safe.jpeg"
+                  alt="100 percent safe"
+                  width={260}
+                  height={130}
+                  className="hero-ayush-claim-image"
+                />
               </span>
               <span className="hero-ayush-cell hero-ayush-claim">
-                <strong>100%</strong>
-                <small>AYURVEDIC</small>
+                <Image
+                  src="/images/branding/100%25%20natural.jpeg"
+                  alt="100 percent natural"
+                  width={260}
+                  height={130}
+                  className="hero-ayush-claim-image"
+                />
               </span>
               <span className="hero-ayush-cell hero-ayush-claim">
-                <strong>100%</strong>
-                <small>VEGETARIAN</small>
+                <Image
+                  src="/images/branding/100%25%20veg.jpeg"
+                  alt="100 percent vegetarian"
+                  width={260}
+                  height={130}
+                  className="hero-ayush-claim-image"
+                />
               </span>
             </div>
           </div>

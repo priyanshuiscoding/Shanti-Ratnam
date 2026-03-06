@@ -18,7 +18,7 @@
   --footer-line: #b9d7f5;
   --radius-lg: 14px;
   --shadow-soft: 0 14px 30px rgba(24, 58, 99, 0.12);
-  --font-hi: "Apraajita", "Aparajita", "Aprajita", "Kohinoor Devanagari", "Noto Sans Devanagari", "Mangal", sans-serif;
+  --font-hi-fallback: "Apraajita", "Aparajita", "Aprajita", "Kohinoor Devanagari", "Noto Sans Devanagari", "Mangal", sans-serif;
 }
 
 * {
@@ -38,13 +38,37 @@ body {
   line-height: 1.6;
 }
 
-/* Force all Hindi pages to use Apraajita first */
+/* Force all Hindi pages to use Kalam first */
 html[lang="hi"] body,
 html[lang="hi"] button,
 html[lang="hi"] input,
 html[lang="hi"] select,
 html[lang="hi"] textarea {
-  font-family: var(--font-hi);
+  font-family: var(--font-hi), var(--font-hi-fallback);
+}
+
+html[lang="hi"] body {
+  font-size: 1.1rem;
+}
+
+html[lang="hi"] .eyebrow {
+  font-size: 0.875rem;
+}
+
+html[lang="hi"] .mini-kicker {
+  font-size: 0.885rem;
+}
+
+html[lang="hi"] .lang-btn {
+  font-size: 0.925rem;
+}
+
+html[lang="hi"] .chip {
+  font-size: 1.045rem;
+}
+
+html[lang="hi"] .footer-links a {
+  font-size: 1.025rem;
 }
 
 img {
@@ -73,7 +97,7 @@ h3 {
 html[lang="hi"] h1,
 html[lang="hi"] h2,
 html[lang="hi"] h3 {
-  font-family: var(--font-hi);
+  font-family: var(--font-hi), var(--font-hi-fallback);
   line-height: 1.2;
 }
 
@@ -713,39 +737,15 @@ main {
 }
 
 .hero-ayush-claim {
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0.25rem 0.3rem;
 }
 
-.hero-ayush-claim strong {
-  display: block;
-  color: #244f7e;
-  font-size: 1rem;
-  line-height: 1;
-  font-weight: 800;
-}
-
-.hero-ayush-claim small {
-  display: block;
-  margin-top: 0.16rem;
-  color: #355a86;
-  font-size: 0.8rem;
-  letter-spacing: 0.01em;
-  font-weight: 800;
-}
-
-.hero-ayush-claim:hover {
-  background: #fff3ea;
-  animation: ayushBlink 1s ease-in-out infinite;
-}
-
-@keyframes ayushBlink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.82;
-  }
+.hero-ayush-claim-image {
+  width: 100%;
+  max-width: 150px;
+  height: 68px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .logo-slot {
@@ -788,9 +788,11 @@ main {
 }
 
 .advisor-card h2 {
-  font-size: clamp(2rem, 4vw, 3.7rem);
-  text-transform: uppercase;
-  line-height: 0.95;
+  font-size: clamp(1.45rem, 2.35vw, 2.2rem);
+  text-transform: none;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-wrap: balance;
 }
 
 .advisor-card p {
@@ -1877,6 +1879,10 @@ main {
   margin-top: 0.8rem;
   color: var(--muted);
   line-height: 1.48;
+}
+
+.about-story-long {
+  white-space: pre-line;
 }
 
 .about-inline-cta {
@@ -3919,12 +3925,9 @@ select:focus {
     border-top: 1px solid rgba(242, 106, 33, 0.45);
   }
 
-  .hero-ayush-claim strong {
-    font-size: 0.9rem;
-  }
-
-  .hero-ayush-claim small {
-    font-size: 0.72rem;
+  .hero-ayush-claim-image {
+    max-width: 132px;
+    height: 56px;
   }
 
   .logo-slot-ayush {

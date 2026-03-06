@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Noto_Serif_Devanagari } from "next/font/google";
 import { headers } from "next/headers";
 import LayoutShell from "@/components/LayoutShell";
 import SeoLocalBusiness from "@/components/SeoLocalBusiness";
@@ -14,6 +14,13 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["600", "700"],
+  display: "swap"
+});
+
+const hindiSerif = Noto_Serif_Devanagari({
+  subsets: ["devanagari", "latin"],
+  variable: "--font-hi",
+  weight: ["400", "500", "600", "700"],
   display: "swap"
 });
 
@@ -50,7 +57,7 @@ export default function RootLayout({ children }) {
           <link rel="stylesheet" href={`https://use.typekit.net/${adobeFontKitId}.css`} />
         </head>
       ) : null}
-      <body className={`${manrope.variable} ${cormorant.variable}`}>
+      <body className={`${manrope.variable} ${cormorant.variable} ${hindiSerif.variable}`}>
         <SeoLocalBusiness />
         <LayoutShell>{children}</LayoutShell>
       </body>
