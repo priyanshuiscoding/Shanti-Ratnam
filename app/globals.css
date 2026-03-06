@@ -2110,6 +2110,29 @@ main {
   margin: 0 0 1rem;
 }
 
+.legacy-summary-layout {
+  display: grid;
+  grid-template-columns: minmax(180px, 230px) 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.legacy-portrait {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 26px rgba(35, 73, 125, 0.08);
+}
+
+.legacy-portrait-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .legacy-summary p {
   color: var(--muted);
   line-height: 1.6;
@@ -3721,6 +3744,15 @@ select:focus {
 
   .legacy-founder-compact {
     padding: 1.5rem;
+  }
+
+  .legacy-summary-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-portrait {
+    max-width: 260px;
+    margin: 0 auto;
   }
 
   .legacy-torchbearers-compact {

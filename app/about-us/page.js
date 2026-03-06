@@ -13,6 +13,7 @@ export const metadata = {
 };
 
 const ABOUT_CAMPUS_IMAGE_PATH = "/images/about/about us image.jpeg";
+const ABOUT_LEGEND_IMAGE_PATH = "/images/about/Dr. Ratan Chand Jain.png";
 
 const aboutParagraph = `Sarve Bhavantu Sukhinah. Sarve Santu Niraamayaah.
 May all beings be happy. May all be free from illness. May all witness that which is auspicious.
@@ -132,7 +133,7 @@ export default function AboutUsPage() {
         emailPlaceholder: "\u0905\u092a\u0928\u093e \u0908\u092e\u0947\u0932 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",
         campus: "\u0939\u092e\u093e\u0930\u093e \u0915\u0948\u0902\u092a\u0938",
         campusSub:
-          "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e \u0935\u0947\u0932\u0928\u0947\u0938 \u0938\u0947\u0902\u091f\u0930, \u0938\u093e\u0917\u0930",
+          "shanti-ratnam ayush institute of indian medicinal sciences",
         timingNote: "एसआर-एआईआईएमएस आएं और हमारी सेवाओं का अनुभव करें।",
         opd: "ओपीडी",
         monSat: "सोम-शनि",
@@ -159,7 +160,7 @@ export default function AboutUsPage() {
         send: "Send",
         emailPlaceholder: "Enter Your Mail",
         campus: "Our Campus",
-        campusSub: "Shanti-Ratnam Wellness Centre, Sagar"
+        campusSub: "shanti-ratnam ayush institute of indian medicinal sciences"
       };
 
   return (
@@ -252,24 +253,37 @@ export default function AboutUsPage() {
             </div>
             <div className="legacy-summary">
               <h4>{hi ? "à¤®à¤¹à¤¾à¤¨ à¤µà¤¿à¤­à¥‚à¤¤à¤¿ à¤•à¤¾ à¤ªà¤°à¤¿à¤šà¤¯" : "About the Legend"}</h4>
-              <p>
-                {hi 
-                  ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ à¤•à¥‡ à¤¸à¤¾à¤—à¤° à¤œà¤¿à¤²à¥‡ à¤•à¥‡ à¤¸à¤¬à¤¸à¥‡ à¤ªà¥à¤°à¤¤à¤¿à¤·à¥à¤ à¤¿à¤¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¾à¤šà¤¾à¤°à¥à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤à¤• à¤¥à¥‡à¥¤ 5 à¤…à¤•à¥à¤Ÿà¥‚à¤¬à¤° 1931 à¤•à¥‹ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤œà¤¨à¥à¤®à¥‡, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤…à¤ªà¤¨à¤¾ à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤œà¥€à¤µà¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦ à¤•à¥€ à¤ªà¥à¤°à¤¾à¤šà¥€à¤¨ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤•à¤° à¤¦à¤¿à¤¯à¤¾à¥¤ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤—à¥‹à¤‚ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ 67 à¤µà¤°à¥à¤·à¥‹à¤‚ à¤¤à¤• à¤…à¤¨à¤µà¤°à¤¤ à¤¶à¥à¤°à¤® à¤•à¤¿à¤¯à¤¾à¥¤"
-                  : "Dr. Ratan Chand Jain was one of the most revered Ayurvedacharyas of the Sagar region in Madhya Pradesh. Born on 5th October 1931 in Shahpur Sagar, he dedicated his entire life to the ancient science of Ayurveda, serving the people of central India with unwavering devotion, compassion, and exceptional medical wisdom as goverment ayurvedic medical officer (from 1962-1962)."
-                }
-              </p>
-              <p>
-                {hi 
-                  ? "à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤°à¥‹à¤—à¥€ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤¸à¤®à¤¾à¤¨ à¤­à¤¾à¤µ à¤¸à¥‡ à¤•à¥€ â€” à¤šà¤¾à¤¹à¥‡ à¤µà¤¹ à¤—à¤¾à¤‚à¤µ à¤•à¤¾ à¤¸à¤¾à¤§à¤¾à¤°à¤£ à¤•à¤¿à¤¸à¤¾à¤¨ à¤¹à¥‹ à¤¯à¤¾ à¤¶à¤¹à¤° à¤•à¤¾ à¤µà¤¿à¤¦à¥à¤µà¤¾à¤¨à¥¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¿à¤• à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°à¥‹à¤‚ à¤•à¤¾ à¤‰à¤¨à¤•à¤¾ à¤—à¤¹à¤¨ à¤œà¥à¤žà¤¾à¤¨, à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿-à¤ªà¤°à¥€à¤•à¥à¤·à¤£ à¤•à¥€ à¤•à¥à¤¶à¤²à¤¤à¤¾, à¤”à¤° à¤œà¤¡à¤¼à¥€-à¤¬à¥‚à¤Ÿà¤¿à¤¯à¥‹à¤‚ à¤•à¥‡ à¤ªà¥à¤°à¤¯à¥‹à¤— à¤¨à¥‡ à¤‰à¤¨à¥à¤¹à¥‡à¤‚ à¤à¤• à¤…à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¬à¤¨à¤¾à¤¯à¤¾ à¤œà¤¿à¤¨à¤•à¥‡ à¤‰à¤ªà¤šà¤¾à¤° à¤¸à¥‡ à¤…à¤¸à¤‚à¤–à¥à¤¯ à¤°à¥‹à¤—à¥€ à¤²à¤¾à¤­à¤¾à¤¨à¥à¤µà¤¿à¤¤ à¤¹à¥à¤à¥¤"
-                  : "For an extraordinary span of 67 years, Dr. Ratan Chand Jain served as a guiding light for thousands of patients across the region. Whether it was the common folk from rural areas or families from the city, he treated each patient with equal care, ensuring that the blessings of Ayurvedic healing reached every doorstep."
-                }
-              </p>
-              <blockquote className="legacy-quote-compact">
-                "{hi ? "à¤µà¥‡ à¤•à¥‡à¤µà¤² à¤°à¥‹à¤—à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚, à¤†à¤¤à¥à¤®à¤¾à¤“à¤‚ à¤•à¥‹ à¤­à¥€ à¤¸à¥à¤µà¤¸à¥à¤¥ à¤•à¤°à¤¤à¥‡ à¤¥à¥‡à¥¤" : "He did not just heal bodies — he healed communities."}"
-                <span className="legacy-quote-sub">
-                  {hi ? "à¤‰à¤¨à¤•à¥€ à¤¦à¤µà¤¾ à¤¥à¥€ â€” à¤œà¥à¤žà¤¾à¤¨, à¤•à¤°à¥à¤£à¤¾ à¤”à¤° à¤µà¤¿à¤¶à¥à¤µà¤¾à¤¸ à¤•à¤¾ à¤¸à¤‚à¤—à¤®à¥¤" : "His medicine was equal parts knowledge, kindness, and faith."}
-                </span>
-              </blockquote>
+              <div className="legacy-summary-layout">
+                <div className="legacy-portrait">
+                  <Image
+                    src={ABOUT_LEGEND_IMAGE_PATH}
+                    alt="Dr. Ratan Chand Jain portrait"
+                    width={420}
+                    height={520}
+                    className="legacy-portrait-img"
+                  />
+                </div>
+                <div className="legacy-summary-copy">
+                  <p>
+                    {hi 
+                      ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ à¤•à¥‡ à¤¸à¤¾à¤—à¤° à¤œà¤¿à¤²à¥‡ à¤•à¥‡ à¤¸à¤¬à¤¸à¥‡ à¤ªà¥à¤°à¤¤à¤¿à¤·à¥à¤ à¤¿à¤¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¾à¤šà¤¾à¤°à¥à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤à¤• à¤¥à¥‡à¥¤ 5 à¤…à¤•à¥à¤Ÿà¥‚à¤¬à¤° 1931 à¤•à¥‹ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤œà¤¨à¥à¤®à¥‡, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤…à¤ªà¤¨à¤¾ à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤œà¥€à¤µà¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦ à¤•à¥€ à¤ªà¥à¤°à¤¾à¤šà¥€à¤¨ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤•à¤° à¤¦à¤¿à¤¯à¤¾à¥¤ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤—à¥‹à¤‚ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ 67 à¤µà¤°à¥à¤·à¥‹à¤‚ à¤¤à¤• à¤…à¤¨à¤µà¤°à¤¤ à¤¶à¥à¤°à¤® à¤•à¤¿à¤¯à¤¾à¥¤"
+                      : "Dr. Ratan Chand Jain was one of the most revered Ayurvedacharyas of the Sagar region in Madhya Pradesh. Born on 5th October 1931 in Shahpur Sagar, he dedicated his entire life to the ancient science of Ayurveda, serving the people of central India with unwavering devotion, compassion, and exceptional medical wisdom as goverment ayurvedic medical officer (from 1962-1962)."
+                    }
+                  </p>
+                  <p>
+                    {hi 
+                      ? "à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤°à¥‹à¤—à¥€ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤¸à¤®à¤¾à¤¨ à¤­à¤¾à¤µ à¤¸à¥‡ à¤•à¥€ â€” à¤šà¤¾à¤¹à¥‡ à¤µà¤¹ à¤—à¤¾à¤‚à¤µ à¤•à¤¾ à¤¸à¤¾à¤§à¤¾à¤°à¤£ à¤•à¤¿à¤¸à¤¾à¤¨ à¤¹à¥‹ à¤¯à¤¾ à¤¶à¤¹à¤° à¤•à¤¾ à¤µà¤¿à¤¦à¥à¤µà¤¾à¤¨à¥¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¿à¤• à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°à¥‹à¤‚ à¤•à¤¾ à¤‰à¤¨à¤•à¤¾ à¤—à¤¹à¤¨ à¤œà¥à¤žà¤¾à¤¨, à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿-à¤ªà¤°à¥€à¤•à¥à¤·à¤£ à¤•à¥€ à¤•à¥à¤¶à¤²à¤¤à¤¾, à¤”à¤° à¤œà¤¡à¤¼à¥€-à¤¬à¥‚à¤Ÿà¤¿à¤¯à¥‹à¤‚ à¤•à¥‡ à¤ªà¥à¤°à¤¯à¥‹à¤— à¤¨à¥‡ à¤‰à¤¨à¥à¤¹à¥‡à¤‚ à¤à¤• à¤…à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¬à¤¨à¤¾à¤¯à¤¾ à¤œà¤¿à¤¨à¤•à¥‡ à¤‰à¤ªà¤šà¤¾à¤° à¤¸à¥‡ à¤…à¤¸à¤‚à¤–à¥à¤¯ à¤°à¥‹à¤—à¥€ à¤²à¤¾à¤­à¤¾à¤¨à¥à¤µà¤¿à¤¤ à¤¹à¥à¤à¥¤"
+                      : "For an extraordinary span of 67 years, Dr. Ratan Chand Jain served as a guiding light for thousands of patients across the region. Whether it was the common folk from rural areas or families from the city, he treated each patient with equal care, ensuring that the blessings of Ayurvedic healing reached every doorstep."
+                    }
+                  </p>
+                  <blockquote className="legacy-quote-compact">
+                    "{hi ? "à¤µà¥‡ à¤•à¥‡à¤µà¤² à¤°à¥‹à¤—à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚, à¤†à¤¤à¥à¤®à¤¾à¤“à¤‚ à¤•à¥‹ à¤­à¥€ à¤¸à¥à¤µà¤¸à¥à¤¥ à¤•à¤°à¤¤à¥‡ à¤¥à¥‡à¥¤" : "He did not just heal bodies — he healed communities."}"
+                    <span className="legacy-quote-sub">
+                      {hi ? "à¤‰à¤¨à¤•à¥€ à¤¦à¤µà¤¾ à¤¥à¥€ â€” à¤œà¥à¤žà¤¾à¤¨, à¤•à¤°à¥à¤£à¤¾ à¤”à¤° à¤µà¤¿à¤¶à¥à¤µà¤¾à¤¸ à¤•à¤¾ à¤¸à¤‚à¤—à¤®à¥¤" : "His medicine was equal parts knowledge, kindness, and faith."}
+                    </span>
+                  </blockquote>
+                </div>
+              </div>
             </div>
           </div>
 
