@@ -386,12 +386,6 @@ export default async function HomePage() {
         </aside>
       </section>
 
-      <section className="container symptom-relief-note reveal in">
-        <p>
-          {t.symptom}
-        </p>
-      </section>
-
       <section className="container consultation-showcase reveal in">
         <div className="consultation-showcase-grid">
           <article className="consultation-intro">

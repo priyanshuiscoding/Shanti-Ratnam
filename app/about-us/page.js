@@ -133,17 +133,17 @@ export default function AboutUsPage() {
         campus: "\u0939\u092e\u093e\u0930\u093e \u0915\u0948\u0902\u092a\u0938",
         campusSub:
           "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e \u0935\u0947\u0932\u0928\u0947\u0938 \u0938\u0947\u0902\u091f\u0930, \u0938\u093e\u0917\u0930",
-        timingNote: "à¤à¤¸à¤†à¤°-à¤à¤†à¤ˆà¤†à¤ˆà¤à¤®à¤à¤¸ à¤†à¤à¤‚ à¤”à¤° à¤¹à¤®à¤¾à¤°à¥€ à¤¸à¥‡à¤µà¤¾à¤“à¤‚ à¤•à¤¾ à¤…à¤¨à¥à¤­à¤µ à¤•à¤°à¥‡à¤‚à¥¤",
-        opd: "à¤“à¤ªà¥€à¤¡à¥€",
-        monSat: "à¤¸à¥‹à¤®-à¤¶à¤¨à¤¿",
-        sunday: "à¤°à¤µà¤¿à¤µà¤¾à¤° à¤”à¤° à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤…à¤µà¤•à¤¾à¤¶ à¤¸à¤®à¤¯",
-        ipd: "à¤†à¤ˆà¤ªà¥€à¤¡à¥€",
-        contactTitle: "à¤…à¤ªà¥‰à¤‡à¤‚à¤Ÿà¤®à¥‡à¤‚à¤Ÿ à¤¬à¥à¤• à¤•à¤°à¥‡à¤‚",
-        contactBody: "à¤µà¥à¤¯à¤•à¥à¤¤à¤¿à¤—à¤¤ à¤¦à¥‡à¤–à¤­à¤¾à¤² à¤•à¥‡ à¤²à¤¿à¤ à¤…à¤­à¥€ à¤…à¤ªà¤¨à¤¾ à¤…à¤ªà¥‰à¤‡à¤‚à¤Ÿà¤®à¥‡à¤‚à¤Ÿ à¤¸à¥à¤°à¤•à¥à¤·à¤¿à¤¤ à¤•à¤°à¥‡à¤‚ à¤”à¤° à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤¯à¤¾à¤¤à¥à¤°à¤¾ à¤¶à¥à¤°à¥‚ à¤•à¤°à¥‡à¤‚à¥¤",
-        callNow: "à¤…à¤­à¥€ à¤•à¥‰à¤² à¤•à¤°à¥‡à¤‚",
-        callBody: "à¤¹à¤®à¤¾à¤°à¥€ à¤Ÿà¥€à¤® à¤¸à¥‡ à¤¸à¥€à¤§à¥‡ à¤œà¥à¤¡à¤¼à¥‡à¤‚, à¤¹à¤® à¤†à¤ªà¤•à¥‹ à¤¸à¤¹à¥€ à¤…à¤ªà¥‰à¤‡à¤‚à¤Ÿà¤®à¥‡à¤‚à¤Ÿ à¤¤à¤• à¤®à¤¾à¤°à¥à¤—à¤¦à¤°à¥à¤¶à¤¨ à¤¦à¥‡à¤‚à¤—à¥‡à¥¤",
-        chat: "à¤¹à¤®à¤¸à¥‡ à¤šà¥ˆà¤Ÿ à¤•à¤°à¥‡à¤‚",
-        chatBody: "à¤…à¤ªà¤¨à¥‡ à¤ªà¥à¤°à¤¶à¥à¤¨à¥‹à¤‚ à¤•à¥‡ à¤²à¤¿à¤ à¤µà¥à¤¹à¤¾à¤Ÿà¥à¤¸à¤à¤ª à¤ªà¤° à¤¹à¤®à¤¸à¥‡ à¤¸à¥à¤µà¤¿à¤§à¤¾à¤œà¤¨à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤œà¥à¤¡à¤¼à¥‡à¤‚à¥¤"
+        timingNote: "एसआर-एआईआईएमएस आएं और हमारी सेवाओं का अनुभव करें।",
+        opd: "ओपीडी",
+        monSat: "सोम-शनि",
+        sunday: "रविवार और राष्ट्रीय अवकाश समय",
+        ipd: "आईपीडी",
+        contactTitle: "अपॉइंटमेंट बुक करें",
+        contactBody: "व्यक्तिगत देखभाल के लिए अभी अपना अपॉइंटमेंट सुरक्षित करें और स्वास्थ्य यात्रा शुरू करें।",
+        callNow: "अभी कॉल करें",
+        callBody: "हमारी टीम से सीधे जुड़ें, हम आपको सही अपॉइंटमेंट तक मार्गदर्शन देंगे।",
+        chat: "हमसे चैट करें",
+        chatBody: "अपने प्रश्नों के लिए व्हाट्सएप पर हमसे सुविधाजनक रूप से जुड़ें।"
       }
     : {
         about: "About Us",
@@ -265,7 +265,7 @@ export default function AboutUsPage() {
                 }
               </p>
               <blockquote className="legacy-quote-compact">
-                "{hi ? "à¤µà¥‡ à¤•à¥‡à¤µà¤² à¤°à¥‹à¤—à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚, à¤†à¤¤à¥à¤®à¤¾à¤“à¤‚ à¤•à¥‹ à¤­à¥€ à¤¸à¥à¤µà¤¸à¥à¤¥ à¤•à¤°à¤¤à¥‡ à¤¥à¥‡à¥¤" : "He did not just heal bodies â€” he healed communities."}"
+                "{hi ? "à¤µà¥‡ à¤•à¥‡à¤µà¤² à¤°à¥‹à¤—à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚, à¤†à¤¤à¥à¤®à¤¾à¤“à¤‚ à¤•à¥‹ à¤­à¥€ à¤¸à¥à¤µà¤¸à¥à¤¥ à¤•à¤°à¤¤à¥‡ à¤¥à¥‡à¥¤" : "He did not just heal bodies — he healed communities."}"
                 <span className="legacy-quote-sub">
                   {hi ? "à¤‰à¤¨à¤•à¥€ à¤¦à¤µà¤¾ à¤¥à¥€ â€” à¤œà¥à¤žà¤¾à¤¨, à¤•à¤°à¥à¤£à¤¾ à¤”à¤° à¤µà¤¿à¤¶à¥à¤µà¤¾à¤¸ à¤•à¤¾ à¤¸à¤‚à¤—à¤®à¥¤" : "His medicine was equal parts knowledge, kindness, and faith."}
                 </span>
@@ -278,7 +278,7 @@ export default function AboutUsPage() {
             <p className="legacy-continuation-intro">
               {hi 
                 ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤œà¤²à¤¾à¤ˆ à¤—à¤ˆ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥€ à¤œà¥à¤¯à¥‹à¤¤à¤¿ à¤†à¤œ à¤­à¥€ à¤ªà¥à¤°à¤•à¤¾à¤¶à¤®à¤¾à¤¨ à¤¹à¥ˆà¥¤ à¤‰à¤¨à¤•à¥€ à¤‡à¤¸ à¤…à¤®à¤° à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥‹ à¤‰à¤¨à¤•à¥‡ à¤ªà¥à¤¤à¥à¤°à¥‹à¤‚ à¤à¤µà¤‚ à¤ªà¥Œà¤¤à¥à¤° à¤¨à¥‡ à¤¸à¤¾à¤°à¥à¤¥à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤†à¤—à¥‡ à¤¬à¤¢à¤¼à¤¾à¤¯à¤¾ à¤¹à¥ˆ â€” à¤¤à¤¾à¤•à¤¿ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤”à¤° à¤¸à¤®à¥‚à¤šà¥‡ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤— à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤•à¥€ à¤›à¤¾à¤¯à¤¾ à¤®à¥‡à¤‚ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤²à¤¾à¤­ à¤ªà¤¾à¤¤à¥‡ à¤°à¤¹à¥‡à¤‚à¥¤"
-                : "The lamp lit by Dr. Ratan Chand Jain has never gone dark. His legacy lives on through his sons and grandson, each of whom took forward the torch of healing â€” ensuring that the people of Shahpur Sagar and central India continue to receive dedicated, compassionate medical care rooted in the Indian healing tradition."
+                : "The lamp lit by Dr. Ratan Chand Jain has never gone dark. His legacy lives on through his sons and grandson, each of whom took forward the torch of healing — ensuring that the people of Shahpur Sagar and central India continue to receive dedicated, compassionate medical care rooted in the Indian healing tradition."
               }
             </p>
             
@@ -291,26 +291,26 @@ export default function AboutUsPage() {
                     {hi ? "à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¤¿à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤• | à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤•à¤¨à¤¿à¤·à¥à¤  à¤ªà¥à¤¤à¥à¤°" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
                   </span>
                   <span className="torchbearer-place">
-                    {hi ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤°" : "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤² | Shantiniketan Hospital, Shahpur Sagar"}
+                    {hi ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤°" : "Shantiniketan Hospital, Shahpur Sagar"}
                   </span>
                 </div>
                 <p>
                   {hi 
                     ? "à¤ªà¤¿à¤¤à¤¾ à¤•à¥€ à¤®à¤¹à¤¾à¤¨ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤®à¥‡à¤‚ à¤ªà¤²à¥‡-à¤¬à¤¢à¤¼à¥‡ à¤¡à¥‰. à¤¸à¤‚à¤œà¥€à¤µ à¤•à¥à¤®à¤¾à¤° à¤œà¥ˆà¤¨ à¤¨à¥‡ à¤¬à¤šà¤ªà¤¨ à¤¸à¥‡ à¤¹à¥€ à¤¸à¥‡à¤µà¤¾, à¤µà¤¿à¤¨à¤®à¥à¤°à¤¤à¤¾ à¤”à¤° à¤•à¤°à¥à¤£à¤¾ à¤•à¥‡ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤—à¥à¤°à¤¹à¤£ à¤•à¤¿à¤à¥¤ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤•à¤¨à¤¿à¤·à¥à¤  à¤ªà¥à¤¤à¥à¤° à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¤°à¤¿à¤µà¤¾à¤° à¤•à¥€ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤¸à¥‡à¤µà¤¾ à¤•à¥€ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤•à¥‹ à¤¸à¤¬à¤¸à¥‡ à¤ªà¤¹à¤²à¥‡ à¤†à¤—à¥‡ à¤¬à¤¢à¤¼à¤¾à¤¯à¤¾à¥¤ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¥€ à¤•à¥‹ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¬à¤¨à¤¾à¤•à¤° à¤‡à¤¸ à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥‹ à¤à¤• à¤¨à¤ˆ à¤¦à¤¿à¤¶à¤¾ à¤¦à¥€ à¤”à¤° à¤…à¤§à¤¿à¤• à¤¸à¥‡ à¤…à¤§à¤¿à¤• à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤¤à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤•à¥€ à¤ªà¤¹à¥à¤à¤š à¤¸à¥à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤ à¤•à¥€à¥¤"
-                    : "Growing up in the shadow of a legendary father, Dr. Sanjeev Kumar Jain imbibed the values of service, humility, and healing from a very young age. As the younger son of Vaidyaraj Dr. Ratan Chand Jain, he was among the first to carry forward the family's sacred mission of healthcare â€” choosing the path of Homeopathy to extend the reach of the healing legacy to a wider spectrum of patients."
+                    : "Growing up in the shadow of a legendary father, Dr. Sanjeev Kumar Jain imbibed the values of service, humility, and healing from a very young age. As the younger son of Vaidyaraj Dr. Ratan Chand Jain, he was among the first to carry forward the family's sacred mission of healthcare — choosing the path of Homeopathy to extend the reach of the healing legacy to a wider spectrum of patients."
                   }
                 </p>
                 <p>
                   {hi 
                     ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤…à¤ªà¤¨à¥€ à¤¸à¥‡à¤µà¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¥‡ à¤¹à¥à¤, à¤¡à¥‰. à¤¸à¤‚à¤œà¥€à¤µ à¤•à¥à¤®à¤¾à¤° à¤œà¥ˆà¤¨ à¤¨à¥‡ à¤à¤• à¤µà¤¿à¤¶à¥à¤µà¤¸à¤¨à¥€à¤¯ à¤”à¤° à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¤¿à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤• à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤…à¤ªà¤¨à¥€ à¤ªà¤¹à¤šà¤¾à¤¨ à¤¬à¤¨à¤¾à¤ˆ à¤¹à¥ˆà¥¤ à¤‰à¤¨à¤•à¤¾ à¤°à¥‹à¤—à¥€-à¤•à¥‡à¤¨à¥à¤¦à¥à¤°à¤¿à¤¤ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿à¤•à¥‹à¤£, à¤¸à¥‚à¤•à¥à¤·à¥à¤® à¤°à¥‹à¤—-à¤¨à¤¿à¤¦à¤¾à¤¨ à¤”à¤° à¤ªà¥à¤°à¤­à¤¾à¤µà¥€ à¤‰à¤ªà¤šà¤¾à¤° à¤¨à¥‡ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤•à¥‡ à¤…à¤¨à¤—à¤¿à¤¨à¤¤ à¤ªà¤°à¤¿à¤µà¤¾à¤°à¥‹à¤‚ à¤•à¥‹ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤²à¤¾à¤­ à¤¦à¤¿à¤²à¤¾à¤¯à¤¾ à¤¹à¥ˆà¥¤"
-                    : "Practicing at à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤² (Shantiniketan Hospital) in Shahpur Sagar, Dr. Sanjeev Kumar Jain has built a trusted reputation as a dedicated Homeopathic practitioner, known for his patient-centric approach, careful case analysis, and commitment to gentle yet effective healing. His clinic has become a familiar refuge for families in Shahpur Sagar who seek holistic, side-effect-free treatment for both acute and chronic conditions."
+                    : "Practicing at Shantiniketan Hospital in Shahpur Sagar, Dr. Sanjeev Kumar Jain has built a trusted reputation as a dedicated Homeopathic practitioner, known for his patient-centric approach, careful case analysis, and commitment to gentle yet effective healing. His clinic has become a familiar refuge for families in Shahpur Sagar who seek holistic, side-effect-free treatment for both acute and chronic conditions."
                   }
                 </p>
               </div>
 
               <div className="torchbearer-compact featured">
                 <div className="torchbearer-info">
-                  <h4>{hi ? "à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥€ à¤¨à¤¿à¤°à¤¨à¥à¤¤à¤°à¤¤à¤¾ â€” à¤…à¤—à¤²à¥€ à¤ªà¥€à¤¢à¤¼à¥€" : "Legacy Continues â€” Next Generation"}</h4>
+                  <h4>{hi ? "à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥€ à¤¨à¤¿à¤°à¤¨à¥à¤¤à¤°à¤¤à¤¾ â€” à¤…à¤—à¤²à¥€ à¤ªà¥€à¤¢à¤¼à¥€" : "Legacy Continues — Next Generation"}</h4>
                   <h5>Shantiratnam Ayush Institute of Indian Medicinal Sciences</h5>
                   <span className="torchbearer-role">
                     {hi ? "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ | à¤¸à¤¾à¤—à¤°, à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ | à¤¸à¥à¤¥à¤¾à¤ªà¤¨à¤¾: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
@@ -325,7 +325,7 @@ export default function AboutUsPage() {
                 <p>
                   {hi 
                     ? "à¤¯à¤¹ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦, à¤¯à¥‹à¤—, à¤¯à¥‚à¤¨à¤¾à¤¨à¥€, à¤¸à¤¿à¤¦à¥à¤§ à¤”à¤° à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¥€ à¤®à¥‡à¤‚ à¤µà¥à¤¯à¤¾à¤ªà¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤¸à¥à¤µà¤¿à¤§à¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¡à¥‰. à¤¸à¥Œà¤°à¤­ à¤­à¤°à¤¿à¤²à¥à¤² à¤•à¤¾ à¤†à¤¯à¥à¤· à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤—à¤¤à¤¿à¤¶à¥€à¤² à¤•à¤¾à¤°à¥à¤¯ à¤¨ à¤•à¥‡à¤µà¤² à¤‰à¤¨à¤•à¥‡ à¤ªà¤¿à¤¤à¤¾à¤®à¤¹ à¤•à¥€ à¤¸à¥à¤®à¥ƒà¤¤à¤¿ à¤•à¥‹ à¤¸à¤®à¥à¤®à¤¾à¤¨ à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤¬à¤²à¥à¤•à¤¿ à¤®à¤§à¥à¤¯ à¤­à¤¾à¤°à¤¤ à¤®à¥‡à¤‚ à¤¸à¤®à¤—à¥à¤° à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤¸à¥‡à¤µà¤¾à¤“à¤‚ à¤•à¥‡ à¤¸à¥à¤¤à¤° à¤•à¥‹ à¤­à¥€ à¤Šà¤à¤šà¤¾ à¤‰à¤ à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
-                    : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management â€” working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
+                    : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management — working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
                   }
                 </p>
               </div>
