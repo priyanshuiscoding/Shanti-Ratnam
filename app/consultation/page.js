@@ -16,7 +16,7 @@ export default function ConsultationPage() {
   const t = hi
     ? {
         consultation: "\u092a\u0930\u093e\u092e\u0930\u094d\u0936",
-        hero: "\u092a\u0939\u0932\u0947 \u0938\u094d\u092a\u0937\u094d\u091f\u0924\u093e, \u092b\u093f\u0930 \u0926\u0947\u0916\u092d\u093e\u0932\u0964",
+        hero: "पहले स्पष्टता, फिर देखभाल",
         lead:
           "\u0939\u092e\u093e\u0930\u0947 \u090f\u0915\u094d\u0938\u092a\u0930\u094d\u091f\u094d\u0938 \u0938\u0947 \u092c\u093e\u0924 \u0915\u0930\u0947\u0902, \u0905\u092a\u0928\u0940 \u0938\u092e\u0938\u094d\u092f\u093e \u0938\u093e\u091d\u093e \u0915\u0930\u0947\u0902 \u0914\u0930 \u0915\u094d\u0932\u093f\u092f\u0930 \u091f\u094d\u0930\u0940\u091f\u092e\u0947\u0902\u091f \u0921\u093e\u092f\u0930\u0947\u0915\u094d\u0936\u0928 \u092a\u093e\u090f\u0902\u0964",
         secondOpinion: "\u0938\u0947\u0915\u0902\u0921 \u0913\u092a\u093f\u0928\u093f\u092f\u0928",
@@ -30,7 +30,7 @@ export default function ConsultationPage() {
       }
     : {
         consultation: "Consultation",
-        hero: "Clarity First. Care Next.",
+        hero: "Clarity First Care Next",
         lead:
           "Talk to our experts, share your concerns, and receive a clear treatment direction in a short consult.",
         secondOpinion: "Second Opinion",

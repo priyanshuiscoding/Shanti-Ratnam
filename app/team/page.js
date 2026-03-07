@@ -22,7 +22,7 @@ const coreDoctors = [
     name: "Dr. M. Senthil Kumar",
     role: "Joint & Spine Specialist",
     detail:
-      "KERALIYA AYURVEDA SPECIALIST | More Then 20 Years Of Experience In Pain Management",
+      "KERALIYA AYURVEDA SPECIALIST More Then 20 Years Of Experience In Pain Management",
     image: "/images/team/Dr%20Senthilkumar.jpeg"
   },
   {
@@ -49,7 +49,7 @@ export default function TeamPage() {
   const t = hi
     ? {
         team: "\u091f\u0940\u092e",
-        hero: "\u0938\u093e\u091d\u093e \u0932\u0915\u094d\u0937\u094d\u092f \u0914\u0930 \u0938\u092b\u0932\u0924\u093e \u0915\u0947 \u0932\u093f\u090f \u0938\u092e\u0930\u094d\u092a\u093f\u0924 \u0938\u0939\u092f\u094b\u0917\u0940 \u091f\u0940\u092e\u0964",
+        hero: "सम्पूर्ण स्वास्थ्य का लक्ष्य और सफलता मे सहयोगी हमारे समर्पित सदस्य",
         lead:
           "\u0909\u0928 \u090f\u0915\u094d\u0938\u092a\u0930\u094d\u091f\u094d\u0938 \u0914\u0930 \u0938\u092a\u094b\u0930\u094d\u091f \u0938\u094d\u091f\u093e\u092b \u0938\u0947 \u092e\u093f\u0932\u0947\u0902 \u091c\u094b \u0930\u094b\u0917\u0940 \u0930\u093f\u0915\u0935\u0930\u0940 \u0915\u094b \u0915\u0930\u0941\u0923\u093e \u0914\u0930 \u0905\u0928\u0941\u0936\u093e\u0938\u0928 \u0915\u0947 \u0938\u093e\u0925 \u0917\u093e\u0907\u0921 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964",
         meet: "\u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0938\u0947 \u092e\u093f\u0932\u0947\u0902",
@@ -60,7 +60,7 @@ export default function TeamPage() {
       }
     : {
         team: "Team",
-        hero: "Collaborative group striving for shared goals and success.",
+        hero: "Collaborative group striving for shared goals and success",
         lead:
           "Meet the experts and support staff who guide patient recovery with compassion and discipline.",
         meet: "Meet Our Team",
@@ -117,7 +117,7 @@ export default function TeamPage() {
       <section className="container team-contact-section reveal in">
         <div className="team-contact-card">
           <p className="eyebrow">{t.join}</p>
-          <h2>{hi ? "सहायता के लिए हमारी टीम से संपर्क करें, हमें आपकी मदद करके खुशी होगी।" : "Contact Our Friendly Team For Assistance, And We'll Be Delighted To Help You!"}</h2>
+          <h2>{hi ? "सहायता के लिए हमारी टीम से संपर्क करें, हमें आपकी मदद करके खुशी होगी" : "Contact Our Friendly Team For Assistance, And We'll Be Delighted To Help You!"}</h2>
           <p>{hi ? "हमारे उन्नत उपचारों के साथ नई आशा और बेहतर स्वास्थ्य की दिशा में अपनी यात्रा शुरू करें।" : "Discover renewed hope and healing with our advanced treatments. Embrace a journey of wellness, and let us guide you to better health. Join us today!"}</p>
           <Link href={localHref("/contact-us")}>{t.contact}</Link>
         </div>

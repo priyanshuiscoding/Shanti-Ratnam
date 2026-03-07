@@ -3,7 +3,7 @@ import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
 
 export const metadata = {
-  title: "Diabetic Reversal Program | Sagar",
+  title: "Diabetic Reversal Program Sagar",
   description:
     "Reverse diabetes naturally with SR-AIIMS 90-day Ayurvedic diabetic reversal protocol in Sagar.",
   alternates: {
@@ -18,7 +18,7 @@ export default function DiabeticReversalProgramPage() {
   const t = hi
     ? {
         kicker: "एसआर-एआईआईएमएस डायबिटिक रिवर्सल प्रोग्राम",
-        title: "प्राकृतिक रूप से डायबिटीज नियंत्रण की दिशा में आगे बढ़ें।",
+        title: "प्राकृतिक रूप से डायबिटीज नियंत्रण की दिशा में आगे बढ़ें",
         lead:
           "हमारे संरचित 90-दिवसीय आयुर्वेदिक प्रोटोकॉल के साथ दवा-निर्भरता कम करने की दिशा में कदम बढ़ाएं।",
         cta: "पात्रता जांचें",
@@ -30,7 +30,7 @@ export default function DiabeticReversalProgramPage() {
       }
     : {
         kicker: "SR-AIIMS Diabetic Reversal Program",
-        title: "Reverse Your Diabetes Naturally.",
+        title: "Reverse Your Diabetes Naturally",
         lead:
           "Break free from lifelong medication with our clinically-proven 90-Day Ayurvedic Protocol.",
         cta: "Check Eligibility",

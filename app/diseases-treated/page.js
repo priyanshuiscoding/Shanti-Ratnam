@@ -16,7 +16,7 @@ const diseaseSections = [
   {
     id: "neuro-pain-management",
     kicker: "Specialty Program",
-    title: "SR-AIIMS Neuro - Pain Management",
+    title: "SR-AIIMS Neuro Pain Management",
     summary:
       "Focused care for chronic nerve and spine pain through Ayurvedic therapies, movement correction, and guided recovery routines.",
     points: [
@@ -218,7 +218,7 @@ export default function DiseaseTreatedPage() {
   const t = hi
     ? {
         diseases: "\u0930\u094b\u0917\u094b\u0902 \u0915\u093e \u0909\u092a\u091a\u093e\u0930",
-        hero: "\u092a\u0942\u0930\u094d\u0923 \u0926\u0940\u0930\u094d\u0918\u0915\u093e\u0932\u093f\u0915 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0932\u093e\u092d \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0947 \u0938\u092e\u0930\u094d\u092a\u093f\u0924 \u0909\u092a\u091a\u093e\u0930 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e\u0964",
+        hero: "पूर्ण स्थायी स्वास्थ्य लाभ के लिए हमारे उपचार प्लान",
         lead:
           "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e \u092e\u0947\u0902 \u0935\u093f\u0936\u0947\u0937 \u0914\u0930 \u0935\u093f\u092d\u093e\u0917-\u0906\u0927\u093e\u0930\u093f\u0924 \u091f\u094d\u0930\u0940\u091f\u092e\u0947\u0902\u091f \u092a\u094d\u0932\u093e\u0928 \u0926\u0947\u0916\u0947\u0902\u0964",
         learnMore: "\u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0947\u0902",

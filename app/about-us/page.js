@@ -119,7 +119,7 @@ export default function AboutUsPage() {
   const t = hi
     ? {
         about: "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902",
-        hero: "\u0932\u093e\u0916\u094b\u0902 \u0915\u093e \u0935\u093f\u0936\u094d\u0935\u093e\u0938, \u0906\u092a\u0915\u0940 \u092e\u0902\u091c\u0942\u0930\u0940\u0964",
+        hero: "शांति- रत्नम - सम्पूर्ण स्वास्थ्य की शुरुआत",
         storyTitle: "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e: \u0938\u094d\u0935\u0938\u094d\u0925 \u091c\u0940\u0935\u0928 \u0915\u093e \u0926\u094d\u0935\u093e\u0930",
         book: "\u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u092c\u0941\u0915 \u0915\u0930\u0947\u0902",
         timing: "\u0938\u092e\u092f",
@@ -148,8 +148,8 @@ export default function AboutUsPage() {
       }
     : {
         about: "About Us",
-        hero: "81 Years of Legacy : Trusted By Millions, Validated By You.",
-        storyTitle: "Shanti-Ratnam: Gateway To Healthy Life",
+        hero: "81 Years of Legacy Trusted By Millions Validated By You",
+        storyTitle: "Shanti-Ratnam: Gateway To Perfect Health",
         book: "Book An Appointment",
         timing: "Timing",
         service: "At Your Service",
@@ -324,7 +324,7 @@ export default function AboutUsPage() {
 
               <div className="torchbearer-compact featured">
                 <div className="torchbearer-info">
-                  <h4>{hi ? "à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥€ à¤¨à¤¿à¤°à¤¨à¥à¤¤à¤°à¤¤à¤¾ â€” à¤…à¤—à¤²à¥€ à¤ªà¥€à¤¢à¤¼à¥€" : "Legacy Continues — Next Generation"}</h4>
+                  <h4>{hi ? "विरासत की निरंतरता अगली पीढ़ी" : "Legacy Continues Next Generation"}</h4>
                   <h5>Shantiratnam Ayush Institute of Indian Medicinal Sciences</h5>
                   <span className="torchbearer-role">
                     {hi ? "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ | à¤¸à¤¾à¤—à¤°, à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ | à¤¸à¥à¤¥à¤¾à¤ªà¤¨à¤¾: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}

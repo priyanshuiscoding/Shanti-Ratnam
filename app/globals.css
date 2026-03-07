@@ -52,11 +52,11 @@ html[lang="hi"] body {
 }
 
 html[lang="hi"] .eyebrow {
-  font-size: 0.875rem;
+  font-size: 1.22rem;
 }
 
 html[lang="hi"] .mini-kicker {
-  font-size: 0.885rem;
+  font-size: 1.2rem;
 }
 
 html[lang="hi"] .lang-btn {
@@ -113,9 +113,9 @@ p {
 
 .eyebrow {
   margin: 0 0 0.3rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 1.08rem;
   color: var(--saffron);
   font-weight: 700;
 }
@@ -125,7 +125,8 @@ p {
 }
 
 .section-head h2 {
-  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-size: clamp(1.35rem, 2.15vw, 1.95rem);
+  line-height: 1.16;
   color: var(--green-deep);
 }
 
@@ -639,7 +640,7 @@ main {
 }
 
 .hero-home-left h1 {
-  font-size: clamp(2.5rem, 4.3vw, 4.2rem);
+  font-size: clamp(1.8rem, 2.9vw, 2.55rem);
   text-transform: none;
   line-height: 1.08;
   text-align: center;
@@ -1649,7 +1650,7 @@ main {
 }
 
 .inner-hero h1 {
-  font-size: clamp(2.1rem, 4.3vw, 4rem);
+  font-size: clamp(1.6rem, 2.6vw, 2.35rem);
 }
 
 .inner-content {
@@ -1675,7 +1676,7 @@ main {
 
 .media-gallery-hero h1 {
   margin-top: 0.45rem;
-  font-size: clamp(2rem, 4.2vw, 3.8rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
   color: var(--green-deep);
 }
 
@@ -1736,8 +1737,8 @@ main {
   gap: 0.5rem;
   color: var(--saffron);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  font-size: 1.06rem;
   font-weight: 800;
 }
 
@@ -1771,7 +1772,7 @@ main {
 
 .about-hero-banner h1 {
   margin-top: 0.55rem;
-  font-size: clamp(2rem, 4.6vw, 4.2rem);
+  font-size: clamp(1.6rem, 2.55vw, 2.35rem);
   color: var(--green-deep);
 }
 
@@ -2948,7 +2949,7 @@ main {
 
 .facilities-hero h1 {
   margin-top: 0.55rem;
-  font-size: clamp(2rem, 4.3vw, 3.9rem);
+  font-size: clamp(1.55rem, 2.6vw, 2.35rem);
   color: var(--green-deep);
 }
 
@@ -3448,7 +3449,7 @@ select:focus {
 
 .package-hero h1 {
   margin-top: 0.52rem;
-  font-size: clamp(2rem, 4.4vw, 4rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.35rem);
   color: var(--green-deep);
 }
 

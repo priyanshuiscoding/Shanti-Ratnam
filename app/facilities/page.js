@@ -102,13 +102,12 @@ export default function FacilitiesPage() {
   const t = hi
     ? {
         title: "\u0938\u0941\u0935\u093f\u0927\u093e\u090f\u0902",
-        hero: "\u092c\u0947\u0939\u0924\u0930 \u0926\u0947\u0916\u092d\u093e\u0932, \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0914\u0930 \u0938\u0947\u0935\u093e \u0939\u092e\u093e\u0930\u0940 \u092a\u094d\u0930\u093e\u0925\u092e\u093f\u0915\u0924\u093e \u0939\u0948\u0964",
-        lead:
-          "\u0936\u093e\u0902\u0924\u093f-\u0930\u0924\u094d\u0928\u092e, \u0938\u093e\u0917\u0930 \u092e\u0947\u0902 \u092e\u0947\u0921\u093f\u0915\u0932, \u0925\u0947\u0930\u0947\u092a\u0940 \u0914\u0930 \u0930\u094b\u0917\u0940 \u0938\u0939\u093e\u092f\u0924\u093e \u0938\u0941\u0935\u093f\u0927\u093e\u0913\u0902 \u0915\u093e \u0938\u0902\u0915\u094d\u0937\u093f\u092a\u094d\u0924 \u0905\u0935\u0932\u094b\u0915\u0928\u0964"
+        hero: "बेहतर देखभाल, स्वास्थ्य और सेवा हमारी प्राथमिकता है",
+        lead: "सम्पूर्ण स्वास्थ्य, सर्वश्रेष्ठ देखभाल और समर्पण सेवा ही हमारी प्रहतमिकता है"
       }
     : {
         title: "Facilities",
-        hero: "Elevating wellness through advanced care and compassion.",
+        hero: "Elevating wellness through advanced care and compassion",
         lead:
           "A focused overview of core medical, therapy, and patient-support facilities at Shanti-Ratnam, Sagar."
       };

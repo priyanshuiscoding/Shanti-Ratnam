@@ -36,7 +36,7 @@ export const metadata = {
   description:
     "Shanti-Ratnam clinic website redesign with modern responsive UI and SEO-ready structure.",
   openGraph: {
-    title: "Shanti-Ratnam | Healing With Happiness",
+    title: "Shanti-Ratnam Healing With Happiness",
     description:
       "Ayurvedic care, personalized treatment plans, and wellness programs in a modern digital experience.",
     url: "https://shantiratnam.com",

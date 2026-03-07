@@ -3,7 +3,7 @@ import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
 
 export const metadata = {
-  title: "Neuro-Pain Management | Sagar",
+  title: "Neuro Pain Management Sagar",
   description:
     "Targeted neuro-pain management in Sagar for sciatica, neuropathy, and cervical or lumbar spondylosis.",
   alternates: {
@@ -18,7 +18,7 @@ export default function NeuroPainManagementPage() {
   const t = hi
     ? {
         kicker: "एसआर-एआईआईएमएस न्यूरो-पेन मैनेजमेंट",
-        title: "नसों के दर्द की जड़ पर काम करें।",
+        title: "नसों के दर्द की जड़ पर काम करें",
         lead:
           "क्रॉनिक दर्द के लिए संरचित आयुर्वेद, थेरेपी और लाइफस्टाइल रिकवरी प्लान के साथ इंटीग्रेटेड केयर।",
         cta: "पात्रता जांचें",
@@ -28,7 +28,7 @@ export default function NeuroPainManagementPage() {
       }
     : {
         kicker: "SR-AIIMS Neuro-Pain Management",
-        title: "Target Nerve Pain at the Root.",
+        title: "Target Nerve Pain at the Root",
         lead:
           "Integrated care for chronic pain conditions with structured Ayurveda, therapy, and lifestyle recovery plans.",
         cta: "Check Eligibility",

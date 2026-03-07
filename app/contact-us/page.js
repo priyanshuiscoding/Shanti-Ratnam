@@ -15,7 +15,7 @@ export default function ContactUsPage() {
   const t = hi
     ? {
         contact: "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902",
-        hero: "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902, \u0939\u0940\u0932\u093f\u0902\u0917 \u0915\u0940 \u0936\u0941\u0930\u0941\u0906\u0924 \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u0938\u0947 \u092c\u093e\u0924\u091a\u0940\u0924 \u0915\u0930\u0947\u0902\u0964",
+        hero: "संपर्क करें, हीलिंग की शुरुआत के लिए हमसे बातचीत करें",
         getInTouch: "\u0938\u0902\u092a\u0930\u094d\u0915 \u092e\u0947\u0902 \u0930\u0939\u0947\u0902",
         shortTitle: "\u0939\u092e \u091c\u0932\u094d\u0926 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947",
         sendMessage: "\u0938\u0902\u0926\u0947\u0936 \u092d\u0947\u091c\u0947\u0902",
@@ -30,7 +30,7 @@ export default function ContactUsPage() {
       }
     : {
         contact: "Contact Us",
-        hero: "Start the conversation to establish a good relationship and healing.",
+        hero: "Start the conversation to establish a good relationship and healing",
         getInTouch: "Get In Touch",
         shortTitle: "We Will Be In Touch Shortly",
         sendMessage: "Send Us A Message",

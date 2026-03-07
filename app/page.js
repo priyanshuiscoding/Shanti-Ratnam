@@ -159,14 +159,14 @@ export default async function HomePage() {
           "\u0905\u092a\u0928\u0947 \u0932\u0915\u094d\u0937\u0923 \u0917\u0942\u0917\u0932 \u0915\u0930\u0928\u093e \u092c\u0902\u0926 \u0915\u0930\u0947\u0902\u0964 15 \u092e\u093f\u0928\u091f \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0947 \u090f\u0915\u094d\u0938\u092a\u0930\u094d\u091f\u094d\u0938 \u0938\u0947 \u0938\u094d\u092a\u0937\u094d\u091f \u092e\u093e\u0930\u094d\u0917\u0926\u0930\u094d\u0936\u0928 \u0932\u0947\u0902\u0964",
         whyEyebrow: "\u0939\u092e\u0947\u0902 \u0915\u094d\u092f\u094b\u0902 \u091a\u0941\u0928\u0947\u0902",
         whyTitle:
-          "\u0930\u094b\u0917\u0940-\u092a\u094d\u0930\u0925\u092e \u0926\u0947\u0916\u092d\u093e\u0932, \u0938\u0902\u0930\u091a\u093f\u0924 \u0939\u0940\u0932\u093f\u0902\u0917 \u092a\u094d\u0932\u093e\u0928",
+          "समपूर्ण स्वयथ्य के लिए समर्पण , सर्वश्रेष्ठ देखभाल और आधुनिक मापदंडों पर आधारित श्रेष्ट सेवा उपलब्ध करना ही हमारी कुंजी है",
         specialties: "\u0935\u093f\u0936\u0947\u0937 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e",
         specialtyTitle:
-          "\u092a\u0942\u0930\u094d\u0923 \u0926\u0940\u0930\u094d\u0918\u0915\u093e\u0932\u093f\u0915 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0932\u093e\u092d \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0947 \u0938\u092e\u0930\u094d\u092a\u093f\u0924 \u0909\u092a\u091a\u093e\u0930 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e",
+          "पूर्ण स्थायी स्वास्थ्य लाभ के लिए हमारे समर्पित उपचार कार्यक्रम",
         learnMore: "\u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0947\u0902",
         ourTreatment: "\u0939\u092e\u093e\u0930\u0940 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e",
         treatmentTitle:
-          "\u092e\u0942\u0932\u092d\u0942\u0924 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e \u0938\u0947 \u0905\u092a\u0928\u0947 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0915\u094b \u0938\u092e\u0943\u0926\u094d\u0927 \u0915\u0930\u0947\u0902",
+          "पंचभौतिक सिद्धांत पर आधारित मूलभूत चिकित्सा से अपने  सम्पूर्ण  स्वास्थ्य को  अनुभव करे",
         treatmentEyebrow: "\u091f\u094d\u0930\u0940\u091f\u092e\u0947\u0902\u091f \u0915\u0947\u092f\u0930",
         treatmentPrograms:
           "\u0907\u0928-\u092a\u0947\u0936\u0947\u0902\u091f \u0914\u0930 \u0935\u0949\u0915-\u0907\u0928 \u091f\u094d\u0930\u0940\u091f\u092e\u0947\u0902\u091f \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e",
@@ -188,7 +188,7 @@ export default async function HomePage() {
         reviewCta: "\u0917\u0942\u0917\u0932 \u092a\u0930 \u0938\u092d\u0940 \u0930\u093f\u0935\u094d\u092f\u0942 \u0926\u0947\u0916\u0947\u0902",
         reviewSummary: "\u0917\u0942\u0917\u0932 \u0930\u0947\u091f\u093f\u0902\u0917",
         heroLead:
-          "\u0939\u092e \u0938\u0902\u0930\u091a\u093f\u0924, \u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0915\u0943\u0924 \u0914\u0930 \u0935\u093f\u0936\u093f\u0937\u094d\u091f \u0921\u0949\u0915\u094d\u091f\u0930-\u0917\u093e\u0907\u0921\u0947\u0921 \u0939\u0940\u0932\u093f\u0902\u0917 \u092a\u094d\u0932\u093e\u0928 \u092a\u094d\u0930\u0926\u093e\u0928 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902, \u091c\u094b \u0926\u0940\u0930\u094d\u0918\u0915\u093e\u0932\u093f\u0915 \u0938\u094d\u0925\u093f\u0930\u0924\u093e \u0914\u0930 \u092c\u0947\u0939\u0924\u0930 \u0938\u094d\u0935\u0938\u094d\u0925 \u091c\u0940\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0915\u093f\u090f \u0917\u090f \u0939\u0948\u0902\u0964",
+          "हमारी टीम विशेष रूप से  प्रकृति आधारित, व्यक्तिगत चिकित्सा प्लान प्रदान करती है , जो ।।",
         exp: "\u0032\u0035+ \u0935\u0930\u094d\u0937\u094b\u0902 \u0915\u093e \u0905\u0928\u0941\u092d\u0935",
         doctorPrograms: "\u0921\u0949\u0915\u094d\u091f\u0930-\u0928\u093f\u0930\u094d\u0926\u0947\u0936\u093f\u0924 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e",
         chronicFocus: "\u0915\u094d\u0930\u0949\u0928\u093f\u0915 \u0915\u0947\u092f\u0930 \u092b\u094b\u0915\u0938",
@@ -263,12 +263,12 @@ export default async function HomePage() {
           imageAlt: "Video consultation"
         },
         {
-          title: "Walk In Consultation - OPD",
+          title: "Walk In Consultation OPD",
           imagePath: "/images/sections/WALK IN.png",
           imageAlt: "Walk in consultation OPD"
         },
         {
-          title: "Live In Consultation - IPD",
+          title: "Live In Consultation IPD",
           imagePath: "/images/sections/IPD.png",
           imageAlt: "Live in consultation IPD"
         }
@@ -280,12 +280,12 @@ export default async function HomePage() {
           imageAlt: "Video consultation"
         },
         {
-          title: "Walk In Consultation - OPD",
+          title: "Walk In Consultation OPD",
           imagePath: "/images/sections/WALK IN.png",
           imageAlt: "Walk in consultation OPD"
         },
         {
-          title: "Live In Consultation - IPD",
+          title: "Live In Consultation IPD",
           imagePath: "/images/sections/IPD.png",
           imageAlt: "Live in consultation IPD"
         }
@@ -449,7 +449,7 @@ export default async function HomePage() {
                 <path d="M12 17v2.5M10 19.5h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/>
               </svg>
             </span>
-            <h3>Neuro - Pain Management</h3>
+            <h3>Neuro Pain Management</h3>
             <p>Sciatica, Neuropathy, Cervical &amp; Lumbar Spondylosis</p>
             <Link href={localHref("/neuro-pain-management-sagar")}>{t.learnMore} &rarr;</Link>
           </article>
