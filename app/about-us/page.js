@@ -14,7 +14,7 @@ export const metadata = {
 
 const ABOUT_CAMPUS_IMAGE_PATH = "/images/about/about us image.jpeg";
 const ABOUT_LEGEND_IMAGE_PATH = "/images/about/Dr. Ratan Chand Jain.png";
-const ABOUT_TORCHBEARER_IMAGE_PATH = "/images/facilities/doctor patient picture.jpeg";
+const ABOUT_TORCHBEARER_IMAGE_PATH = "/images/about/hospital-campus.webp";
 
 const aboutParagraph = `Sarve Bhavantu Sukhinah. Sarve Santu Niraamayaah.
 May all beings be happy. May all be free from illness. May all witness that which is auspicious.
@@ -302,7 +302,7 @@ export default function AboutUsPage() {
                 <div className="torchbearer-thumb">
                   <Image
                     src={ABOUT_TORCHBEARER_IMAGE_PATH}
-                    alt="Doctor consultation at Shanti-Ratnam"
+                    alt="Shanti-Ratnam campus and care environment"
                     width={560}
                     height={360}
                     className="torchbearer-thumb-img"
