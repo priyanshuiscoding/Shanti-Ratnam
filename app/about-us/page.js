@@ -228,10 +228,10 @@ export default function AboutUsPage() {
 
       <section className="container about-legacy-section reveal in">
         <div className="about-legacy-head">
-          <p className="mini-kicker">{hi ? "à¤à¤• à¤…à¤®à¤° à¤µà¤¿à¤°à¤¾à¤¸à¤¤" : "A Living Legacy"}</p>
-          <h2>{hi ? "à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨" : "Dr. Ratan Chand Jain"}</h2>
+          <p className="mini-kicker">{hi ? "एक अमर विरासत" : "A Living Legacy"}</p>
+          <h2>{hi ? "वैद्यराज डॉ. रतन चन्द जैन" : "Dr. Ratan Chand Jain"}</h2>
           <p className="legacy-subtitle">
-            {hi ? "à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¾à¤šà¤¾à¤°à¥à¤¯ | à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤°, à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶" : "Vaidyaraj | Ayurvedacharya | Shahpur Sagar, Madhya Pradesh"}
+            {hi ? "आयुर्वेदाचार्य | शाहपुर सागर, मध्य प्रदेश" : "Vaidyaraj | Ayurvedacharya | Shahpur Sagar, Madhya Pradesh"}
           </p>
         </div>
 
@@ -239,20 +239,20 @@ export default function AboutUsPage() {
           <div className="legacy-founder-compact">
             <div className="legacy-timeline">
               <div className="legacy-date">
-                <span className="date-label">{hi ? "à¤œà¤¨à¥à¤®" : "Born"}</span>
+                <span className="date-label">{hi ? "जन्म" : "Born"}</span>
                 <span className="date-value">05 Oct 1931</span>
               </div>
               <div className="legacy-date">
-                <span className="date-label">{hi ? "à¤¬à¥à¤°à¤¹à¥à¤®à¤²à¥€à¤¨" : "Attained Moksha"}</span>
+                <span className="date-label">{hi ? "ब्रह्मलीन" : "Attained Moksha"}</span>
                 <span className="date-value">19 Apr 2019</span>
               </div>
               <div className="legacy-date highlight">
-                <span className="date-label">{hi ? "à¤¸à¥‡à¤µà¤¾" : "Service"}</span>
+                <span className="date-label">{hi ? "सेवा" : "Service"}</span>
                 <span className="date-value">67 Years</span>
               </div>
             </div>
             <div className="legacy-summary">
-              <h4>{hi ? "à¤®à¤¹à¤¾à¤¨ à¤µà¤¿à¤­à¥‚à¤¤à¤¿ à¤•à¤¾ à¤ªà¤°à¤¿à¤šà¤¯" : "About the Legend"}</h4>
+              <h4>{hi ? "महान विभूति का परिचय" : "About the Legend"}</h4>
               <div className="legacy-summary-layout">
                 <div className="legacy-portrait">
                   <Image
@@ -266,20 +266,20 @@ export default function AboutUsPage() {
                 <div className="legacy-summary-copy">
                   <p>
                     {hi 
-                      ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ à¤•à¥‡ à¤¸à¤¾à¤—à¤° à¤œà¤¿à¤²à¥‡ à¤•à¥‡ à¤¸à¤¬à¤¸à¥‡ à¤ªà¥à¤°à¤¤à¤¿à¤·à¥à¤ à¤¿à¤¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¾à¤šà¤¾à¤°à¥à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤à¤• à¤¥à¥‡à¥¤ 5 à¤…à¤•à¥à¤Ÿà¥‚à¤¬à¤° 1931 à¤•à¥‹ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤œà¤¨à¥à¤®à¥‡, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤…à¤ªà¤¨à¤¾ à¤¸à¤®à¥à¤ªà¥‚à¤°à¥à¤£ à¤œà¥€à¤µà¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦ à¤•à¥€ à¤ªà¥à¤°à¤¾à¤šà¥€à¤¨ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤•à¥‹ à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤•à¤° à¤¦à¤¿à¤¯à¤¾à¥¤ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤—à¥‹à¤‚ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤®à¥‡à¤‚ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ 67 à¤µà¤°à¥à¤·à¥‹à¤‚ à¤¤à¤• à¤…à¤¨à¤µà¤°à¤¤ à¤¶à¥à¤°à¤® à¤•à¤¿à¤¯à¤¾à¥¤"
+                      ? "डॉ. रतन चन्द जैन मध्य प्रदेश के सागर क्षेत्र के अत्यंत प्रतिष्ठित आयुर्वेदाचार्यों में से एक थे। 5 अक्टूबर 1931 को शाहपुर सागर में जन्म लेकर उन्होंने अपना पूरा जीवन आयुर्वेद और जनसेवा को समर्पित किया। सागर संभाग के लोगों की सेवा में उन्होंने 67 वर्षों तक निरंतर कार्य किया।"
                       : "Dr. Ratan Chand Jain was one of the most revered Ayurvedacharyas of the Sagar region in Madhya Pradesh. Born on 5th October 1931 in Shahpur Sagar, he dedicated his entire life to the ancient science of Ayurveda, serving the people of central India with unwavering devotion, compassion, and exceptional medical wisdom as goverment ayurvedic medical officer (from 1962-1962)."
                     }
                   </p>
                   <p>
                     {hi 
-                      ? "à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤°à¥‹à¤—à¥€ à¤•à¥€ à¤¸à¥‡à¤µà¤¾ à¤¸à¤®à¤¾à¤¨ à¤­à¤¾à¤µ à¤¸à¥‡ à¤•à¥€ â€” à¤šà¤¾à¤¹à¥‡ à¤µà¤¹ à¤—à¤¾à¤‚à¤µ à¤•à¤¾ à¤¸à¤¾à¤§à¤¾à¤°à¤£ à¤•à¤¿à¤¸à¤¾à¤¨ à¤¹à¥‹ à¤¯à¤¾ à¤¶à¤¹à¤° à¤•à¤¾ à¤µà¤¿à¤¦à¥à¤µà¤¾à¤¨à¥¤ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦à¤¿à¤• à¤¶à¤¾à¤¸à¥à¤¤à¥à¤°à¥‹à¤‚ à¤•à¤¾ à¤‰à¤¨à¤•à¤¾ à¤—à¤¹à¤¨ à¤œà¥à¤žà¤¾à¤¨, à¤ªà¥à¤°à¤•à¥ƒà¤¤à¤¿-à¤ªà¤°à¥€à¤•à¥à¤·à¤£ à¤•à¥€ à¤•à¥à¤¶à¤²à¤¤à¤¾, à¤”à¤° à¤œà¤¡à¤¼à¥€-à¤¬à¥‚à¤Ÿà¤¿à¤¯à¥‹à¤‚ à¤•à¥‡ à¤ªà¥à¤°à¤¯à¥‹à¤— à¤¨à¥‡ à¤‰à¤¨à¥à¤¹à¥‡à¤‚ à¤à¤• à¤…à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¬à¤¨à¤¾à¤¯à¤¾ à¤œà¤¿à¤¨à¤•à¥‡ à¤‰à¤ªà¤šà¤¾à¤° à¤¸à¥‡ à¤…à¤¸à¤‚à¤–à¥à¤¯ à¤°à¥‹à¤—à¥€ à¤²à¤¾à¤­à¤¾à¤¨à¥à¤µà¤¿à¤¤ à¤¹à¥à¤à¥¤"
+                      ? "उन्होंने हर मरीज की समान भावना से सेवा की, चाहे वह ग्रामीण किसान हो या शहर का शिक्षित परिवार। आयुर्वेद शास्त्र का गहरा ज्ञान, प्रकृति-परीक्षण की कुशलता और जड़ी-बूटियों के विवेकपूर्ण प्रयोग ने उन्हें अद्वितीय वैद्यराज बनाया, जिनसे असंख्य रोगी लाभान्वित हुए।"
                       : "For an extraordinary span of 67 years, Dr. Ratan Chand Jain served as a guiding light for thousands of patients across the region. Whether it was the common folk from rural areas or families from the city, he treated each patient with equal care, ensuring that the blessings of Ayurvedic healing reached every doorstep."
                     }
                   </p>
                   <blockquote className="legacy-quote-compact">
-                    "{hi ? "à¤µà¥‡ à¤•à¥‡à¤µà¤² à¤°à¥‹à¤—à¥‹à¤‚ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚, à¤†à¤¤à¥à¤®à¤¾à¤“à¤‚ à¤•à¥‹ à¤­à¥€ à¤¸à¥à¤µà¤¸à¥à¤¥ à¤•à¤°à¤¤à¥‡ à¤¥à¥‡à¥¤" : "He did not just heal bodies — he healed communities."}"
+                    {hi ? "वे केवल शरीर नहीं, समाज को भी स्वस्थ करते थे।" : "He did not just heal bodies — he healed communities."}
                     <span className="legacy-quote-sub">
-                      {hi ? "à¤‰à¤¨à¤•à¥€ à¤¦à¤µà¤¾ à¤¥à¥€ â€” à¤œà¥à¤žà¤¾à¤¨, à¤•à¤°à¥à¤£à¤¾ à¤”à¤° à¤µà¤¿à¤¶à¥à¤µà¤¾à¤¸ à¤•à¤¾ à¤¸à¤‚à¤—à¤®à¥¤" : "His medicine was equal parts knowledge, kindness, and faith."}
+                      {hi ? "उनकी चिकित्सा थी ज्ञान, करुणा और विश्वास का संगम।" : "His medicine was equal parts knowledge, kindness, and faith."}
                     </span>
                   </blockquote>
                 </div>
@@ -288,10 +288,10 @@ export default function AboutUsPage() {
           </div>
 
           <div className="legacy-continuation-compact">
-            <h3>{hi ? "à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥€ à¤¨à¤¿à¤°à¤¨à¥à¤¤à¤°à¤¤à¤¾" : "Healing since 81 years"}</h3>
+            <h3>{hi ? "विरासत की निरंतरता" : "Healing since 81 years"}</h3>
             <p className="legacy-continuation-intro">
               {hi 
-                ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤œà¤²à¤¾à¤ˆ à¤—à¤ˆ à¤œà¥à¤žà¤¾à¤¨ à¤•à¥€ à¤œà¥à¤¯à¥‹à¤¤à¤¿ à¤†à¤œ à¤­à¥€ à¤ªà¥à¤°à¤•à¤¾à¤¶à¤®à¤¾à¤¨ à¤¹à¥ˆà¥¤ à¤‰à¤¨à¤•à¥€ à¤‡à¤¸ à¤…à¤®à¤° à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥‹ à¤‰à¤¨à¤•à¥‡ à¤ªà¥à¤¤à¥à¤°à¥‹à¤‚ à¤à¤µà¤‚ à¤ªà¥Œà¤¤à¥à¤° à¤¨à¥‡ à¤¸à¤¾à¤°à¥à¤¥à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤†à¤—à¥‡ à¤¬à¤¢à¤¼à¤¾à¤¯à¤¾ à¤¹à¥ˆ â€” à¤¤à¤¾à¤•à¤¿ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤”à¤° à¤¸à¤®à¥‚à¤šà¥‡ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤•à¥‡ à¤²à¥‹à¤— à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤•à¥€ à¤›à¤¾à¤¯à¤¾ à¤®à¥‡à¤‚ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤²à¤¾à¤­ à¤ªà¤¾à¤¤à¥‡ à¤°à¤¹à¥‡à¤‚à¥¤"
+                ? "डॉ. रतन चन्द जैन द्वारा प्रज्ज्वलित ज्ञान की ज्योति आज भी उज्ज्वल है। उनकी इस अमर विरासत को उनके पुत्रों और पौत्र ने आगे बढ़ाया, ताकि शाहपुर सागर और पूरे क्षेत्र के लोगों को भारतीय चिकित्सा परंपरा के आधार पर समर्पित स्वास्थ्य सेवा मिलती रहे।"
                 : "The lamp lit by Dr. Ratan Chand Jain has never gone dark. His legacy lives on through his sons and grandson, each of whom took forward the torch of healing — ensuring that the people of Shahpur Sagar and central India continue to receive dedicated, compassionate medical care rooted in the Indian healing tradition."
               }
             </p>
@@ -299,24 +299,24 @@ export default function AboutUsPage() {
             <div className="legacy-torchbearers-compact">
               <div className="torchbearer-compact is-brief">
                 <div className="torchbearer-info">
-                  <h4>{hi ? "à¤ªà¥à¤°à¤¥à¤® à¤®à¤¶à¤¾à¤²à¤µà¤¾à¤¹à¤•" : "First Torch Bearer"}</h4>
+                  <h4>{hi ? "प्रथम मशालवाहक" : "First Torch Bearer"}</h4>
                   <h5>Dr. Sanjeev Kumar Jain</h5>
                   <span className="torchbearer-role">
-                    {hi ? "à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¤¿à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤• | à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤•à¤¨à¤¿à¤·à¥à¤  à¤ªà¥à¤¤à¥à¤°" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
+                    {hi ? "होम्योपैथिक चिकित्सक | डॉ. रतन चन्द जैन के कनिष्ठ पुत्र" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
                   </span>
                   <span className="torchbearer-place">
-                    {hi ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤°" : "Shantiniketan Hospital, Shahpur Sagar"}
+                    {hi ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर" : "Shantiniketan Hospital, Shahpur Sagar"}
                   </span>
                 </div>
                 <p>
                   {hi 
-                    ? "à¤ªà¤¿à¤¤à¤¾ à¤•à¥€ à¤®à¤¹à¤¾à¤¨ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤®à¥‡à¤‚ à¤ªà¤²à¥‡-à¤¬à¤¢à¤¼à¥‡ à¤¡à¥‰. à¤¸à¤‚à¤œà¥€à¤µ à¤•à¥à¤®à¤¾à¤° à¤œà¥ˆà¤¨ à¤¨à¥‡ à¤¬à¤šà¤ªà¤¨ à¤¸à¥‡ à¤¹à¥€ à¤¸à¥‡à¤µà¤¾, à¤µà¤¿à¤¨à¤®à¥à¤°à¤¤à¤¾ à¤”à¤° à¤•à¤°à¥à¤£à¤¾ à¤•à¥‡ à¤¸à¤‚à¤¸à¥à¤•à¤¾à¤° à¤—à¥à¤°à¤¹à¤£ à¤•à¤¿à¤à¥¤ à¤µà¥ˆà¤¦à¥à¤¯à¤°à¤¾à¤œ à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤•à¤¨à¤¿à¤·à¥à¤  à¤ªà¥à¤¤à¥à¤° à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚, à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤ªà¤°à¤¿à¤µà¤¾à¤° à¤•à¥€ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤¸à¥‡à¤µà¤¾ à¤•à¥€ à¤ªà¤°à¤®à¥à¤ªà¤°à¤¾ à¤•à¥‹ à¤¸à¤¬à¤¸à¥‡ à¤ªà¤¹à¤²à¥‡ à¤†à¤—à¥‡ à¤¬à¤¢à¤¼à¤¾à¤¯à¤¾à¥¤ à¤‰à¤¨à¥à¤¹à¥‹à¤‚à¤¨à¥‡ à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¥€ à¤•à¥‹ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¬à¤¨à¤¾à¤•à¤° à¤‡à¤¸ à¤µà¤¿à¤°à¤¾à¤¸à¤¤ à¤•à¥‹ à¤à¤• à¤¨à¤ˆ à¤¦à¤¿à¤¶à¤¾ à¤¦à¥€ à¤”à¤° à¤…à¤§à¤¿à¤• à¤¸à¥‡ à¤…à¤§à¤¿à¤• à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤¤à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤•à¥€ à¤ªà¤¹à¥à¤à¤š à¤¸à¥à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤ à¤•à¥€à¥¤"
+                    ? "पिता की महान परंपरा में पले-बढ़े डॉ. संजीव कुमार जैन ने बचपन से ही सेवा, विनम्रता और करुणा के संस्कार ग्रहण किए। डॉ. रतन चन्द जैन के कनिष्ठ पुत्र के रूप में उन्होंने परिवार की चिकित्सा परंपरा को आगे बढ़ाया और होम्योपैथी के माध्यम से अधिक से अधिक रोगियों तक उपचार पहुंचाया।"
                     : "Growing up in the shadow of a legendary father, Dr. Sanjeev Kumar Jain imbibed the values of service, humility, and healing from a very young age. As the younger son of Vaidyaraj Dr. Ratan Chand Jain, he was among the first to carry forward the family's sacred mission of healthcare — choosing the path of Homeopathy to extend the reach of the healing legacy to a wider spectrum of patients."
                   }
                 </p>
                 <p>
                   {hi 
-                    ? "à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤¨à¤¿à¤•à¥‡à¤¤à¤¨ à¤…à¤¸à¥à¤ªà¤¤à¤¾à¤², à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤®à¥‡à¤‚ à¤…à¤ªà¤¨à¥€ à¤¸à¥‡à¤µà¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¥‡ à¤¹à¥à¤, à¤¡à¥‰. à¤¸à¤‚à¤œà¥€à¤µ à¤•à¥à¤®à¤¾à¤° à¤œà¥ˆà¤¨ à¤¨à¥‡ à¤à¤• à¤µà¤¿à¤¶à¥à¤µà¤¸à¤¨à¥€à¤¯ à¤”à¤° à¤¸à¤®à¤°à¥à¤ªà¤¿à¤¤ à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¤¿à¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤• à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤…à¤ªà¤¨à¥€ à¤ªà¤¹à¤šà¤¾à¤¨ à¤¬à¤¨à¤¾à¤ˆ à¤¹à¥ˆà¥¤ à¤‰à¤¨à¤•à¤¾ à¤°à¥‹à¤—à¥€-à¤•à¥‡à¤¨à¥à¤¦à¥à¤°à¤¿à¤¤ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿à¤•à¥‹à¤£, à¤¸à¥‚à¤•à¥à¤·à¥à¤® à¤°à¥‹à¤—-à¤¨à¤¿à¤¦à¤¾à¤¨ à¤”à¤° à¤ªà¥à¤°à¤­à¤¾à¤µà¥€ à¤‰à¤ªà¤šà¤¾à¤° à¤¨à¥‡ à¤¶à¤¾à¤¹à¤ªà¥à¤° à¤¸à¤¾à¤—à¤° à¤•à¥‡ à¤…à¤¨à¤—à¤¿à¤¨à¤¤ à¤ªà¤°à¤¿à¤µà¤¾à¤°à¥‹à¤‚ à¤•à¥‹ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤²à¤¾à¤­ à¤¦à¤¿à¤²à¤¾à¤¯à¤¾ à¤¹à¥ˆà¥¤"
+                    ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर में सेवाएं देते हुए डॉ. संजीव कुमार जैन ने एक विश्वसनीय और समर्पित होम्योपैथिक चिकित्सक के रूप में अपनी पहचान बनाई। उनके रोगी-केंद्रित दृष्टिकोण, सूक्ष्म निदान और प्रभावी उपचार ने क्षेत्र के अनेक परिवारों को स्वास्थ्य लाभ दिलाया है।"
                     : "Practicing at Shantiniketan Hospital in Shahpur Sagar, Dr. Sanjeev Kumar Jain has built a trusted reputation as a dedicated Homeopathic practitioner, known for his patient-centric approach, careful case analysis, and commitment to gentle yet effective healing. His clinic has become a familiar refuge for families in Shahpur Sagar who seek holistic, side-effect-free treatment for both acute and chronic conditions."
                   }
                 </p>
@@ -327,18 +327,18 @@ export default function AboutUsPage() {
                   <h4>{hi ? "विरासत की निरंतरता अगली पीढ़ी" : "Legacy Continues Next Generation"}</h4>
                   <h5>Shantiratnam Ayush Institute of Indian Medicinal Sciences</h5>
                   <span className="torchbearer-role">
-                    {hi ? "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤µà¤¿à¤œà¥à¤žà¤¾à¤¨ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ | à¤¸à¤¾à¤—à¤°, à¤®à¤§à¥à¤¯ à¤ªà¥à¤°à¤¦à¥‡à¤¶ | à¤¸à¥à¤¥à¤¾à¤ªà¤¨à¤¾: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
+                    {hi ? "भारतीय चिकित्सा विज्ञान संस्थान | सागर, मध्य प्रदेश | स्थापना: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
                   </span>
                 </div>
                 <p>
                   {hi 
-                    ? "à¤¡à¥‰. à¤°à¤¤à¤¨ à¤šà¤¨à¥à¤¦ à¤œà¥ˆà¤¨ à¤•à¥‡ à¤ªà¥Œà¤¤à¥à¤° à¤¡à¥‰. à¤¸à¥Œà¤°à¤­ à¤­à¤°à¤¿à¤²à¥à¤² à¤•à¥‡ à¤—à¤¤à¤¿à¤¶à¥€à¤² à¤¨à¥‡à¤¤à¥ƒà¤¤à¥à¤µ à¤®à¥‡à¤‚ à¤¶à¤¾à¤¨à¥à¤¤à¤¿à¤°à¤¤à¥à¤¨à¤®à¥ à¤†à¤¯à¥à¤· à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ à¤¸à¤¾à¤—à¤° à¤¸à¤‚à¤­à¤¾à¤— à¤®à¥‡à¤‚ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦ à¤à¤µà¤‚ à¤…à¤¨à¥à¤¯ à¤†à¤¯à¥à¤· à¤µà¤¿à¤·à¤¯à¥‹à¤‚ à¤•à¥‡ à¤²à¤¿à¤ à¤à¤• à¤ªà¥à¤°à¤®à¥à¤– à¤•à¥‡à¤¨à¥à¤¦à¥à¤° à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤¸à¥à¤¥à¤¾à¤ªà¤¿à¤¤ à¤¹à¥‹ à¤šà¥à¤•à¤¾ à¤¹à¥ˆà¥¤ à¤µà¤°à¥à¤· 2004 à¤®à¥‡à¤‚ à¤¸à¥à¤¥à¤¾à¤ªà¤¨à¤¾ à¤¸à¥‡ à¤…à¤¬ à¤¤à¤• 10,000 à¤¸à¥‡ à¤…à¤§à¤¿à¤• à¤¸à¤‚à¤¤à¥à¤·à¥à¤Ÿ à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤¸à¥‡à¤µà¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¥€ à¤œà¤¾ à¤šà¥à¤•à¥€ à¤¹à¥ˆà¤‚à¥¤"
+                    ? "डॉ. रतन चन्द जैन के पौत्र डॉ. सौरभ भरिल्ल के गतिशील नेतृत्व में शान्तिरत्नम् आयुष संस्थान सागर क्षेत्र में आयुर्वेद और अन्य आयुष विधाओं का प्रमुख केंद्र बन चुका है। वर्ष 2004 से अब तक संस्थान 10,000 से अधिक संतुष्ट रोगियों को सेवाएं प्रदान कर चुका है।"
                     : "Under the dynamic leadership of Dr. Saurabh Bharill, grandson of Dr. Ratan Chand Jain, Shantiratnam Ayush Institute has emerged as a premier center for Ayurveda and other AYUSH disciplines in central India. Since its establishment in 2004 as Shanti ratnam ayurvedic Chitiksalay, the Institute has successfully served more than 10,000 satisfied patients from across central India."
                   }
                 </p>
                 <p>
                   {hi 
-                    ? "à¤¯à¤¹ à¤¸à¤‚à¤¸à¥à¤¥à¤¾à¤¨ à¤†à¤¯à¥à¤°à¥à¤µà¥‡à¤¦, à¤¯à¥‹à¤—, à¤¯à¥‚à¤¨à¤¾à¤¨à¥€, à¤¸à¤¿à¤¦à¥à¤§ à¤”à¤° à¤¹à¥‹à¤®à¥à¤¯à¥‹à¤ªà¥ˆà¤¥à¥€ à¤®à¥‡à¤‚ à¤µà¥à¤¯à¤¾à¤ªà¤• à¤šà¤¿à¤•à¤¿à¤¤à¥à¤¸à¤¾ à¤¸à¥à¤µà¤¿à¤§à¤¾à¤à¤ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤¡à¥‰. à¤¸à¥Œà¤°à¤­ à¤­à¤°à¤¿à¤²à¥à¤² à¤•à¤¾ à¤†à¤¯à¥à¤· à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤—à¤¤à¤¿à¤¶à¥€à¤² à¤•à¤¾à¤°à¥à¤¯ à¤¨ à¤•à¥‡à¤µà¤² à¤‰à¤¨à¤•à¥‡ à¤ªà¤¿à¤¤à¤¾à¤®à¤¹ à¤•à¥€ à¤¸à¥à¤®à¥ƒà¤¤à¤¿ à¤•à¥‹ à¤¸à¤®à¥à¤®à¤¾à¤¨ à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆ, à¤¬à¤²à¥à¤•à¤¿ à¤®à¤§à¥à¤¯ à¤­à¤¾à¤°à¤¤ à¤®à¥‡à¤‚ à¤¸à¤®à¤—à¥à¤° à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤¸à¥‡à¤µà¤¾à¤“à¤‚ à¤•à¥‡ à¤¸à¥à¤¤à¤° à¤•à¥‹ à¤­à¥€ à¤Šà¤à¤šà¤¾ à¤‰à¤ à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+                    ? "यह संस्थान आयुर्वेद, योग और जीवनशैली-आधारित समग्र उपचार प्रदान करता है। डॉ. सौरभ भरिल्ल का आयुष क्षेत्र में कार्य न केवल अपने पूर्वजों की विरासत का सम्मान है, बल्कि मध्य भारत में समग्र स्वास्थ्य सेवाओं के स्तर को ऊंचा उठाने का सतत प्रयास भी है।"
                     : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management — working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
                   }
                 </p>
@@ -395,7 +395,7 @@ export default function AboutUsPage() {
           <h2>{t.patientsSay}</h2>
           <p>
             {hi
-              ? "à¤°à¥‹à¤—à¤¿à¤¯à¥‹à¤‚ à¤•à¥‡ à¤…à¤¨à¥à¤­à¤µ à¤”à¤° à¤¸à¤«à¤²à¤¤à¤¾ à¤•à¤¥à¤¾à¤à¤‚ à¤¹à¤®à¤¾à¤°à¥€ à¤‰à¤ªà¤šà¤¾à¤° à¤ªà¥à¤°à¤£à¤¾à¤²à¥€ à¤•à¥€ à¤ªà¥à¤°à¤­à¤¾à¤µà¤¶à¥€à¤²à¤¤à¤¾ à¤”à¤° à¤¦à¥‡à¤–à¤­à¤¾à¤² à¤•à¥‹ à¤¦à¤°à¥à¤¶à¤¾à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤"
+              ? "रोगियों के अनुभव और सफलता की कहानियां हमारी उपचार प्रणाली की प्रभावशीलता और देखभाल को दर्शाती हैं।"
               : "Patients express their heartfelt gratitude and success stories through testimonials, showcasing the effectiveness of our treatments and care."}
           </p>
         </div>
