@@ -2202,12 +2202,26 @@ main {
 }
 
 .torchbearer-compact.is-brief {
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 320px;
 }
 
 .torchbearer-compact.is-brief p {
   display: none;
+}
+
+.torchbearer-thumb {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin-bottom: 0.9rem;
+}
+
+.torchbearer-thumb-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .torchbearer-compact:hover {
