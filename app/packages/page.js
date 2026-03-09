@@ -293,6 +293,20 @@ const packagePrograms = [
   }
 ];
 
+const packageSequence = [
+  "joint-and-spine-package",
+  "diabetes-package",
+  "detox-package",
+  "stress-management-package",
+  "weight-management-package",
+  "womens-health-care-package",
+  "rejuvenation-package"
+];
+
+const orderedPackagePrograms = packageSequence
+  .map((id) => packagePrograms.find((item) => item.id === id))
+  .filter(Boolean);
+
 function CheckList({ items }) {
   return (
     <ul className="package-list-grid">
@@ -395,7 +409,7 @@ export default function PackagePage() {
       </section>
 
       <section className="container package-stack reveal in">
-        {packagePrograms.map((item, index) => (
+        {orderedPackagePrograms.map((item, index) => (
           <PackageBlock key={item.id} item={item} index={index} t={t} locale={locale} />
         ))}
       </section>
