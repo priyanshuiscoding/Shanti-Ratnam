@@ -3144,9 +3144,13 @@ main {
   place-items: center;
   background: #2b5d94;
   color: #f4f4f4;
-  font-size: 0.74rem;
-  font-weight: 700;
   text-decoration: none;
+}
+
+.social-list a svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .social-list a:hover {
@@ -3376,6 +3380,44 @@ select:focus {
 .contact-info-list p {
   margin-top: 0.7rem;
   color: #4f6f92;
+}
+
+.contact-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+}
+
+.contact-social-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  border: 1px solid #d4e2ef;
+  border-radius: 999px;
+  padding: 0.34rem 0.66rem;
+  color: #2b5d94;
+  text-decoration: none;
+  background: #ffffff;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-social-list a svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.contact-social-list a span {
+  font-weight: 600;
+  font-size: 0.86rem;
+  line-height: 1;
+}
+
+.contact-social-list a:hover {
+  border-color: #2b5d94;
+  color: #1f4e82;
+  background: #eef5fb;
 }
 
 .contact-message-form {

@@ -1,5 +1,6 @@
 import ContactMessageForm from "@/components/ContactMessageForm";
 import { getServerLocale } from "@/lib/locale-server";
+import { SocialLinks } from "@/components/SocialIcons";
 
 export const metadata = {
   title: "Contact Us",
@@ -71,15 +72,9 @@ export default function ContactUsPage() {
               <strong>Phone:</strong> +91 8989927755, +91 7582357300
             </p>
             <p>
-              <strong>{t.social}:</strong>{" "}
-              <a href="https://www.facebook.com/people/Shanti-Ratnam/100039183655785/" target="_blank" rel="noopener noreferrer">Facebook</a>{" "}
-              |{" "}
-              <a href="https://www.instagram.com/shantiratnamayushinstitute/" target="_blank" rel="noopener noreferrer">Instagram</a>{" "}
-              |{" "}
-              <a href="https://www.youtube.com/@saurabhbharill" target="_blank" rel="noopener noreferrer">YouTube</a>{" "}
-              |{" "}
-              <a href="https://x.com/SR_AIIMS" target="_blank" rel="noopener noreferrer">X</a>
+              <strong>{t.social}:</strong>
             </p>
+            <SocialLinks className="contact-social-list" withLabels />
             <p>
               <strong>{t.map}:</strong>{" "}
               <a href="https://www.google.com/maps/place/Shanti+Ratnam/@23.8575549,78.7958644,17z/data=!3m1!4b1!4m6!3m5!1s0x3978d15d0b823b3f:0xfbbae15f9ad773d6!8m2!3d23.85755!4d78.7984393!16s%2Fg%2F11pzx4mwvs?entry=tts" target="_blank" rel="noopener noreferrer">

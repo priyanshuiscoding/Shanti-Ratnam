@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { getClientLocaleFromPath } from "@/lib/locale";
+import { SocialLinks } from "@/components/SocialIcons";
 
 const SAGAR_COORDS = {
   latitude: 23.8388,
@@ -204,40 +205,7 @@ export default function SiteFooter() {
 
         <section>
           <h3>{t.follow}</h3>
-          <div className="social-list" aria-label="Social links">
-            <a
-              href="https://www.facebook.com/people/Shanti-Ratnam/100039183655785/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              f
-            </a>
-            <a
-              href="https://x.com/SR_AIIMS"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-            >
-              x
-            </a>
-            <a
-              href="https://www.youtube.com/@saurabhbharill"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-            >
-              yt
-            </a>
-            <a
-              href="https://www.instagram.com/shantiratnamayushinstitute/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              ig
-            </a>
-          </div>
+          <SocialLinks />
           <p>{t.securePayment}</p>
           <p>Razorpay</p>
         </section>
