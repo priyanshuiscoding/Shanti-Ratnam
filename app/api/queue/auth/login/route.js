@@ -4,8 +4,8 @@ import { COOKIE_NAME, createAuthToken, getQueuePasswords } from "@/lib/queueAuth
 export async function POST(request) {
   try {
     const body = await request.json();
-    const role = String(body?.role || "reception");
-    const password = String(body?.password || "");
+    const role = String(body?.role || "reception").trim().toLowerCase();
+    const password = String(body?.password || "").trim();
 
     const passwords = getQueuePasswords();
     const allowed =
@@ -30,3 +30,4 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, message: "Unable to login." }, { status: 400 });
   }
 }
+
