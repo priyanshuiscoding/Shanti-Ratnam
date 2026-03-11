@@ -1,5 +1,6 @@
 import { Cormorant_Garamond, Manrope, Noto_Serif_Devanagari } from "next/font/google";
 import { headers } from "next/headers";
+import { Analytics } from "@vercel/analytics/react";
 import LayoutShell from "@/components/LayoutShell";
 import SeoLocalBusiness from "@/components/SeoLocalBusiness";
 import "./globals.css";
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.variable} ${cormorant.variable} ${hindiSerif.variable}`}>
         <SeoLocalBusiness />
         <LayoutShell>{children}</LayoutShell>
+        <Analytics />
       </body>
     </html>
   );
