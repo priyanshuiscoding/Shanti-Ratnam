@@ -1,11 +1,16 @@
 import { NextResponse } from "next/server";
-import { COOKIE_NAME, createAuthToken, getQueuePasswords } from "@/lib/queueAuth";
+import {
+  COOKIE_NAME,
+  createAuthToken,
+  getQueuePasswords,
+  normalizeCredential
+} from "@/lib/queueAuth";
 
 export async function POST(request) {
   try {
     const body = await request.json();
     const role = String(body?.role || "reception").trim().toLowerCase();
-    const password = String(body?.password || "").trim();
+    const password = normalizeCredential(body?.password || "");
 
     const passwords = getQueuePasswords();
     const allowed =
