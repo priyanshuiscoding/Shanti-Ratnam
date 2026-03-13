@@ -12,6 +12,12 @@ export const metadata = {
 
 const galleryImages = [
   {
+    src: "/images/media/Dhanwantri Bhagwan Image.jpg",
+    alt: "Dhanwantri statue inside the Shanti-Ratnam facility corridor",
+    width: 1368,
+    height: 768
+  },
+  {
     src: "/images/media/DSC_0362.JPG",
     alt: "Shanti-Ratnam clinic environment view",
     width: 6192,
@@ -76,6 +82,7 @@ const collageClasses = [
   "is-square",
   "is-wide",
   "is-square",
+  "is-wide",
   "is-wide"
 ];
 
