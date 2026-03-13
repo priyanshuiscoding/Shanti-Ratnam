@@ -61,17 +61,20 @@ export function SocialLinks({ className = "social-list", withLabels = false }) {
       {SOCIAL_LINKS.map((link) => (
         <a
           key={link.key}
+          className="social-link"
+          data-network={link.key}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
           title={link.label}
         >
-          <SocialIcon network={link.key} />
+          <span className="social-icon" aria-hidden="true">
+            <SocialIcon network={link.key} />
+          </span>
           {withLabels ? <span>{link.label}</span> : null}
         </a>
       ))}
     </div>
   );
 }
-
