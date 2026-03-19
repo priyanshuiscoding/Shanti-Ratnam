@@ -34,11 +34,6 @@ const coreDoctors = [
     name: "Dr. Riya Bhargav AMO",
     role: "Ayurvedic Medical Officer",
     image: "/images/team/DR%20Riya%20BHargav.jpeg"
-  },
-  {
-    name: "Dr. Prasansa Upadhyay",
-    role: "Naturopathy And Yoga Specialist",
-    image: "/images/team/Dr%20parsansa%20upadhyay.jpeg"
   }
 ];
 
