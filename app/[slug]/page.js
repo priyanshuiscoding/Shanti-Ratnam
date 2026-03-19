@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import InnerPageContent from "@/components/InnerPageContent";
 import { getPageBySlug, innerPages } from "@/lib/siteData";
 import { getServerLocale } from "@/lib/locale-server";

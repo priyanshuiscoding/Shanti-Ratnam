@@ -6,13 +6,240 @@ import { getServerLocale } from "@/lib/locale-server";
 export const metadata = {
   title: "Package",
   description:
-    "Package-wise Ayurveda and naturopathy wellness programs at Shanti-Ratnam.",
+    "Explore daily OPD walk-in packages and residential IPD admissions at Shanti-Ratnam.",
   alternates: {
     canonical: "/packages"
   }
 };
 
-const packagePrograms = [
+const opdPackages = [
+  {
+    id: "feel-good-package",
+    categoryClass: "prevention",
+    category: "Prevention",
+    title: "Feel Good Package",
+    subtitle: "Package #1 - OPD Outpatient Programme",
+    duration: "2 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 7,000",
+    shortDescription:
+      "A revitalising two-day retreat designed to refresh your body and uplift your spirit through time-tested Ayurvedic therapies.",
+    fullDescription:
+      "The Feel Good Package is an introduction to restorative Ayurveda. It combines Abhyangam warm oil massage, Manjal Kizhi herbal poultice work, specialised stimulation techniques, and herbal steam to improve circulation, reduce fatigue, and leave the body feeling renewed.",
+    procedures: ["Abhyangam", "Manjal Kizhi", "SSPS", "PPS", "Steam"],
+    benefits: [
+      "Relieves muscular fatigue and body ache",
+      "Improves blood and lymphatic circulation",
+      "Brightens and nourishes skin",
+      "Boosts immunity and energy levels",
+      "Promotes deep mental calm and clarity"
+    ]
+  },
+  {
+    id: "know-your-body-package",
+    categoryClass: "rejuvenation",
+    category: "Rejuvenation",
+    title: "Know Your Body Package",
+    subtitle: "Package #2 - OPD Outpatient Programme",
+    duration: "3 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 11,000",
+    shortDescription:
+      "A three-day journey of self-discovery and deep cellular rejuvenation using the royal oil bath of Pizhichiil alongside classical Panchakarma techniques.",
+    fullDescription:
+      "This package begins with Abhyangam and then introduces Pizhichiil, a deeply nourishing warm oil treatment for muscles, joints, and the nervous system. CPS and Nasyam are added to support energy balance, sinus clarity, sharper focus, and overall rejuvenation.",
+    procedures: ["Abhyangam", "Pizhichiil", "CPS", "Nasyam", "Steam"],
+    benefits: [
+      "Deep joint and muscle nourishment",
+      "Balances all three doshas",
+      "Clears nasal passages and improves breathing",
+      "Enhances mental focus and memory",
+      "Strengthens the nervous system"
+    ]
+  },
+  {
+    id: "basic-detoxification-package",
+    categoryClass: "detox",
+    category: "Detoxification",
+    title: "Basic Detoxification Package",
+    subtitle: "Package #3 - OPD Outpatient Programme",
+    duration: "5 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 16,000",
+    shortDescription:
+      "A focused five-day detox programme to cleanse the body of accumulated toxins and restore cellular vitality through classical Ayurvedic purification.",
+    fullDescription:
+      "Each day combines Abhyangam, Shirodhara or Takra Dhara, Udwarthanam, Naranga Kizhi, and steam to mobilise toxins, calm the nervous system, stimulate metabolism, and support elimination. It is designed for guests seeking a structured cleansing reset.",
+    procedures: [
+      "Abhyangam",
+      "Shirodhara / Takra Dhara",
+      "Udwarthanam",
+      "Naranga Kizhi",
+      "Steam"
+    ],
+    benefits: [
+      "Deep cellular detoxification",
+      "Improved digestive fire",
+      "Reduction of inflammation and joint pain",
+      "Weight management support",
+      "Glowing, tightened skin",
+      "Relieves stress and mental fog"
+    ]
+  },
+  {
+    id: "complete-detox-package",
+    categoryClass: "purification",
+    category: "Body Purification",
+    title: "Complete Detox Package",
+    subtitle: "Package #4 - OPD Outpatient Programme",
+    duration: "7 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 21,000",
+    shortDescription:
+      "A comprehensive seven-day purification protocol that works through multiple body systems for a complete Ayurvedic reset.",
+    fullDescription:
+      "This deeper detox builds on the basic cleanse with Dhanyamla Dhara, CPS, and Matra Basti. The programme supports gut cleansing, Vata balance, joint relief, nervous-system support, and a lighter, clearer post-treatment state.",
+    procedures: [
+      "Abhyangam",
+      "Shirodhara / Takra Dhara",
+      "Dhanyamla Dhara",
+      "CPS",
+      "Steam",
+      "Matra Basti"
+    ],
+    benefits: [
+      "Thorough colon and gut cleanse",
+      "Relieves chronic back pain and sciatica",
+      "Supports neurological health",
+      "Reduces excess weight and water retention",
+      "Deep nervous system restoration",
+      "Full dosha rebalancing"
+    ]
+  },
+  {
+    id: "stress-buster-package",
+    categoryClass: "destress",
+    category: "De-Stress",
+    title: "Stress Buster Package",
+    subtitle: "Package #5 - OPD Outpatient Programme",
+    duration: "10 or 15 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 28,000 - Rs 36,000",
+    shortDescription:
+      "An immersive Ayurvedic stress management programme that works on both the physical and emotional roots of chronic stress.",
+    fullDescription:
+      "Abhyangam, Shirodhara or Takra Dhara, Udwarthanam, Dhanyamla Dhara, CPS, and steam are combined to regulate stress response, reduce muscular tension, and restore parasympathetic calm. The 15-day option adds Yoga Basti for deeper Vata balancing.",
+    procedures: [
+      "Abhyangam",
+      "Shirodhara / Takra Dhara",
+      "Udwarthanam",
+      "Dhanyamla Dhara",
+      "CPS",
+      "Steam",
+      "Yoga Basti (15-day)"
+    ],
+    benefits: [
+      "Regulates cortisol and stress hormones",
+      "Deeply restores sleep quality",
+      "Relieves anxiety, panic and mental fatigue",
+      "Addresses root cause of Vata imbalance",
+      "Strengthens digestive and immune function",
+      "Restores emotional resilience and clarity"
+    ]
+  },
+  {
+    id: "lady-bloom-package",
+    categoryClass: "womens",
+    category: "Women's Care",
+    title: "Lady Bloom Package",
+    subtitle: "Package #6 - OPD Outpatient Programme",
+    duration: "7 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 21,000",
+    shortDescription:
+      "A dedicated seven-day women's wellness programme addressing hormonal balance, reproductive health, skin radiance, and deep feminine vitality.",
+    fullDescription:
+      "The Lady Bloom Package blends Pizhichiil, Shirodhara or Takra Dhara, Udwarthanam, Dhanyamla Dhara, CPS, steam, and Matra Basti to support hormone rhythm, ease discomfort, improve skin vitality, and promote emotional and reproductive wellbeing.",
+    procedures: [
+      "Abhyangam",
+      "Shirodhara / Takra Dhara",
+      "Udwarthanam",
+      "Pizhichiil",
+      "Dhanyamla Dhara",
+      "CPS",
+      "Steam",
+      "Matra Basti"
+    ],
+    benefits: [
+      "Supports hormonal balance and menstrual health",
+      "Relieves perimenopausal and PMS symptoms",
+      "Improves skin glow and texture",
+      "Reduces pelvic tension and inflammation",
+      "Restores libido and reproductive vitality",
+      "Deep emotional and energetic renewal"
+    ]
+  },
+  {
+    id: "care-package-for-elderly",
+    categoryClass: "elderly",
+    category: "Senior Citizen Care",
+    title: "Care Package for Elderly",
+    subtitle: "Package #7 - OPD Outpatient Programme",
+    duration: "5 Days",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 15,000",
+    shortDescription:
+      "A gentle yet deeply effective five-day Ayurvedic care programme specially formulated for the needs and sensitivities of senior citizens.",
+    fullDescription:
+      "This programme uses Abhyangam, Shirodhara, Udwarthanam, CPS, and steam in a slower, carefully supported format for ageing bodies. It focuses on mobility, sleep quality, mental calm, circulation, and seasonal tune-up care.",
+    procedures: [
+      "Abhyangam",
+      "Shirodhara / Takra Dhara",
+      "Udwarthanam",
+      "CPS",
+      "Steam"
+    ],
+    benefits: [
+      "Relieves arthritic joint pain and stiffness",
+      "Improves sleep and cognitive function",
+      "Supports healthy blood pressure",
+      "Reduces emotional stress",
+      "Strengthens skin, immunity and circulation",
+      "Promotes graceful, dignified aging"
+    ]
+  },
+  {
+    id: "pioneering-package-for-kids",
+    categoryClass: "kids",
+    category: "Children's Care",
+    title: "Pioneering Package for Kids",
+    subtitle: "Package #8 - OPD Outpatient Programme",
+    duration: "8 Weekend Days/Month",
+    dailyHours: "2-3 hrs/day",
+    price: "Rs 15,000",
+    shortDescription:
+      "An innovative weekend Ayurvedic programme for children under 15, supporting immunity, concentration, and emotional wellbeing.",
+    fullDescription:
+      "Conducted over 8 weekend sessions in a month, this child-friendly package combines Abhyangam, Shirodhara or Takra Dhara, Nasyam, Manjal Kizhi, and steam in age-appropriate ways to support growth, calmness, respiratory ease, and learning focus.",
+    procedures: [
+      "Abhyangam",
+      "Shirodhara / Takra Dhara",
+      "Nasyam",
+      "Manjal Kizhi",
+      "Steam"
+    ],
+    benefits: [
+      "Builds strong immunity and disease resistance",
+      "Improves concentration, memory and learning",
+      "Reduces hyperactivity and anxiety",
+      "Supports healthy growth and development",
+      "Relieves recurrent respiratory conditions",
+      "Promotes deep, restful sleep in children"
+    ]
+  }
+];
+
+const ipdPackages = [
   {
     id: "rejuvenation-package",
     title: "Rejuvenation Package",
@@ -303,8 +530,8 @@ const packageSequence = [
   "rejuvenation-package"
 ];
 
-const orderedPackagePrograms = packageSequence
-  .map((id) => packagePrograms.find((item) => item.id === id))
+const orderedIpdPackages = packageSequence
+  .map((id) => ipdPackages.find((item) => item.id === id))
   .filter(Boolean);
 
 function CheckList({ items }) {
@@ -314,6 +541,77 @@ function CheckList({ items }) {
         <li key={item}>{item}</li>
       ))}
     </ul>
+  );
+}
+
+function PackageJumpCard({ href, title, subtitle, description }) {
+  return (
+    <a className="package-jump-card" href={href}>
+      <span className="package-jump-kicker">{subtitle}</span>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <span className="package-jump-link">Explore section</span>
+    </a>
+  );
+}
+
+function OpdPackageCard({ item, t, locale }) {
+  const localHref = (path) => withLocalePath(path, locale);
+
+  return (
+    <article className="opd-package-card" id={item.id}>
+      <div className="opd-package-top">
+        <span className={`opd-package-badge ${item.categoryClass}`}>{item.category}</span>
+        <h3>{item.title}</h3>
+        <p className="opd-package-subtitle">{item.subtitle}</p>
+      </div>
+
+      <div className="opd-package-body">
+        <p className="opd-package-desc">{item.shortDescription}</p>
+
+        <div className="opd-package-procedures">
+          <p className="opd-package-label">{t.proceduresIncluded}</p>
+          <div className="opd-procedure-tags">
+            {item.procedures.map((procedure) => (
+              <span key={procedure} className="opd-procedure-tag">
+                {procedure}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <details className="opd-package-more">
+          <summary>{t.readMore}</summary>
+          <div className="opd-package-more-content">
+            <p>{item.fullDescription}</p>
+            <div className="opd-package-benefits">
+              <p className="opd-package-label">{t.keyBenefits}</p>
+              <CheckList items={item.benefits} />
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div className="opd-package-footer">
+        <div className="opd-package-meta">
+          <div className="opd-meta-item">
+            <span>{t.duration}</span>
+            <strong>{item.duration}</strong>
+          </div>
+          <div className="opd-meta-item">
+            <span>{t.dailyTiming}</span>
+            <strong>{item.dailyHours}</strong>
+          </div>
+        </div>
+
+        <div className="opd-package-price-wrap">
+          <p className="opd-package-price">{item.price}</p>
+          <Link href={localHref("/consultation")} className="opd-package-cta">
+            {t.bookAppointment}
+          </Link>
+        </div>
+      </div>
+    </article>
   );
 }
 
@@ -375,29 +673,58 @@ export default function PackagePage() {
   const hi = locale === "hi";
   const t = hi
     ? {
-        package: "\u0909\u092a\u091a\u093e\u0930 \u092a\u0948\u0915\u0947\u091c",
+        package: "उपचार पैकेज",
         lead:
-          "\u0936\u0930\u0940\u0930, \u092e\u0928 \u0914\u0930 \u0906\u0924\u094d\u092e\u093e \u0915\u094b \u0938\u0902\u0924\u0941\u0932\u093f\u0924 \u0914\u0930 \u0938\u093e\u092e\u0902\u091c\u0938\u094d\u092f\u092a\u0942\u0930\u094d\u0923 \u091c\u0940\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f \u091c\u094b\u0921\u093c\u0928\u093e\u0964",
-        imagePlaceholder: "\u0907\u092e\u0947\u091c \u092a\u094d\u0932\u0947\u0938\u0939\u094b\u0932\u094d\u0921\u0930",
-        addImageAt: "\u0905\u092a\u0928\u0940 \u0907\u092e\u0947\u091c \u092f\u0939\u093e\u0902 \u091c\u094b\u0921\u093c\u0947\u0902",
-        goal: "\u0932\u0915\u094d\u0937\u094d\u092f",
-        daysLabel: "\u0926\u093f\u0928\u094b\u0902 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e",
-        bookAppointment: "\u0905\u092a\u0949\u0907\u0902\u091f\u092e\u0947\u0902\u091f \u092c\u0941\u0915 \u0915\u0930\u0947\u0902",
-        contents: "\u0915\u0902\u091f\u0947\u0902\u091f \u0913\u0935\u0930\u0935\u094d\u092f\u0942",
-        whoJoin: "\u0915\u093f\u0938\u0947 \u091c\u0941\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u093f\u090f",
-        benefits: "\u0932\u093e\u092d"
+          "दैनिक ओपीडी वॉक-इन पैकेज और आवासीय आईपीडी उपचार कार्यक्रम, दोनों एक ही स्थान पर।",
+        packageChooser: "पैकेज प्रकार चुनें",
+        packageChooserLead:
+          "त्वरित विजिट के लिए ओपीडी चुनें या गहन उपचार के लिए आईपीडी प्रवेश देखें।",
+        opdTitle: "OPD Packages",
+        opdSubtitle: "Daily Walk-In",
+        opdLead:
+          "दैनिक ओपीडी पैकेज उन मरीजों के लिए हैं जो नियोजित सत्रों के साथ दिन में आकर उपचार लेना चाहते हैं।",
+        ipdTitle: "IPD Packages",
+        ipdSubtitle: "Admissions",
+        ipdLead:
+          "आईपीडी पैकेज प्रवेश आधारित आवासीय कार्यक्रम हैं जिनमें लंबी अवधि का समग्र उपचार शामिल है।",
+        goal: "लक्ष्य",
+        daysLabel: "दिनों की संख्या",
+        bookAppointment: "अपॉइंटमेंट बुक करें",
+        contents: "कंटेंट ओवरव्यू",
+        whoJoin: "किसे जुड़ना चाहिए",
+        benefits: "लाभ",
+        proceduresIncluded: "प्रोसीजर्स शामिल",
+        readMore: "अधिक जानकारी पढ़ें",
+        keyBenefits: "मुख्य लाभ",
+        duration: "अवधि",
+        dailyTiming: "रोजाना"
       }
     : {
-        package: "Package",
-        lead: "Uniting body, mind, and soul for a harmonious and balanced life.",
-        imagePlaceholder: "Image Placeholder",
-        addImageAt: "Add your image at",
+        package: "Packages",
+        lead:
+          "Browse both daily OPD walk-in packages and residential IPD admission programmes in one place.",
+        packageChooser: "Choose Package Type",
+        packageChooserLead:
+          "Pick OPD for short daily visits or IPD for immersive admission-based treatment plans.",
+        opdTitle: "OPD Packages",
+        opdSubtitle: "Daily Walk-In",
+        opdLead:
+          "These outpatient packages are designed for guests who want structured daily therapies without hospital admission.",
+        ipdTitle: "IPD Packages",
+        ipdSubtitle: "Admissions",
+        ipdLead:
+          "These admission-based programmes are better suited for deeper recovery, longer protocols, and supervised residential care.",
         goal: "Goal",
         daysLabel: "No. Of. Days",
         bookAppointment: "Book An Appointment",
         contents: "Contents Overview",
         whoJoin: "Who Must Join",
-        benefits: "Benefits"
+        benefits: "Benefits",
+        proceduresIncluded: "Procedures Included",
+        readMore: "Read more",
+        keyBenefits: "Key Benefits",
+        duration: "Duration",
+        dailyTiming: "Daily"
       };
 
   return (
@@ -408,12 +735,56 @@ export default function PackagePage() {
         <p className="lead">{t.lead}</p>
       </section>
 
-      <section className="container package-stack reveal in">
-        {orderedPackagePrograms.map((item, index) => (
-          <PackageBlock key={item.id} item={item} index={index} t={t} locale={locale} />
-        ))}
+      <section className="container package-jump-grid reveal in" aria-label={t.packageChooser}>
+        <div className="package-section-intro">
+          <p className="mini-kicker">{t.packageChooser}</p>
+          <h2>{t.packageChooser}</h2>
+          <p>{t.packageChooserLead}</p>
+        </div>
+
+        <div className="package-jump-links">
+          <PackageJumpCard
+            href="#opd-packages"
+            title={t.opdTitle}
+            subtitle={t.opdSubtitle}
+            description={t.opdLead}
+          />
+          <PackageJumpCard
+            href="#ipd-packages"
+            title={t.ipdTitle}
+            subtitle={t.ipdSubtitle}
+            description={t.ipdLead}
+          />
+        </div>
+      </section>
+
+      <section id="opd-packages" className="container package-section reveal in">
+        <div className="package-section-head">
+          <p className="mini-kicker">{t.opdSubtitle}</p>
+          <h2>{t.opdTitle}</h2>
+          <p>{t.opdLead}</p>
+        </div>
+
+        <div className="opd-package-grid">
+          {opdPackages.map((item) => (
+            <OpdPackageCard key={item.id} item={item} t={t} locale={locale} />
+          ))}
+        </div>
+      </section>
+
+      <section id="ipd-packages" className="container package-section reveal in">
+        <div className="package-section-head">
+          <p className="mini-kicker">{t.ipdSubtitle}</p>
+          <h2>{t.ipdTitle}</h2>
+          <p>{t.ipdLead}</p>
+        </div>
+
+        <div className="package-stack">
+          {orderedIpdPackages.map((item, index) => (
+            <PackageBlock key={item.id} item={item} index={index} t={t} locale={locale} />
+          ))}
+        </div>
       </section>
     </main>
   );
 }
-
