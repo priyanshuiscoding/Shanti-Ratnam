@@ -45,10 +45,10 @@ const opdPackages = [
     dailyHours: "2-3 hrs/day",
     price: "Rs 11,000",
     shortDescription:
-      "A three-day journey of self-discovery and deep cellular rejuvenation using the royal oil bath of Pizhichiil alongside classical Panchakarma techniques.",
+      "A three-day journey of self-discovery and deep cellular rejuvenation using the royal oil bath of Pizhichil alongside classical Panchakarma techniques.",
     fullDescription:
-      "This package begins with Abhyangam and then introduces Pizhichiil, a deeply nourishing warm oil treatment for muscles, joints, and the nervous system. CPS and Nasyam are added to support energy balance, sinus clarity, sharper focus, and overall rejuvenation.",
-    procedures: ["Abhyangam", "Pizhichiil", "CPS", "Nasyam", "Steam"],
+      "This package begins with Abhyangam and then introduces Pizhichil, a deeply nourishing warm oil treatment for muscles, joints, and the nervous system. CPS and Nasyam are added to support energy balance, sinus clarity, sharper focus, and overall rejuvenation.",
+    procedures: ["Abhyangam", "Pizhichil", "CPS", "Nasyam", "Steam"],
     benefits: [
       "Deep joint and muscle nourishment",
       "Balances all three doshas",
@@ -100,6 +100,7 @@ const opdPackages = [
     fullDescription:
       "This deeper detox builds on the basic cleanse with Dhanyamla Dhara, CPS, and Matra Basti. The programme supports gut cleansing, Vata balance, joint relief, nervous-system support, and a lighter, clearer post-treatment state.",
     procedures: [
+      "Colon Therapy",
       "Abhyangam",
       "Shirodhara / Takra Dhara",
       "Dhanyamla Dhara",
@@ -130,13 +131,14 @@ const opdPackages = [
     fullDescription:
       "Abhyangam, Shirodhara or Takra Dhara, Udwarthanam, Dhanyamla Dhara, CPS, and steam are combined to regulate stress response, reduce muscular tension, and restore parasympathetic calm. The 15-day option adds Yoga Basti for deeper Vata balancing.",
     procedures: [
+      "Colon Therapy",
       "Abhyangam",
       "Shirodhara / Takra Dhara",
       "Udwarthanam",
       "Dhanyamla Dhara",
       "CPS",
       "Steam",
-      "Yoga Basti (15-day)"
+      "Yoga Basti"
     ],
     benefits: [
       "Regulates cortisol and stress hormones",
@@ -159,12 +161,13 @@ const opdPackages = [
     shortDescription:
       "A dedicated seven-day women's wellness programme addressing hormonal balance, reproductive health, skin radiance, and deep feminine vitality.",
     fullDescription:
-      "The Lady Bloom Package blends Pizhichiil, Shirodhara or Takra Dhara, Udwarthanam, Dhanyamla Dhara, CPS, steam, and Matra Basti to support hormone rhythm, ease discomfort, improve skin vitality, and promote emotional and reproductive wellbeing.",
+      "The Lady Bloom Package blends Pizhichil, Shirodhara or Takra Dhara, Udwarthanam, Dhanyamla Dhara, CPS, steam, and Matra Basti to support hormone rhythm, ease discomfort, improve skin vitality, and promote emotional and reproductive wellbeing.",
     procedures: [
+      "Colon Therapy",
       "Abhyangam",
       "Shirodhara / Takra Dhara",
       "Udwarthanam",
-      "Pizhichiil",
+      "Pizhichil",
       "Dhanyamla Dhara",
       "CPS",
       "Steam",
@@ -214,7 +217,7 @@ const opdPackages = [
     category: "Children's Care",
     title: "Pioneering Package for Kids",
     subtitle: "Package #8 - OPD Outpatient Programme",
-    duration: "8 Weekend Days/Month",
+    duration: "8 days in a month (Weekend Days)",
     dailyHours: "2-3 hrs/day",
     price: "Rs 15,000",
     shortDescription:
@@ -361,6 +364,7 @@ const ipdPackages = [
     imagePath: "/images/packages/weight management.webp",
     imageSide: "right",
     contents: [
+      "Colon Therapy",
       "Initial Assessment",
       "Cooking Class",
       "Yoga And Meditation",

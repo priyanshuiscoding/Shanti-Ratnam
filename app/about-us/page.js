@@ -268,7 +268,7 @@ export default function AboutUsPage() {
                   <p>
                     {hi 
                       ? "डॉ. रतन चन्द जैन मध्य प्रदेश के सागर क्षेत्र के अत्यंत प्रतिष्ठित आयुर्वेदाचार्यों में से एक थे। 5 अक्टूबर 1931 को शाहपुर सागर में जन्म लेकर उन्होंने अपना पूरा जीवन आयुर्वेद और जनसेवा को समर्पित किया। सागर संभाग के लोगों की सेवा में उन्होंने 67 वर्षों तक निरंतर कार्य किया।"
-                      : "Dr. Ratan Chand Jain was one of the most revered Ayurvedacharyas of the Sagar region in Madhya Pradesh. Born on 5th October 1931 in Shahpur Sagar, he dedicated his entire life to the ancient science of Ayurveda, serving the people of central India with unwavering devotion, compassion, and exceptional medical wisdom as goverment ayurvedic medical officer (from 1962-1962)."
+                      : "Dr. Ratan Chand Jain was one of the most revered Ayurvedacharyas of the Sagar region in Madhya Pradesh. Born on 5th October 1931 in Shahpur Sagar, he dedicated his entire life to the ancient science of Ayurveda, serving the people of central India with unwavering devotion, compassion, and exceptional medical wisdom as Government Ayurvedic Medical Officer (from 1962-1990)."
                     }
                   </p>
                   <p>
