@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { getClientLocaleFromPath } from "@/lib/locale";
+import { CONTACT } from "@/lib/contact";
 
 const LOCAL_KEY = "sr_appointment_widget_minimized";
 
@@ -57,12 +58,12 @@ export default function AppointmentWidget() {
       <p className="appointment-kicker">{t.quickHelp}</p>
       <p className="appointment-title">{t.title}</p>
       <div className="appointment-links">
-        <a className="appointment-call" href="tel:+917007077353">
+        <a className="appointment-call" href={CONTACT.callHref}>
           {t.callNow}
         </a>
         <a
           className="appointment-chat"
-          href="https://wa.me/917007077353"
+          href={CONTACT.whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
         >

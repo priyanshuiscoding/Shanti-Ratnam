@@ -1,4 +1,5 @@
 import ContactMessageForm from "@/components/ContactMessageForm";
+import { CONTACT } from "@/lib/contact";
 import { getServerLocale } from "@/lib/locale-server";
 import { SocialLinks } from "@/components/SocialIcons";
 
@@ -69,7 +70,10 @@ export default function ContactUsPage() {
               <strong>Email:</strong> info@shantiratnam.com
             </p>
             <p>
-              <strong>Phone:</strong> +91 8989927755, +91 7582357300
+              <strong>Call:</strong> {CONTACT.callDisplay}
+            </p>
+            <p>
+              <strong>WhatsApp:</strong> {CONTACT.whatsappDisplay}
             </p>
             <p>
               <strong>{t.social}:</strong>

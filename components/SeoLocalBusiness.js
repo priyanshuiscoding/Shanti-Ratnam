@@ -1,10 +1,12 @@
+import { CONTACT } from "@/lib/contact";
+
 export default function SeoLocalBusiness() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Shanti Ratnam",
     image: "https://shantiratnam.com/images/logo.png",
-    telephone: "+91 70070 77353",
+    telephone: CONTACT.callDisplay,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Lane No.3 Neha Nagar, Makronia",

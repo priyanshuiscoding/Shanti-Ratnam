@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
+import { CONTACT } from "@/lib/contact";
 import { mdDeskContent } from "@/lib/siteData";
 import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
@@ -320,7 +321,7 @@ export default async function HomePage() {
             <Link className="btn saffron-btn" href={localHref("/consultation")}>
               {t.book}
             </Link>
-            <a className="btn ghost-btn" href="tel:+917007077353">
+            <a className="btn ghost-btn" href={CONTACT.callHref}>
               {t.callNow}
             </a>
           </div>
@@ -371,12 +372,12 @@ export default async function HomePage() {
           <p>{t.advisorBody}</p>
           <p className="city">{t.city}</p>
           <div className="card-actions">
-            <a className="btn saffron-btn" href="tel:+917007077353">
+            <a className="btn saffron-btn" href={CONTACT.callHref}>
               {t.callNow}
             </a>
             <a
               className="btn ghost-btn"
-              href="https://wa.me/917007077353"
+              href={CONTACT.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
             >

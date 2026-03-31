@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { CONTACT } from "@/lib/contact";
 import { getClientLocaleFromPath } from "@/lib/locale";
 import { SocialLinks } from "@/components/SocialIcons";
 
@@ -215,7 +216,8 @@ export default function SiteFooter() {
           <p>Shanti-Ratnam Wellness Centre</p>
           <p>Lane No.3 Neha Nagar</p>
           <p>Makronia, Sagar-470004, Madhya Pradesh</p>
-          <p>+91 70070 77353</p>
+          <p>Call: {CONTACT.callDisplay}</p>
+          <p>WhatsApp: {CONTACT.whatsappDisplay}</p>
           <p>
             <a href="https://www.google.com/maps/place/Shanti+Ratnam/@23.8575549,78.7958644,17z/data=!3m1!4b1!4m6!3m5!1s0x3978d15d0b823b3f:0xfbbae15f9ad773d6!8m2!3d23.85755!4d78.7984393!16s%2Fg%2F11pzx4mwvs?entry=tts" target="_blank" rel="noopener noreferrer">
               {t.openMap}

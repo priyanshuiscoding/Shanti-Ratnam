@@ -1,4 +1,5 @@
 import ConsultationForm from "@/components/ConsultationForm";
+import { CONTACT } from "@/lib/contact";
 import { getServerLocale } from "@/lib/locale-server";
 
 export const metadata = {
@@ -61,8 +62,8 @@ export default function ConsultationPage() {
               : "We review your current diagnosis, medicines, and reports carefully before suggesting next steps."}
           </p>
           <div className="consultation-quick-links">
-            <a href="tel:+917007077353">{t.callNow}</a>
-            <a href="https://wa.me/917007077353" target="_blank" rel="noopener noreferrer">
+            <a href={CONTACT.callHref}>{t.callNow}</a>
+            <a href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer">
               {t.whatsapp}
             </a>
           </div>
