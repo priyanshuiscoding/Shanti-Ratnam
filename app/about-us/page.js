@@ -1,5 +1,6 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
+import { mdDeskContent } from "@/lib/siteData";
 import { withLocalePath } from "@/lib/locale";
 import { getServerLocale } from "@/lib/locale-server";
 
@@ -117,6 +118,19 @@ export default function AboutUsPage() {
   const locale = getServerLocale();
   const hi = locale === "hi";
   const localHref = (path) => withLocalePath(path, locale);
+  const continuationHighlights = hi
+    ? [
+        "स्थापना: 2004",
+        "10,000+ संतुष्ट रोगियों का विश्वास",
+        "20+ वर्षों का नैदानिक नेतृत्व",
+        "आयुर्वेद, योग और जीवनशैली आधारित समग्र देखभाल"
+      ]
+    : [
+        "Established in 2004",
+        "Trusted by 10,000+ satisfied patients",
+        "20+ years of clinical leadership",
+        "Integrated Ayurveda, Yoga, and lifestyle care"
+      ];
   const t = hi
     ? {
         about: "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902",
@@ -172,6 +186,14 @@ export default function AboutUsPage() {
         <p className="lead">
           Shanti-Ratnam AYUSH Institute of Indian Medicinal Sciences, Sagar.
         </p>
+        <div className="about-hero-emphasis">
+          <span>{hi ? "जीवंत विरासत" : "A Living Legacy"}</span>
+          <p>
+            {hi
+              ? "विरासत अगली पीढ़ी तक निरंतर आगे बढ़ रही है।"
+              : "Legacy Continues to the Next Generation - A Living Legacy."}
+          </p>
+        </div>
       </section>
 
       <section className="container about-story-section reveal in">
@@ -236,6 +258,22 @@ export default function AboutUsPage() {
           </p>
         </div>
 
+        <article className="legacy-theme-highlight">
+          <span className="legacy-theme-label">
+            {hi ? "विरासत की धारा" : "Legacy Focus"}
+          </span>
+          <h3>
+            {hi
+              ? "विरासत अगली पीढ़ी तक - एक जीवंत विरासत"
+              : "Legacy Continues to the Next Generation - A Living Legacy"}
+          </h3>
+          <p>
+            {hi
+              ? "डॉ. रतन चन्द जैन जी द्वारा स्थापित सेवा, विश्वास और समर्पण की परंपरा आज भी परिवार और संस्थान के माध्यम से उसी ऊष्मा के साथ आगे बढ़ रही है।"
+              : "The healing vision established by Dr. Ratan Chand Jain Ji continues through the family and the institute, carrying his values of service, trust, and compassionate care into the next generation."}
+          </p>
+        </article>
+
         <div className="about-legacy-compact">
           <div className="legacy-founder-compact">
             <div className="legacy-timeline">
@@ -259,8 +297,8 @@ export default function AboutUsPage() {
                   <Image
                     src={ABOUT_LEGEND_IMAGE_PATH}
                     alt="Dr. Ratan Chand Jain portrait"
-                    width={420}
-                    height={520}
+                    width={520}
+                    height={660}
                     className="legacy-portrait-img"
                   />
                 </div>
@@ -298,7 +336,7 @@ export default function AboutUsPage() {
             </p>
             
             <div className="legacy-torchbearers-compact">
-              <div className="torchbearer-compact is-brief">
+              <div className="torchbearer-compact legacy-photo-card">
                 <div className="torchbearer-thumb">
                   <Image
                     src={ABOUT_TORCHBEARER_IMAGE_PATH}
@@ -308,50 +346,60 @@ export default function AboutUsPage() {
                     className="torchbearer-thumb-img"
                   />
                 </div>
-                <div className="torchbearer-info">
-                  <h4>{hi ? "प्रथम मशालवाहक" : "First Torch Bearer"}</h4>
-                  <h5>Dr. Sanjeev Kumar Jain</h5>
-                  <span className="torchbearer-role">
-                    {hi ? "होम्योपैथिक चिकित्सक | डॉ. रतन चन्द जैन के कनिष्ठ पुत्र" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
-                  </span>
-                  <span className="torchbearer-place">
-                    {hi ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर" : "Shantiniketan Hospital, Shahpur Sagar"}
-                  </span>
-                </div>
-                <p>
-                  {hi 
-                    ? "पिता की महान परंपरा में पले-बढ़े डॉ. संजीव कुमार जैन ने बचपन से ही सेवा, विनम्रता और करुणा के संस्कार ग्रहण किए। डॉ. रतन चन्द जैन के कनिष्ठ पुत्र के रूप में उन्होंने परिवार की चिकित्सा परंपरा को आगे बढ़ाया और होम्योपैथी के माध्यम से अधिक से अधिक रोगियों तक उपचार पहुंचाया।"
-                    : "Growing up in the shadow of a legendary father, Dr. Sanjeev Kumar Jain imbibed the values of service, humility, and healing from a very young age. As the younger son of Vaidyaraj Dr. Ratan Chand Jain, he was among the first to carry forward the family's sacred mission of healthcare — choosing the path of Homeopathy to extend the reach of the healing legacy to a wider spectrum of patients."
-                  }
-                </p>
-                <p>
-                  {hi 
-                    ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर में सेवाएं देते हुए डॉ. संजीव कुमार जैन ने एक विश्वसनीय और समर्पित होम्योपैथिक चिकित्सक के रूप में अपनी पहचान बनाई। उनके रोगी-केंद्रित दृष्टिकोण, सूक्ष्म निदान और प्रभावी उपचार ने क्षेत्र के अनेक परिवारों को स्वास्थ्य लाभ दिलाया है।"
-                    : "Practicing at Shantiniketan Hospital in Shahpur Sagar, Dr. Sanjeev Kumar Jain has built a trusted reputation as a dedicated Homeopathic practitioner, known for his patient-centric approach, careful case analysis, and commitment to gentle yet effective healing. His clinic has become a familiar refuge for families in Shahpur Sagar who seek holistic, side-effect-free treatment for both acute and chronic conditions."
-                  }
-                </p>
               </div>
 
-              <div className="torchbearer-compact featured">
-                <div className="torchbearer-info">
-                  <h4>{hi ? "विरासत की निरंतरता अगली पीढ़ी" : "Legacy Continues Next Generation"}</h4>
-                  <h5>Shantiratnam Ayush Institute of Indian Medicinal Sciences</h5>
-                  <span className="torchbearer-role">
-                    {hi ? "भारतीय चिकित्सा विज्ञान संस्थान | सागर, मध्य प्रदेश | स्थापना: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
-                  </span>
+              <div className="legacy-torchbearer-stack">
+                <div className="torchbearer-compact legacy-sanjeev-card">
+                  <div className="torchbearer-info">
+                    <h4>{hi ? "प्रथम मशालवाहक" : "First Torch Bearer"}</h4>
+                    <h5>Dr. Sanjeev Kumar Jain</h5>
+                    <span className="torchbearer-role">
+                      {hi ? "होम्योपैथिक चिकित्सक | डॉ. रतन चन्द जैन के कनिष्ठ पुत्र" : "Homeopathic Practitioner | Younger Son of Dr. Ratan Chand Jain"}
+                    </span>
+                    <span className="torchbearer-place">
+                      {hi ? "शान्तिनिकेतन अस्पताल, शाहपुर सागर" : "Shantiniketan Hospital, Shahpur Sagar"}
+                    </span>
+                  </div>
+                  <p>
+                    {hi 
+                      ? "डॉ. संजीव कुमार जैन ने अपने पिता की सेवा-परंपरा को संवेदनशील होम्योपैथिक चिकित्सा के माध्यम से आगे बढ़ाया और शाहपुर सागर क्षेत्र के परिवारों का विश्वास अर्जित किया।"
+                      : "Dr. Sanjeev Kumar Jain carried forward his father's healing tradition through compassionate homeopathic care, earning the trust of families across Shahpur Sagar."
+                    }
+                  </p>
+
                 </div>
-                <p>
-                  {hi 
-                    ? "डॉ. रतन चन्द जैन के पौत्र डॉ. सौरभ भरिल्ल के गतिशील नेतृत्व में शान्तिरत्नम् आयुष संस्थान सागर क्षेत्र में आयुर्वेद और अन्य आयुष विधाओं का प्रमुख केंद्र बन चुका है। वर्ष 2004 से अब तक संस्थान 10,000 से अधिक संतुष्ट रोगियों को सेवाएं प्रदान कर चुका है।"
-                    : "Under the dynamic leadership of Dr. Saurabh Bharill, grandson of Dr. Ratan Chand Jain, Shantiratnam Ayush Institute has emerged as a premier center for Ayurveda and other AYUSH disciplines in central India. Since its establishment in 2004 as Shanti ratnam ayurvedic Chitiksalay, the Institute has successfully served more than 10,000 satisfied patients from across central India."
-                  }
-                </p>
-                <p>
-                  {hi 
-                    ? "यह संस्थान आयुर्वेद, योग और जीवनशैली-आधारित समग्र उपचार प्रदान करता है। डॉ. सौरभ भरिल्ल का आयुष क्षेत्र में कार्य न केवल अपने पूर्वजों की विरासत का सम्मान है, बल्कि मध्य भारत में समग्र स्वास्थ्य सेवाओं के स्तर को ऊंचा उठाने का सतत प्रयास भी है।"
-                    : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management — working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
-                  }
-                </p>
+
+                <div className="torchbearer-compact featured">
+                  <div className="torchbearer-info">
+                    <h4>{hi ? "विरासत अगली पीढ़ी तक" : "Legacy Continues to the Next Generation"}</h4>
+                    <h5>Shantiratnam Ayush Institute of Indian Medicinal Sciences</h5>
+                    <span className="torchbearer-role">
+                      {hi ? "भारतीय चिकित्सा विज्ञान संस्थान | सागर, मध्य प्रदेश | स्थापना: 2004" : "Sagar, Madhya Pradesh | Established: 2004"}
+                    </span>
+                  </div>
+                  <p>
+                    {hi 
+                      ? "डॉ. रतन चन्द जैन के पौत्र डॉ. सौरभ भरिल्ल के गतिशील नेतृत्व में शान्तिरत्नम् आयुष संस्थान सागर क्षेत्र में आयुर्वेद और अन्य आयुष विधाओं का प्रमुख केंद्र बन चुका है। वर्ष 2004 से अब तक संस्थान 10,000 से अधिक संतुष्ट रोगियों को सेवाएं प्रदान कर चुका है।"
+                      : "Under the dynamic leadership of Dr. Saurabh Bharill, grandson of Dr. Ratan Chand Jain, Shantiratnam Ayush Institute has emerged as a premier center for Ayurveda and other AYUSH disciplines in central India. Since its establishment in 2004 as Shanti ratnam ayurvedic Chitiksalay, the Institute has successfully served more than 10,000 satisfied patients from across central India."
+                    }
+                  </p>
+                  <ul className="legacy-progress-points">
+                    {continuationHighlights.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                  <p>
+                    {hi 
+                      ? "यह संस्थान आयुर्वेद, योग और जीवनशैली-आधारित समग्र उपचार प्रदान करता है। डॉ. सौरभ भरिल्ल का आयुष क्षेत्र में कार्य न केवल अपने पूर्वजों की विरासत का सम्मान है, बल्कि मध्य भारत में समग्र स्वास्थ्य सेवाओं के स्तर को ऊंचा उठाने का सतत प्रयास भी है।"
+                      : "The Institute offers comprehensive care in Ayurveda, Yoga, and lifestyle disease management — working tirelessly to make traditional Indian medical wisdom accessible to all. Dr. Saurabh Bharill's dynamic work in the AYUSH sector has not only honored the memory of his grandfather but has also elevated the standard of holistic healthcare in central India."
+                    }
+                  </p>
+                  <p>
+                    {hi
+                      ? `${mdDeskContent.doctorName} के नेतृत्व में यह संस्थान प्राचीन भारतीय चिकित्सा ज्ञान को आधुनिक वैज्ञानिक दृष्टि के साथ जोड़ते हुए रोगी-केंद्रित स्वास्थ्य यात्रा को आगे बढ़ा रहा है।`
+                      : `Led by ${mdDeskContent.doctorName}, the institute continues to blend ancient Indian healing wisdom with modern scientific thinking in a patient-centered model of care.`}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
