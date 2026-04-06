@@ -26,11 +26,6 @@ const coreDoctors = [
     image: "/images/team/Dr%20Senthilkumar.jpeg"
   },
   {
-    name: "Dr Sanket Chintewar",
-    role: "Naturopathy & Yoga Specialist",
-    image: "/images/team/Dr%20Sanket%20Chintewar.jpeg"
-  },
-  {
     name: "Dr. Riya Bhargav AMO",
     role: "Ayurvedic Medical Officer",
     image: "/images/team/DR%20Riya%20BHargav.jpeg"
