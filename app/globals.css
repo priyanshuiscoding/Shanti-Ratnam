@@ -667,6 +667,12 @@ main {
   margin-inline: auto;
 }
 
+.hero-home-left .eyebrow {
+  font-size: 0.96rem;
+  margin-bottom: 0.12rem;
+  transform: translateY(-4px);
+}
+
 .hero-highlight {
   margin-top: 1.1rem;
   font-size: 1.15rem;
@@ -3774,6 +3780,22 @@ select:focus {
 .opd-package-top {
   padding: 1.15rem 1.15rem 0.95rem;
   border-bottom: 1px solid #edf3fb;
+}
+
+.opd-package-image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #f5f8fc;
+  border-bottom: 1px solid #edf3fb;
+  padding: 0.45rem;
+}
+
+.opd-package-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
 }
 
 .opd-package-badge {

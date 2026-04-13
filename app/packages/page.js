@@ -19,6 +19,7 @@ const opdPackages = [
     category: "Prevention",
     title: "Feel Good Package",
     subtitle: "Package #1 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Feel Good Package.jpg",
     duration: "2 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 7,000",
@@ -41,6 +42,7 @@ const opdPackages = [
     category: "Rejuvenation",
     title: "Know Your Body Package",
     subtitle: "Package #2 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Know Your Body Package.webp",
     duration: "3 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 11,000",
@@ -63,6 +65,7 @@ const opdPackages = [
     category: "Detoxification",
     title: "Basic Detoxification Package",
     subtitle: "Package #3 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Basic Detoxfication package.jpg",
     duration: "5 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 16,000",
@@ -92,6 +95,7 @@ const opdPackages = [
     category: "Body Purification",
     title: "Complete Detox Package",
     subtitle: "Package #4 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Complete Detox Package  .jpg",
     duration: "7 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 21,000",
@@ -123,6 +127,7 @@ const opdPackages = [
     category: "De-Stress",
     title: "Stress Buster Package",
     subtitle: "Package #5 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Stress Buster.jfif",
     duration: "10 or 15 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 28,000 - Rs 36,000",
@@ -155,6 +160,7 @@ const opdPackages = [
     category: "Women's Care",
     title: "Lady Bloom Package",
     subtitle: "Package #6 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Lady Bloom Package.jpg",
     duration: "7 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 21,000",
@@ -188,6 +194,7 @@ const opdPackages = [
     category: "Senior Citizen Care",
     title: "Care Package for Elderly",
     subtitle: "Package #7 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Care Package for Elderly.jpg",
     duration: "5 Days",
     dailyHours: "2-3 hrs/day",
     price: "Rs 15,000",
@@ -217,6 +224,7 @@ const opdPackages = [
     category: "Children's Care",
     title: "Pioneering Package for Kids",
     subtitle: "Package #8 - OPD Outpatient Programme",
+    imagePath: "/images/opd packages/Pioneering Package for Kids.jfif",
     duration: "8 days in a month (Weekend Days)",
     dailyHours: "2-3 hrs/day",
     price: "Rs 15,000",
@@ -568,6 +576,18 @@ function OpdPackageCard({ item, t, locale }) {
         <span className={`opd-package-badge ${item.categoryClass}`}>{item.category}</span>
         <h3>{item.title}</h3>
         <p className="opd-package-subtitle">{item.subtitle}</p>
+      </div>
+
+      <div className="opd-package-image-wrap" aria-label={`${item.title} image`}>
+        <Image
+          src={item.imagePath}
+          alt={item.title}
+          width={1600}
+          height={1000}
+          quality={95}
+          sizes="(max-width: 820px) 100vw, 50vw"
+          className="opd-package-image"
+        />
       </div>
 
       <div className="opd-package-body">

@@ -312,7 +312,7 @@ export default async function HomePage() {
       <section className="hero container">
         <div className="hero-left hero-home-left reveal in">
           <p className="eyebrow">{t.welcome}</p>
-          <h1 className="hero-brand-hindi">{"\u0936\u093e\u0902\u0924\u093f \u0930\u0924\u094d\u0928\u092e"}</h1>
+          <h1 className="hero-brand-hindi">{"शांति रत्नम अस्पताल"}</h1>
           <p className="hero-subtitle">
             Central India's First Neuro-Painfree Centre and DIABETES REVERSAL AYUSH HOSPITAL.
           </p>
