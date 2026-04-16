@@ -359,7 +359,7 @@ main {
 
 .appointment-float {
   position: fixed;
-  top: 150px;
+  top: 300px;
   right: 14px;
   background: #ffffff;
   border: 1px solid var(--line);
@@ -379,7 +379,7 @@ main {
 
 .registration-float {
   position: fixed;
-  top: 220px;
+  top: 300px;
   left: 14px;
   background: #ffffff;
   border: 1px solid var(--saffron);
@@ -616,6 +616,80 @@ main {
   width: 18px;
   height: 18px;
   flex: 0 0 18px;
+}
+
+.home-service-marquee {
+  width: min(1240px, 92vw);
+  margin: 0.55rem auto 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(242, 106, 33, 0.28);
+  background: linear-gradient(90deg, #fff8f2, #f6fbff);
+  overflow: hidden;
+  position: relative;
+}
+
+.home-service-marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  padding: 0.42rem 0.5rem;
+  min-width: max-content;
+  animation: service-marquee-run 30s linear infinite;
+}
+
+.home-service-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.58rem;
+  background: #ffffff;
+  border: 1px solid #1f4f96;
+  color: var(--saffron);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  animation: service-word-blink 1.3s ease-in-out infinite;
+}
+
+.home-service-pill .service-pill-en {
+  text-transform: uppercase;
+  font-size: 0.86rem;
+  color: var(--saffron);
+}
+
+.home-service-pill .service-pill-sep,
+.home-service-pill .service-pill-hi {
+  color: var(--saffron);
+}
+
+.home-service-pill:nth-child(2n) {
+  animation-delay: 0.3s;
+}
+
+.home-service-pill:nth-child(3n) {
+  animation-delay: 0.6s;
+}
+
+@keyframes service-marquee-run {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes service-word-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.32;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero {
@@ -4483,6 +4557,23 @@ select:focus {
     padding: 0.7rem 0.55rem;
   }
 
+  .home-service-marquee {
+    width: calc(100vw - 20px);
+    margin: 0.45rem auto 0.75rem;
+    border-radius: 12px;
+  }
+
+  .home-service-marquee-track {
+    gap: 0.38rem;
+    padding: 0.35rem 0.4rem;
+    animation-duration: 24s;
+  }
+
+  .home-service-pill {
+    font-size: 0.69rem;
+    padding: 0.24rem 0.46rem;
+  }
+
   .appointment-min,
   .registration-min {
     top: 0.3rem;
@@ -4703,3 +4794,4 @@ select:focus {
     padding: 0.8rem 0;
   }
 }
+

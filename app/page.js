@@ -125,6 +125,17 @@ const googleReviewsFallback = [
   }
 ];
 
+const marqueeServices = [
+  { en: "Panchakarma", hi: "पंचकर्म" },
+  { en: "Ayurveda", hi: "आयुर्वेद" },
+  { en: "Naturopathy", hi: "प्राकृतिक चिकित्सा" },
+  { en: "Yoga", hi: "योग" },
+  { en: "Colon Hydro Therapy", hi: "कोलन हाइड्रो थेरेपी" },
+  { en: "Chiropractic", hi: "काइरोप्रैक्टिक" },
+  { en: "Diabetes Reversible Program", hi: "डायबिटीज रिवर्सिबल प्रोग्राम" },
+  { en: "Pain Free Neurospine Center", hi: "पेन फ्री न्यूरोस्पाइन सेंटर" }
+];
+
 function getYouTubeEmbedUrl(url) {
   try {
     const parsed = new URL(url);
@@ -309,6 +320,18 @@ export default async function HomePage() {
 
   return (
     <main>
+      <section className="home-service-marquee" aria-label="Featured services">
+        <div className="home-service-marquee-track">
+          {[...marqueeServices, ...marqueeServices].map((item, index) => (
+            <span className="home-service-pill" key={`${item.en}-${index}`}>
+              <span className="service-pill-en">{item.en}</span>
+              <span className="service-pill-sep"> | </span>
+              <span className="service-pill-hi">{item.hi}</span>
+            </span>
+          ))}
+        </div>
+      </section>
+
       <section className="hero container">
         <div className="hero-left hero-home-left reveal in">
           <p className="eyebrow">{t.welcome}</p>
