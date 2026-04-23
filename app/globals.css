@@ -626,6 +626,7 @@ main {
   background: linear-gradient(90deg, #fff8f2, #f6fbff);
   overflow: hidden;
   position: relative;
+  min-height: 60px;
 }
 
 .home-service-marquee-track {
@@ -633,42 +634,43 @@ main {
   align-items: center;
   gap: 0.5rem;
   white-space: nowrap;
-  padding: 0.42rem 0.5rem;
+  padding: 0.68rem 0.7rem;
   min-width: max-content;
-  animation: service-marquee-run 30s linear infinite;
+  animation: service-marquee-run 45s linear infinite;
 }
 
 .home-service-pill {
   display: inline-flex;
   align-items: center;
+  gap: 0.24rem;
   border-radius: 999px;
-  padding: 0.25rem 0.58rem;
+  padding: 0.34rem 0.75rem;
   background: #ffffff;
   border: 1px solid #1f4f96;
   color: var(--saffron);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
-  animation: service-word-blink 1.3s ease-in-out infinite;
+  animation: none;
 }
 
 .home-service-pill .service-pill-en {
   text-transform: uppercase;
-  font-size: 0.86rem;
+  font-size: 1.02rem;
   color: var(--saffron);
+}
+
+.home-service-pill .service-pill-hi {
+  font-size: 1.06rem;
+}
+
+.home-service-pill .service-pill-sep {
+  margin-inline: 0.1rem;
 }
 
 .home-service-pill .service-pill-sep,
 .home-service-pill .service-pill-hi {
   color: var(--saffron);
-}
-
-.home-service-pill:nth-child(2n) {
-  animation-delay: 0.3s;
-}
-
-.home-service-pill:nth-child(3n) {
-  animation-delay: 0.6s;
 }
 
 @keyframes service-marquee-run {
@@ -4561,17 +4563,18 @@ select:focus {
     width: calc(100vw - 20px);
     margin: 0.45rem auto 0.75rem;
     border-radius: 12px;
+    min-height: 54px;
   }
 
   .home-service-marquee-track {
     gap: 0.38rem;
-    padding: 0.35rem 0.4rem;
-    animation-duration: 24s;
+    padding: 0.58rem 0.5rem;
+    animation-duration: 36s;
   }
 
   .home-service-pill {
-    font-size: 0.69rem;
-    padding: 0.24rem 0.46rem;
+    font-size: 0.86rem;
+    padding: 0.3rem 0.54rem;
   }
 
   .appointment-min,

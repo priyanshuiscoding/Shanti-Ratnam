@@ -324,9 +324,9 @@ export default async function HomePage() {
         <div className="home-service-marquee-track">
           {[...marqueeServices, ...marqueeServices].map((item, index) => (
             <span className="home-service-pill" key={`${item.en}-${index}`}>
-              <span className="service-pill-en">{item.en}</span>
-              <span className="service-pill-sep"> | </span>
               <span className="service-pill-hi">{item.hi}</span>
+              <span className="service-pill-sep"> | </span>
+              <span className="service-pill-en">{item.en}</span>
             </span>
           ))}
         </div>
