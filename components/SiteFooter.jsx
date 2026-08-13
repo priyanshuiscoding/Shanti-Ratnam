@@ -67,6 +67,7 @@ export default function SiteFooter() {
           staffQueueLogin: "\u0938\u094d\u091f\u093e\u092b \u0915\u094d\u092f\u0942 \u0932\u0949\u0917\u093f\u0928",
           queueDisplay: "\u0915\u094d\u092f\u0942 \u0921\u093f\u0938\u094d\u092a\u094d\u0932\u0947 \u0938\u094d\u0915\u094d\u0930\u0940\u0928",
           terms: "\u0928\u093f\u092f\u092e \u090f\u0935\u0902 \u0936\u0930\u094d\u0924\u0947\u0902",
+          privacy: "\u0917\u094b\u092a\u0928\u0940\u092f\u0924\u093e \u0928\u0940\u0924\u093f",
           weather: "\u0906\u091c \u0915\u093e \u092e\u094c\u0938\u092e",
           follow: "\u0939\u092e\u093e\u0930\u0947 \u0938\u093e\u0925 \u091c\u0941\u0921\u093c\u0947\u0902",
           securePayment: "100% \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u092d\u0941\u0917\u0924\u093e\u0928",
@@ -89,7 +90,8 @@ export default function SiteFooter() {
           staffQueueLogin: "Staff Queue Login",
           queueDisplay: "Queue Display Screen",
           terms: "Terms & Conditions",
-          weather: "Today Weather",
+          privacy: "Privacy Policy",
+          weather: "Today's Weather",
           follow: "Follow Us",
           securePayment: "100% Secure Payment",
           contactUs: "Contact Us",
@@ -191,7 +193,6 @@ export default function SiteFooter() {
             <Link href="/queue/login">{t.staffQueueLogin}</Link>
             <Link href="/queue/display">{t.queueDisplay}</Link>
             <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a>
-            <Link href="/terms-and-conditions">{t.terms}</Link>
           </div>
         </section>
 
@@ -227,6 +228,10 @@ export default function SiteFooter() {
       </div>
       <div className="container footer-bottom">
         <p>{t.developedBy}</p>
+        <nav className="footer-legal-links" aria-label="Legal information">
+          <Link href="/privacy-policy">{t.privacy}</Link>
+          <Link href="/terms-and-conditions">{t.terms}</Link>
+        </nav>
         <p>Copyright {year} Shanti-Ratnam</p>
       </div>
     </footer>
