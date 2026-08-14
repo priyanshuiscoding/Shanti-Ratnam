@@ -93,14 +93,14 @@ const treatmentDepartments = [
 
 const videoTestimonials = [
   {
-    title: "Diabetes Reversal Testimonial",
-    titleHi: "\u0921\u093e\u092f\u092c\u093f\u091f\u0940\u091c \u0930\u093f\u0935\u0930\u094d\u0938\u0932 \u091f\u0947\u0938\u094d\u091f\u093f\u092e\u094b\u0928\u093f\u092f\u0932",
-    youtubeUrl: "https://www.youtube.com/watch?v=1bCflnm8vPA"
+    title: "Can Fatty Liver Be Reversed Naturally?",
+    titleHi: "\u0915\u094d\u092f\u093e \u092b\u0948\u091f\u0940 \u0932\u093f\u0935\u0930 \u092a\u094d\u0930\u093e\u0915\u0943\u0924\u093f\u0915 \u0930\u0942\u092a \u0938\u0947 \u0920\u0940\u0915 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948?",
+    youtubeUrl: "https://youtu.be/w3v54zlSkac?si=basYZV1i1NfW7MGS"
   },
   {
-    title: "Patient Recovery Testimonial",
-    titleHi: "\u0930\u094b\u0917\u0940 \u0930\u093f\u0915\u0935\u0930\u0940 \u091f\u0947\u0938\u094d\u091f\u093f\u092e\u094b\u0928\u093f\u092f\u0932",
-    youtubeUrl: "https://youtu.be/we04tu-zIUE?si=sITDEpcTtCBTFitf"
+    title: "One Day Detox Camp | Real Participants' Experience",
+    titleHi: "\u090f\u0915 \u0926\u093f\u0935\u0938\u0940\u092f \u0921\u093f\u091f\u0949\u0915\u094d\u0938 \u0915\u0948\u0902\u092a | \u092a\u094d\u0930\u0924\u093f\u092d\u093e\u0917\u093f\u092f\u094b\u0902 \u0915\u093e \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0905\u0928\u0941\u092d\u0935",
+    youtubeUrl: "https://youtu.be/ciIr3NWpGac?si=RZzojIr2Nhu200Qp"
   }
 ];
 
