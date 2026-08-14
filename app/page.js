@@ -98,9 +98,9 @@ const videoTestimonials = [
     youtubeUrl: "https://youtu.be/w3v54zlSkac?si=basYZV1i1NfW7MGS"
   },
   {
-    title: "One Day Detox Camp | Real Participants' Experience",
-    titleHi: "\u090f\u0915 \u0926\u093f\u0935\u0938\u0940\u092f \u0921\u093f\u091f\u0949\u0915\u094d\u0938 \u0915\u0948\u0902\u092a | \u092a\u094d\u0930\u0924\u093f\u092d\u093e\u0917\u093f\u092f\u094b\u0902 \u0915\u093e \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0905\u0928\u0941\u092d\u0935",
-    youtubeUrl: "https://youtu.be/ciIr3NWpGac?si=RZzojIr2Nhu200Qp"
+    title: "Herpes Zoster Treatment in 3 Days | Ayurvedic Care",
+    titleHi: "\u0939\u0930\u094d\u092a\u0940\u091c\u093c \u091c\u093c\u094b\u0938\u094d\u091f\u0930 \u0915\u093e 3 \u0926\u093f\u0928\u094b\u0902 \u092e\u0947\u0902 \u0906\u092f\u0941\u0930\u094d\u0935\u0947\u0926\u093f\u0915 \u0909\u092a\u091a\u093e\u0930",
+    youtubeUrl: "https://youtu.be/ZL83Z3X9q4c?si=omY9mw3A0XbXBMmv"
   }
 ];
 
