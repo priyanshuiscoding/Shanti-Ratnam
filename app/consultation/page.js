@@ -72,7 +72,7 @@ export default function ConsultationPage() {
         <article className="consultation-form-card">
           <h2>{t.freeConsultation}</h2>
           <p>{t.fillForm}</p>
-          <ConsultationForm />
+          <ConsultationForm initialLocale={locale} />
         </article>
       </section>
     </main>

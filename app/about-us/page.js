@@ -222,7 +222,7 @@ export default function AboutUsPage() {
             <h2>{t.storyTitle}</h2>
             <p className="about-story-long">{hi ? aboutParagraphHi : aboutParagraph}</p>
             <div className="about-inline-cta">
-              <Link href={localHref("/contact-us")}>{t.book}</Link>
+              <Link href={localHref("/consultation")}>{t.book}</Link>
             </div>
             <ul className="about-facility-list">
               {facilities.map((item) => (
@@ -276,20 +276,6 @@ export default function AboutUsPage() {
 
         <div className="about-legacy-compact">
           <div className="legacy-founder-compact">
-            <div className="legacy-timeline">
-              <div className="legacy-date">
-                <span className="date-label">{hi ? "जन्म" : "Born"}</span>
-                <span className="date-value">05 Oct 1931</span>
-              </div>
-              <div className="legacy-date">
-                <span className="date-label">{hi ? "ब्रह्मलीन" : "Attained Moksha"}</span>
-                <span className="date-value">19 Apr 2019</span>
-              </div>
-              <div className="legacy-date highlight">
-                <span className="date-label">{hi ? "सेवा" : "Service"}</span>
-                <span className="date-value">67 Years</span>
-              </div>
-            </div>
             <div className="legacy-summary">
               <h4>{hi ? "महान विभूति का परिचय" : "About the Legend"}</h4>
               <div className="legacy-summary-layout">
@@ -321,6 +307,20 @@ export default function AboutUsPage() {
                       {hi ? "उनकी चिकित्सा थी ज्ञान, करुणा और विश्वास का संगम।" : "His medicine was equal parts knowledge, kindness, and faith."}
                     </span>
                   </blockquote>
+                </div>
+                <div className="legacy-timeline">
+                  <div className="legacy-date">
+                    <span className="date-label">{hi ? "जन्म" : "Born"}</span>
+                    <span className="date-value">05 Oct 1931</span>
+                  </div>
+                  <div className="legacy-date">
+                    <span className="date-label">{hi ? "ब्रह्मलीन" : "Attained Moksha"}</span>
+                    <span className="date-value">19 Apr 2019</span>
+                  </div>
+                  <div className="legacy-date highlight">
+                    <span className="date-label">{hi ? "सेवा" : "Service"}</span>
+                    <span className="date-value">67 Years</span>
+                  </div>
                 </div>
               </div>
             </div>

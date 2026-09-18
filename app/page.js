@@ -420,7 +420,7 @@ export default async function HomePage() {
                 ? "ऑनलाइन या ऑफलाइन कंसल्टेशन के लिए हमारी टीम से सीधे जुड़ें। आपकी स्थिति के अनुसार सही परामर्श मोड और अगला कदम तय किया जाएगा।"
                 : "Connect directly with our team for online or offline consultation. We help you choose the right consultation mode and schedule quickly."}
             </p>
-            <Link className="consultation-cta-btn" href={localHref("/contact-us")}>
+            <Link className="consultation-cta-btn" href={localHref("/consultation")}>
               {hi ? "स्पेशल क्लिनिक्स" : "Special Clinics"}
             </Link>
           </article>
@@ -430,7 +430,7 @@ export default async function HomePage() {
               <Link
                 key={item.title}
                 className="consultation-mode-card"
-                href={localHref("/contact-us")}
+                href={localHref("/consultation")}
               >
                 <Image
                   src={item.imagePath}

@@ -1,4 +1,4 @@
-import ContactMessageForm from "@/components/ContactMessageForm";
+import Link from "next/link";
 import { CONTACT } from "@/lib/contact";
 import { getServerLocale } from "@/lib/locale-server";
 import { SocialLinks } from "@/components/SocialIcons";
@@ -20,8 +20,8 @@ export default function ContactUsPage() {
         hero: "संपर्क करें, हीलिंग की शुरुआत के लिए हमसे बातचीत करें",
         getInTouch: "\u0938\u0902\u092a\u0930\u094d\u0915 \u092e\u0947\u0902 \u0930\u0939\u0947\u0902",
         shortTitle: "\u0939\u092e \u091c\u0932\u094d\u0926 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947",
-        sendMessage: "\u0938\u0902\u0926\u0947\u0936 \u092d\u0947\u091c\u0947\u0902",
-        questions: "\u0915\u094d\u092f\u093e \u0906\u092a\u0915\u0947 \u0915\u094b\u0908 \u0905\u0928\u094d\u092f \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948\u0902?",
+        sendMessage: "\u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u092c\u0941\u0915 \u0915\u0930\u0947\u0902",
+        questions: "\u0905\u092a\u0928\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u090f\u0915 \u0939\u0940 \u092b\u0949\u0930\u094d\u092e \u092e\u0947\u0902 \u0938\u093e\u091d\u093e \u0915\u0930\u0947\u0902",
         newsletter: "\u0928\u094d\u092f\u0942\u091c\u0932\u0947\u091f\u0930",
         newsletterText:
           "\u0905\u0926\u094d\u092f\u0924\u0928 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092a\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0928\u094d\u092f\u0942\u091c\u0932\u0947\u091f\u0930 \u091c\u0949\u0907\u0928 \u0915\u0930\u0947\u0902\u0964",
@@ -35,8 +35,8 @@ export default function ContactUsPage() {
         hero: "Start the conversation to establish a good relationship and healing",
         getInTouch: "Get In Touch",
         shortTitle: "We Will Be In Touch Shortly",
-        sendMessage: "Send Us A Message",
-        questions: "Have Other Questions?",
+        sendMessage: "Book Consultation",
+        questions: "Share Your Details In One Place",
         newsletter: "Newsletter",
         newsletterText: "Sign up for our newsletter to get updated information.",
         send: "Send",
@@ -96,7 +96,22 @@ export default function ContactUsPage() {
               ? "यदि आपके कोई प्रश्न हैं या अधिक जानकारी चाहिए, तो हम आपकी सहायता के लिए उपलब्ध हैं।"
               : "If you have any questions or need more information, we are here to help and support."}
           </p>
-          <ContactMessageForm />
+          <div className="contact-booking-actions">
+            <Link className="contact-booking-primary" href="/consultation">
+              Open Consultation Form
+            </Link>
+            <a className="contact-booking-secondary" href={CONTACT.callHref}>
+              Call Now
+            </a>
+            <a
+              className="contact-booking-secondary"
+              href={CONTACT.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+          </div>
         </article>
       </section>
 

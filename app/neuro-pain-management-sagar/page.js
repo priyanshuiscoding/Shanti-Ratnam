@@ -44,7 +44,7 @@ export default function NeuroPainManagementPage() {
         <h1>{t.title}</h1>
         <p className="lead">{t.lead}</p>
         <div className="hero-cta-row">
-          <Link className="btn saffron-btn" href={localHref("/contact-us")}>
+          <Link className="btn saffron-btn" href={localHref("/consultation")}>
             {t.cta} &rarr;
           </Link>
         </div>

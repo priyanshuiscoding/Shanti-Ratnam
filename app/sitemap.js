@@ -8,6 +8,7 @@ export default function sitemap() {
 
     // main pages
     "/consultation",
+    "/feedback",
     "/diabetic-reversal-program-sagar",
     "/neuro-pain-management-sagar",
 

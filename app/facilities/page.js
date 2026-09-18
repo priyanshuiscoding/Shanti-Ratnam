@@ -69,8 +69,8 @@ const facilities = [
   },
   {
     title: "Physical Therapy",
-    image: "/images/facilities/physical thearpy.png",
-    alt: "Physical therapy care",
+    image: "/images/facilities/physical therapy.jpeg",
+    alt: "Therapist providing physical therapy to a patient on a treatment table",
     body:
       "We combine Ayurveda and modern rehabilitation techniques to restore mobility, relieve discomfort, and strengthen the body. Through therapeutic exercise, manual therapy, hydrotherapy, and yoga-based routines, we support recovery from injuries, improve posture, and enhance overall physical well-being."
   },
